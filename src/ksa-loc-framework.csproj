@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <AssemblyName>ksa-loc-framework</AssemblyName>
+    <ModOutputPath>$(ModsPath)/ksa-loc-framework</ModOutputPath>
+    <OutputPath>$(ModOutputPath)/</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+    <GenerateDependencyFile>false</GenerateDependencyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="$(GamePath)/KSA.dll" Private="false" />
+    <Reference Include="$(GamePath)/Planet.Render.Core.dll" Private="false" />
+    <Reference Include="$(GamePath)/Tomlet.dll" Private="false" />
+    <Reference Include="$(GamePath)/Brutal.*.dll" Private="false" />
+    <Reference Include="$(GamePath)/StarMap-0.4.7/0Harmony.dll" Private="false" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="StarMap.API" Version="0.3.6">
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+  <Target Name="ValidateModsPath" BeforeTargets="PrepareForBuild">
+    <Error Condition="'$(ModsPath)' == ''" Text="ModsPath 未配置，请在 src/Directory.Build.props 中设置 ModsPath" />
+  </Target>
+  <Target Name="CopyModFiles" AfterTargets="Build">
+    <ItemGroup>
+      <ModFile Include="$(ProjectDir)../mod.toml" />
+      <ModFile Include="$(ProjectDir)../Languages.xml" />
+      <ModFontFile Include="$(ProjectDir)../Fonts/**/*" />
+      <ModLanguageFile Include="$(ProjectDir)../Languages/**/*" />
+    </ItemGroup>
+    <Copy SourceFiles="@(ModFile)" DestinationFolder="$(ModOutputPath)/" SkipUnchangedFiles="true">
+      <Output TaskParameter="DestinationFiles" ItemName="CopiedModAsset" />
+    </Copy>
+    <Copy SourceFiles="@(ModFontFile)" DestinationFolder="$(ModOutputPath)/Fonts/%(RecursiveDir)" SkipUnchangedFiles="true">
+      <Output TaskParameter="DestinationFiles" ItemName="CopiedModAsset" />
+    </Copy>
+    <Copy SourceFiles="@(ModLanguageFile)" DestinationFolder="$(ModOutputPath)/Languages/%(RecursiveDir)" SkipUnchangedFiles="true">
+      <Output TaskParameter="DestinationFiles" ItemName="CopiedModAsset" />
+    </Copy>
+    <Message Importance="high" Text="  %(CopiedModAsset.FullPath)" />
+  </Target>
+</Project>

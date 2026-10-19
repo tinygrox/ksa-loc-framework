@@ -1,0 +1,12 @@
+name = "KSA Localization Framework"
+
+assets = [
+    "Languages.xml"
+]
+
+fonts = [
+    "Fonts/simhei.ttf"
+]
+
+[StarMap]
+EntryAssembly = "ksa-loc-framework"

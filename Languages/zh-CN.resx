@@ -1,0 +1,1363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Parsed values are included in capitals surrounded by braces, such as {NAME}.
+The contents of the braces themselves needs to be preserved, but they may freely be moved around within the string.
+The comment field includes the default english string at the time of file generation so is useful for determining when a string has changed.
+Strings for the in-game console typically are printed with no capitalization so will be listed here uncapitalized.
+The filename is used for the locale Code according to ISO 639-1. By default the language name is taken from this. To override this, enter an entry for 'Language'.
+The 'Font' value is a special entry that will be used to select which game font is to be used to allow for special characters.--><root>
+  <!--
+    Microsoft ResX Schema
+
+    Version 2.0
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
+    associated with the data types.
+
+    Example:
+
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+
+    There are any number of "resheader" rows that contain simple
+    name/value pairs.
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
+    mimetype set.
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
+    extensible. For a given mimetype the value must be set accordingly:
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
+    read any of the formats listed below.
+
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+
+  <data name="Font" xml:space="preserve">
+  <value></value>
+</data>
+  <data name="Language" xml:space="preserve">
+    <value>中文（中国）</value>
+</data>
+  <data name="KLF_UI_Language" xml:space="preserve">
+    <value>语言</value>
+    <comment>Language</comment>
+  </data>
+  <data name="KLF_UI_Confirm" xml:space="preserve">
+    <value>确认</value>
+    <comment>CONFIRM</comment>
+  </data>
+  <data name="KLF_UI_Cancel" xml:space="preserve">
+    <value>取消</value>
+    <comment>CANCEL</comment>
+  </data>
+  <data name="KLF_UI_Okay" xml:space="preserve">
+    <value>确定</value>
+    <comment>OKAY</comment>
+  </data>
+  <data name="KLF_UI_AlwaysShow" xml:space="preserve">
+    <value>始终显示</value>
+    <comment>Always Show</comment>
+  </data>
+  <data name="KLF_UI_No" xml:space="preserve">
+    <value>否</value>
+    <comment>No</comment>
+  </data>
+  <data name="KLF_WelcomePopup_Title" xml:space="preserve">
+    <value>欢迎</value>
+    <comment>WELCOME</comment>
+  </data>
+  <data name="KLF_WelcomePopup_Text" xml:space="preserve">
+    <value>欢迎来到 KSA 的 pre-alpha 版本。&lt;Separator/&gt;目前游戏让你操控的是一艘名为「Rocket」的飞船。按 &lt;Action:VesselNext /&gt;、&lt;Action:VesselPrevious/&gt; 可以在几艘可用飞船之间切换。&lt;NewLine/&gt;你可以按 &lt;Action:CameraReferenceFrame/&gt; 切换相机模式，或者按住鼠标右键拖动来平移视角。大多数 UI 元素都可以通过点击拖拽来移动位置、调整大小或隐藏。&lt;NewLine/&gt;KSA 使用的是相当传统的飞船操作方式，你可以按 &lt;Action:OpenGameSettings/&gt; 打开设置菜单，在其中「Controls」一节查看。&lt;NewLine/&gt;按 &lt;Action:ToggleMap/&gt; 可以在飞船视图和地图视图之间切换。地图视图对规划变轨、交会和探索太阳系很有用，不过在这个模式下操作方式会稍有不同。你也可以在地图上左键点击轨道上的某一点来规划变轨。&lt;NewLine/&gt;在菜单栏中，你可以用「Universe」-&gt;「Goto」瞬间移动到其他天体，也可以用「View」-&gt;「Orbit Lines」为众多天体开启或关闭轨道线。菜单栏里还有不少仍在开发中的功能等待你去发掘。&lt;NewLine/&gt;用 &lt;Action:SimSpeedIncrease/&gt; 可以提高时间压缩倍率，用 &lt;Action:SimSpeedDecrease/&gt; 可以降低。用 &lt;Action:ToggleGroundTracking/&gt; 可以切换地面跟踪，用 &lt;Action:ToggleTransferPlan/&gt; 可以切换转移规划。&lt;Separator/&gt;</value>
+    <comment>Welcome to the KSA pre-alpha.&lt;Separator/&gt;The game currently has you controlling a craft named 'Rocket'. Press &lt;Action:VesselNext /&gt;, &lt;Action:VesselPrevious/&gt; to swap between several available craft.&lt;NewLine/&gt;You can press &lt;Action:CameraReferenceFrame/&gt; to switch between the camera modes, or hold right click to pan the camera around. Most UI elements can be repositioned, resized and hidden, by clicking and dragging.&lt;NewLine/&gt;KSA uses fairly traditional craft controls, which can be viewed in the 'Controls' section of the settings menus by pressing &lt;Action:OpenGameSettings/&gt;.&lt;NewLine/&gt;Press &lt;Action:ToggleMap/&gt; to toggle between craft view, and map view. The map view can be useful for planning burns for encounters and exploring the solar system, but controls slightly change while in this mode. You can also use this to prepare burns by left clicking on a point in the orbit.&lt;NewLine/&gt;In the menu bar, you can use 'Universe' -&gt; 'Goto' and you can instantly move to other celestial objects as well as using 'View' -&gt; 'Orbit Lines' to enable or disable orbit lines for the many available celestials. Many other in progress features can be accessed by exploring the menu bar.&lt;NewLine/&gt;Time compression can be increased using &lt;Action:SimSpeedIncrease/&gt; and decreased with &lt;Action:SimSpeedDecrease/&gt;. Ground Tracking can be toggled with &lt;Action:ToggleGroundTracking/&gt; and transfer planning with &lt;Action:ToggleTransferPlan/&gt;.&lt;Separator/&gt;</comment>
+  </data>
+  <data name="KLF_AbandonPopup_Title" xml:space="preserve">
+    <value>放弃载具</value>
+    <comment>ABANDON VEHICLE</comment>
+  </data>
+  <data name="KLF_AbandonPopup_Body" xml:space="preserve">
+    <value>确定要放弃这艘载具吗？</value>
+    <comment>Are you sure you want to abandon this vehicle?</comment>
+  </data>
+  <data name="KLF_ExitPopup_Title" xml:space="preserve">
+    <value>退出游戏</value>
+    <comment>EXIT</comment>
+  </data>
+  <data name="KLF_ExitPopup_Body" xml:space="preserve">
+    <value>确定要退出游戏吗？</value>
+    <comment>Are you sure you want to exit the game?</comment>
+  </data>
+  <data name="KLF_ConfigOnStartPopup_Title" xml:space="preserve">
+    <value>配置</value>
+    <comment>CONFIGURATION</comment>
+  </data>
+  <data name="KLF_ConfigOnStartPopup_VramMessage" xml:space="preserve">
+    <value>部分系统可能因颜色与高度图数据的纹理尺寸而需要比其他系统更多的显存（VRAM），若显存不足，该功能可能不可用，甚至导致游戏崩溃。</value>
+    <comment>Some systems may require more Video Memory (VRAM) than others due to texture size for color and heightmap data, and may not be available or crash the game if you do not have enough VRAM available.</comment>
+  </data>
+  <data name="KLF_ConfigOnStartPopup_VramUsagePrefix" xml:space="preserve">
+    <value> 报告的使用量与预算：约 </value>
+    <comment> Reported usage and budget: ~</comment>
+  </data>
+  <data name="KLF_ConfigOnStartPopup_Start" xml:space="preserve">
+    <value>启动 KSA</value>
+    <comment>Start KSA</comment>
+  </data>
+  <data name="KLF_ConfigOnStartPopup_SelectSystem" xml:space="preserve">
+    <value>选择星系</value>
+    <comment>Select System</comment>
+  </data>
+  <data name="KLF_ConfigOnStartPopup_System" xml:space="preserve">
+    <value>星系</value>
+    <comment>System</comment>
+  </data>
+  <data name="KLF_ConfigOnStartPopup_GameType" xml:space="preserve">
+    <value>游戏类型</value>
+    <comment>Game Type</comment>
+  </data>
+  <data name="KLF_ConfigOnStartPopup_Type" xml:space="preserve">
+    <value>类型</value>
+    <comment>Type</comment>
+  </data>
+  <data name="KLF_ConfigOnStartPopup_StartingSituation" xml:space="preserve">
+    <value>起始状态</value>
+    <comment>Starting Situation</comment>
+  </data>
+  <data name="KLF_ConfigOnStartPopup_Vehicle" xml:space="preserve">
+    <value>载具</value>
+    <comment>Vehicle</comment>
+  </data>
+  <data name="KLF_ConfigOnStartPopup_Location" xml:space="preserve">
+    <value>地点</value>
+    <comment>Location</comment>
+  </data>
+  <data name="KLF_ConfigOnStartPopup_Vessels" xml:space="preserve">
+    <value>载具</value>
+    <comment>Vessels</comment>
+  </data>
+  <data name="KLF_ConfigOnStartPopup_Textures" xml:space="preserve">
+    <value>纹理</value>
+    <comment>Textures</comment>
+  </data>
+  <data name="KLF_ConfigOnStartPopup_Terrain" xml:space="preserve">
+    <value>地形</value>
+    <comment>Terrain</comment>
+  </data>
+  <data name="KLF_ConfigOnStartPopup_Shadows" xml:space="preserve">
+    <value>阴影</value>
+    <comment>Shadows</comment>
+  </data>
+  <data name="KLF_ConfigOnStartPopup_TextureStreaming" xml:space="preserve">
+    <value>纹理流送</value>
+    <comment>Texture Streaming</comment>
+  </data>
+  <data name="KLF_ConfigOnStartPopup_Enabled" xml:space="preserve">
+    <value>启用</value>
+    <comment>Enabled</comment>
+  </data>
+  <data name="KLF_ConfigOnStartPopup_CascadedShadows" xml:space="preserve">
+    <value>级联阴影</value>
+    <comment>Cascaded Shadows</comment>
+  </data>
+  <data name="KLF_ConfigOnStartPopup_Filter" xml:space="preserve">
+    <value>过滤</value>
+    <comment>Filter</comment>
+  </data>
+  <data name="KLF_ConfigOnStartPopup_LightSystem" xml:space="preserve">
+    <value>光源系统</value>
+    <comment>Light System</comment>
+  </data>
+  <data name="KLF_ConfigOnStartPopup_EnableShadows" xml:space="preserve">
+    <value>启用阴影</value>
+    <comment>Enable Shadows</comment>
+  </data>
+  <data name="KLF_ConfigOnStartPopup_Casters" xml:space="preserve">
+    <value>投射者</value>
+    <comment>Casters</comment>
+  </data>
+  <data name="KLF_ConfigOnStartPopup_Thumbnails" xml:space="preserve">
+    <value>缩略图</value>
+    <comment>Thumbnails</comment>
+  </data>
+  <data name="KLF_ConfigOnStartPopup_Parts" xml:space="preserve">
+    <value>部件</value>
+    <comment>Parts</comment>
+  </data>
+  <data name="KLF_ConfirmModPopup_Title" xml:space="preserve">
+    <value>发现新模组</value>
+    <comment>MOD FOUND</comment>
+  </data>
+  <data name="KLF_ConfirmModPopup_Body" xml:space="preserve">
+    <value>发现新模组，id 为 '{Id}'，是否启用？</value>
+    <comment>A new mod with id '{Id}' has been found, do you want it enabled?</comment>
+  </data>
+  <data name="KLF_ConfirmModPopup_Enable" xml:space="preserve">
+    <value>启用</value>
+    <comment>Enable</comment>
+  </data>
+  <data name="AlertSimulationPaused" xml:space="preserve">
+    <value>模拟已暂停</value>
+    <comment>Simulation paused</comment>
+  </data>
+  <data name="AlertAutoWarpActive" xml:space="preserve">
+    <value>自动时间加速已激活</value>
+    <comment>Auto warp active</comment>
+  </data>
+  <data name="AlertControlNotActive" xml:space="preserve">
+    <value>跟随载具未获得控制权</value>
+    <comment>Control not active for the followed vehicle</comment>
+  </data>
+  <data name="AlertNoEnginesActive" xml:space="preserve">
+    <value>没有激活的发动机</value>
+    <comment>No active engines</comment>
+  </data>
+  <data name="AlertNoPropellantActive" xml:space="preserve">
+    <value>激活的发动机没有推进剂</value>
+    <comment>No propellant for active engines</comment>
+  </data>
+  <data name="AlertFuelTransferNoPower" xml:space="preserve">
+    <value>燃料转移需要电力</value>
+    <comment>Fuel transfer requires electrical power</comment>
+  </data>
+  <data name="AlertFuelTransferDonorDisabled" xml:space="preserve">
+    <value>燃料转移被阻止：源油箱已禁用推进剂使用</value>
+    <comment>Fuel transfer blocked: propellant use is disabled on the source tank</comment>
+  </data>
+  <data name="AlertThrottleGLoadLimited" xml:space="preserve">
+    <value>油门受限以保持在 g 力限制内</value>
+    <comment>Throttle limited to stay under the g-force limit</comment>
+  </data>
+  <data name="AlertNearLimitGForce" xml:space="preserve">
+    <value>载具接近最大 g 力负载！</value>
+    <comment>Vehicle is close to its maximum g-force load!</comment>
+  </data>
+  <data name="AlertNearLimitAerodynamic" xml:space="preserve">
+    <value>载具接近最大气动负载！</value>
+    <comment>Vehicle is close to its maximum aerodynamic load!</comment>
+  </data>
+  <data name="AlertDuplicateBurn" xml:space="preserve">
+    <value>重复的点火。</value>
+    <comment>Duplicate burn.</comment>
+  </data>
+  <data name="AlertBurnOnStaleFlightPlan" xml:space="preserve">
+    <value>无法在过期的飞行计划上创建点火。</value>
+    <comment>Cannot create a burn on a stale flight plan.</comment>
+  </data>
+  <data name="AlertTransferBurnOtherBurns" xml:space="preserve">
+    <value>无法创建转移点火：载具还有其他激活的点火。</value>
+    <comment>Cannot create a transfer burn: the vehicle has other active burns.</comment>
+  </data>
+  <data name="AlertFixedCamera" xml:space="preserve">
+    <value>固定摄像机</value>
+    <comment>Fixed camera</comment>
+  </data>
+  <data name="AlertFreeCamera" xml:space="preserve">
+    <value>自由摄像机</value>
+    <comment>Free camera</comment>
+  </data>
+  <data name="AlertIvaCamera" xml:space="preserve">
+    <value>座舱（IVA）摄像机</value>
+    <comment>IVA camera</comment>
+  </data>
+  <data name="AlertOrbitCamera" xml:space="preserve">
+    <value>轨道摄像机</value>
+    <comment>Orbit camera</comment>
+  </data>
+  <data name="AlertFrameCamera" xml:space="preserve">
+    <value>{Frame} 摄像机</value>
+    <comment>{Frame} camera</comment>
+  </data>
+  <data name="AlertSimulationRealTime" xml:space="preserve">
+    <value>模拟为实时</value>
+    <comment>Simulation real time</comment>
+  </data>
+  <data name="AlertFuelPortExists" xml:space="preserve">
+    <value>该部件已有燃料接口：请直接点击接口</value>
+    <comment>That part already has a fuel port: click the port instead</comment>
+  </data>
+  <data name="AlertCannotLoadLaunchVehicle" xml:space="preserve">
+    <value>无法加载要发射的载具</value>
+    <comment>Cannot load the vehicle to launch</comment>
+  </data>
+  <data name="AlertVehicleRecovered" xml:space="preserve">
+    <value>载具已回收</value>
+    <comment>Vehicle recovered</comment>
+  </data>
+  <data name="AlertAutoWarpStopped" xml:space="preserve">
+    <value>自动时间加速已停止</value>
+    <comment>Auto warp stopped</comment>
+  </data>
+  <data name="AlertTargetSet" xml:space="preserve">
+    <value>已设置目标：{Target}</value>
+    <comment>Target set: {Target}</comment>
+  </data>
+  <data name="AlertTargetUnset" xml:space="preserve">
+    <value>目标已取消。</value>
+    <comment>Target unset.</comment>
+  </data>
+  <data name="AlertControlPointReset" xml:space="preserve">
+    <value>控制点已重置。</value>
+    <comment>Control point reset.</comment>
+  </data>
+  <data name="AlertControllingFrom" xml:space="preserve">
+    <value>控制来源：{Name}</value>
+    <comment>Controlling from: {Name}</comment>
+  </data>
+  <data name="AlertCannotCreateTransferBurn" xml:space="preserve">
+    <value>无法创建转移点火</value>
+    <comment>Cannot create a transfer burn</comment>
+  </data>
+  <data name="AlertTransferBurnImpacts" xml:space="preserve">
+    <value>无法在此创建转移点火：点火将在逃逸前撞击。</value>
+    <comment>Cannot create a transfer burn here: the burn will impact before escaping.</comment>
+  </data>
+  <data name="AlertTransferBurnSoiTime" xml:space="preserve">
+    <value>无法在此创建转移点火：需要给足时间离开影响球。</value>
+    <comment>Cannot create a transfer burn here: allow enough time to exit the sphere of influence.</comment>
+  </data>
+  <data name="AlertAutoBurnStoppedNextLoaded" xml:space="preserve">
+    <value>自动点火已停止：推进剂耗尽。下一次点火已加载。</value>
+    <comment>Auto burn stopped: out of propellant. Next burn loaded.</comment>
+  </data>
+  <data name="AlertAutoBurnStoppedNextLoadedVehicle" xml:space="preserve">
+    <value>{Vehicle}：自动点火已停止，推进剂耗尽。下一次点火已加载。</value>
+    <comment>{Vehicle}: auto burn stopped, out of propellant. Next burn loaded.</comment>
+  </data>
+  <data name="AlertAutoBurnStopped" xml:space="preserve">
+    <value>自动点火已停止：推进剂耗尽。</value>
+    <comment>Auto burn stopped: out of propellant.</comment>
+  </data>
+  <data name="AlertAutoBurnStoppedVehicle" xml:space="preserve">
+    <value>{Vehicle}：自动点火已停止，推进剂耗尽。</value>
+    <comment>{Vehicle}: auto burn stopped, out of propellant.</comment>
+  </data>
+  <data name="AlertAutoBurnStageRanDry" xml:space="preserve">
+    <value>自动点火已暂停：级间推进剂耗尽。请分级，然后重新开启自动点火完成点火。</value>
+    <comment>Auto burn paused: stage ran dry. Stage, then turn Auto back on to finish the burn.</comment>
+  </data>
+  <data name="AlertAutoBurnStageRanDryVehicle" xml:space="preserve">
+    <value>{Vehicle}：自动点火已暂停，级间推进剂耗尽。请分级，然后重新开启自动点火完成点火。</value>
+    <comment>{Vehicle}: auto burn paused, stage ran dry. Stage, then turn Auto back on to finish the burn.</comment>
+  </data>
+  <data name="AlertSlowDownBurnNotReplanned" xml:space="preserve">
+    <value>减速点火无法重新规划。</value>
+    <comment>Slow down burn could not be re-planned.</comment>
+  </data>
+  <data name="AlertSlowDownBurnNotReplannedVehicle" xml:space="preserve">
+    <value>{Vehicle}：减速点火无法重新规划。</value>
+    <comment>{Vehicle}: slow down burn could not be re-planned.</comment>
+  </data>
+  <data name="AlertSlowDownBurnReplanned" xml:space="preserve">
+    <value>减速点火已重新规划。</value>
+    <comment>Slow down burn re-planned.</comment>
+  </data>
+  <data name="AlertSlowDownBurnReplannedVehicle" xml:space="preserve">
+    <value>{Vehicle}：减速点火已重新规划。</value>
+    <comment>{Vehicle}: slow down burn re-planned.</comment>
+  </data>
+  <data name="AlertAutoBurnCompleteNextLoaded" xml:space="preserve">
+    <value>自动点火完成：下一次点火已加载。</value>
+    <comment>Auto burn complete: next burn loaded.</comment>
+  </data>
+  <data name="AlertAutoBurnCompleteNextLoadedVehicle" xml:space="preserve">
+    <value>{Vehicle}：自动点火完成，下一次点火已加载。</value>
+    <comment>{Vehicle}: auto burn complete, next burn loaded.</comment>
+  </data>
+  <data name="AlertAutoBurnComplete" xml:space="preserve">
+    <value>自动点火完成。</value>
+    <comment>Auto burn complete.</comment>
+  </data>
+  <data name="AlertAutoBurnCompleteVehicle" xml:space="preserve">
+    <value>{Vehicle}：自动点火完成。</value>
+    <comment>{Vehicle}: auto burn complete.</comment>
+  </data>
+  <data name="AlertNearLimitHydrodynamic" xml:space="preserve">
+    <value>载具接近最大流体动力负载！</value>
+    <comment>Vehicle is close to its maximum hydrodynamic load!</comment>
+  </data>
+  <data name="AlertWreckageGroundImpact" xml:space="preserve">
+    <value>载具因硬着陆撞击地面而损毁！</value>
+    <comment>Vehicle destroyed by hard impact with the ground!</comment>
+  </data>
+  <data name="AlertWreckageOceanImpact" xml:space="preserve">
+    <value>载具因硬着陆撞击海洋而损毁！</value>
+    <comment>Vehicle destroyed by hard impact with the ocean!</comment>
+  </data>
+  <data name="AlertWreckageCollision" xml:space="preserve">
+    <value>载具因碰撞而损毁！</value>
+    <comment>Vehicle destroyed by a collision!</comment>
+  </data>
+  <data name="AlertWreckageExcessiveGForce" xml:space="preserve">
+    <value>载具因过载 g 力而损毁！</value>
+    <comment>Vehicle destroyed by excessive g-force!</comment>
+  </data>
+  <data name="AlertWreckageAerodynamicForces" xml:space="preserve">
+    <value>载具因过大气动载荷而损毁！</value>
+    <comment>Vehicle destroyed by excessive aerodynamic forces!</comment>
+  </data>
+  <data name="AlertWreckageHydrodynamicForces" xml:space="preserve">
+    <value>载具因过大致流体动力载荷而损毁！</value>
+    <comment>Vehicle destroyed by excessive hydrodynamic forces!</comment>
+  </data>
+  <data name="SettingsWindowTitle" xml:space="preserve">
+    <value>设置</value>
+    <comment>Settings</comment>
+  </data>
+  <data name="SettingsTabsId" xml:space="preserve">
+    <value>标签页</value>
+    <comment>Tabs</comment>
+  </data>
+  <data name="SettingsMenuApply" xml:space="preserve">
+    <value>应用</value>
+    <comment>Apply</comment>
+  </data>
+  <data name="SettingsMenuCancel" xml:space="preserve">
+    <value>取消</value>
+    <comment>Cancel</comment>
+  </data>
+  <data name="SettingsMenuResetSettings" xml:space="preserve">
+    <value>重置设置</value>
+    <comment>Reset Settings</comment>
+  </data>
+  <data name="SettingsMenuDiscard" xml:space="preserve">
+    <value>放弃</value>
+    <comment>Discard</comment>
+  </data>
+  <data name="SettingsMenuResetKeybindings" xml:space="preserve">
+    <value>重置按键绑定</value>
+    <comment>Reset Keybindings</comment>
+  </data>
+  <data name="SettingsDisplayMode" xml:space="preserve">
+    <value>模式</value>
+    <comment>Mode</comment>
+  </data>
+  <data name="SettingsDisplayScreen" xml:space="preserve">
+    <value>屏幕</value>
+    <comment>Screen</comment>
+  </data>
+  <data name="SettingsDisplayResolution" xml:space="preserve">
+    <value>分辨率</value>
+    <comment>Resolution</comment>
+  </data>
+  <data name="SettingsDisplayRefreshRate" xml:space="preserve">
+    <value>刷新率</value>
+    <comment>Refresh Rate</comment>
+  </data>
+  <data name="SettingsDisplayAntiAliasing" xml:space="preserve">
+    <value>抗锯齿</value>
+    <comment>Anti-Aliasing</comment>
+  </data>
+  <data name="SettingsDisplayFieldOfView" xml:space="preserve">
+    <value>视场角</value>
+    <comment>Field of View</comment>
+  </data>
+  <data name="SettingsDisplayVsync" xml:space="preserve">
+    <value>垂直同步</value>
+    <comment>Vsync</comment>
+  </data>
+  <data name="SettingsDisplayFrameQueueLimit" xml:space="preserve">
+    <value>预渲染帧数</value>
+    <comment>Frames Queued Ahead</comment>
+  </data>
+  <data name="SettingsDisplayMaxFrameRate" xml:space="preserve">
+    <value>最大帧率</value>
+    <comment>Max Frame Rate</comment>
+  </data>
+  <data name="SettingsDisplayAlwaysOnTop" xml:space="preserve">
+    <value>始终置顶</value>
+    <comment>Always on Top</comment>
+  </data>
+  <data name="SettingsGraphicsGeneral" xml:space="preserve">
+    <value>常规</value>
+    <comment>General</comment>
+  </data>
+  <data name="SettingsGraphicsStars" xml:space="preserve">
+    <value>恒星</value>
+    <comment>Stars</comment>
+  </data>
+  <data name="SettingsGraphicsMilkyWayQuality" xml:space="preserve">
+    <value>银河质量</value>
+    <comment>Milky Way Quality</comment>
+  </data>
+  <data name="SettingsGraphicsVesselAmbientLighting" xml:space="preserve">
+    <value>环境光照</value>
+    <comment>Ambient Lighting</comment>
+  </data>
+  <data name="SettingsGraphicsAmbientOcclusion" xml:space="preserve">
+    <value>环境光遮蔽</value>
+    <comment>Ambient Occlusion</comment>
+  </data>
+  <data name="SettingsGraphicsThinFilmInterference" xml:space="preserve">
+    <value>薄膜干涉</value>
+    <comment>Thin Film Interference</comment>
+  </data>
+  <data name="SettingsGraphicsTonemapper" xml:space="preserve">
+    <value>色调映射</value>
+    <comment>Tonemapper</comment>
+  </data>
+  <data name="SettingsGraphicsTonemapExposure" xml:space="preserve">
+    <value>曝光</value>
+    <comment>Tonemap Exposure</comment>
+  </data>
+  <data name="SettingsGraphicsTonemapGamma" xml:space="preserve">
+    <value>Gamma</value>
+    <comment>Tonemap Gamma</comment>
+  </data>
+  <data name="SettingsGraphicsUiPixelCulling" xml:space="preserve">
+    <value>UI 像素裁剪</value>
+    <comment>UI Pixel Culling</comment>
+  </data>
+  <data name="SettingsGraphicsSpecularAntiAliasing" xml:space="preserve">
+    <value>高光抗锯齿</value>
+    <comment>Specular Anti-Aliasing</comment>
+  </data>
+  <data name="SettingsGraphicsShadowsRegion" xml:space="preserve">
+    <value>阴影</value>
+    <comment>Shadows</comment>
+  </data>
+  <data name="SettingsGraphicsShadowsLights" xml:space="preserve">
+    <value>光源</value>
+    <comment>Lights</comment>
+  </data>
+  <data name="SettingsGraphicsShadowsLightsSize" xml:space="preserve">
+    <value>光源尺寸</value>
+    <comment>Lights Size</comment>
+  </data>
+  <data name="SettingsGraphicsShadowsLightsSlots" xml:space="preserve">
+    <value>光源槽位</value>
+    <comment>Lights Slots</comment>
+  </data>
+  <data name="SettingsGraphicsShadowsHardShadowsOnly" xml:space="preserve">
+    <value>仅硬阴影</value>
+    <comment>Hard Shadows Only</comment>
+  </data>
+  <data name="SettingsGraphicsShadowsVessels" xml:space="preserve">
+    <value>载具</value>
+    <comment>Vessels</comment>
+  </data>
+  <data name="SettingsGraphicsShadowsVesselOnVolumetricExhausts" xml:space="preserve">
+    <value>载具阴影投射到体积尾焰</value>
+    <comment>Vessel Shadows On Volumetric Exhausts</comment>
+  </data>
+  <data name="SettingsGraphicsShadowsTerrain" xml:space="preserve">
+    <value>地形</value>
+    <comment>Terrain</comment>
+  </data>
+  <data name="SettingsGraphicsShadowsTerrainMap" xml:space="preserve">
+    <value>地形阴影图</value>
+    <comment>Terrain Map</comment>
+  </data>
+  <data name="SettingsGraphicsShadowsCascadedShadowMap" xml:space="preserve">
+    <value>级联阴影图</value>
+    <comment>Cascaded Shadow Map</comment>
+  </data>
+  <data name="SettingsGraphicsShadowsCascadedShadowFilter" xml:space="preserve">
+    <value>级联阴影过滤</value>
+    <comment>Cascaded Shadow Filter</comment>
+  </data>
+  <data name="ShadowFilterTooltip_Hard" xml:space="preserve">
+    <value>无过滤 - 最便宜但阴影非常像素化</value>
+    <comment>No filtering - cheapest option but results in very pixelated shadows</comment>
+  </data>
+  <data name="ShadowFilterTooltip_Pcf" xml:space="preserve">
+    <value>简单盒式过滤 - 固定模糊，性能便宜</value>
+    <comment>Simple box filter - fixed blur with cheap performance</comment>
+  </data>
+  <data name="ShadowFilterTooltip_Pcss" xml:space="preserve">
+    <value>半影遮蔽 - 视觉最佳但性能开销更高</value>
+    <comment>Penumbra occlusion - best visual at a higher performance cost</comment>
+  </data>
+  <data name="SettingsGraphicsShadowsSkybox" xml:space="preserve">
+    <value>天空盒</value>
+    <comment>Skybox</comment>
+  </data>
+  <data name="SettingsGraphicsShadowsClouds" xml:space="preserve">
+    <value>云层</value>
+    <comment>Clouds</comment>
+  </data>
+  <data name="SettingsGraphicsTexturesRegion" xml:space="preserve">
+    <value>纹理</value>
+    <comment>Textures</comment>
+  </data>
+  <data name="SettingsGraphicsTexturesVessels" xml:space="preserve">
+    <value>载具</value>
+    <comment>Vessels</comment>
+  </data>
+  <data name="SettingsGraphicsTexturesTerrains" xml:space="preserve">
+    <value>地形</value>
+    <comment>Terrains</comment>
+  </data>
+  <data name="SettingsGraphicsTexturesPartThumbnails" xml:space="preserve">
+    <value>部件缩略图</value>
+    <comment>Part Thumbnails</comment>
+  </data>
+  <data name="SettingsGraphicsTextureStreamingRegion" xml:space="preserve">
+    <value>纹理流送</value>
+    <comment>Texture Streaming</comment>
+  </data>
+  <data name="SettingsGraphicsTextureStreamingEnabled" xml:space="preserve">
+    <value>启用</value>
+    <comment>Enabled</comment>
+  </data>
+  <data name="SettingsGraphicsTextureStreamingBudget" xml:space="preserve">
+    <value>显存预算</value>
+    <comment>VRAM Budget</comment>
+  </data>
+  <data name="SettingsGraphicsTerrainRegion" xml:space="preserve">
+    <value>地形</value>
+    <comment>Terrain</comment>
+  </data>
+  <data name="SettingsGraphicsTerrainTessellation" xml:space="preserve">
+    <value>细分</value>
+    <comment>Tessellation</comment>
+  </data>
+  <data name="SettingsGraphicsGroundClutterRegion" xml:space="preserve">
+    <value>地面回波</value>
+    <comment>Ground Clutter</comment>
+  </data>
+  <data name="SettingsGraphicsGroundClutter" xml:space="preserve">
+    <value>地面回波</value>
+    <comment>Ground Clutter</comment>
+  </data>
+  <data name="SettingsGraphicsGroundClutterTerrainBlending" xml:space="preserve">
+    <value>地形混合</value>
+    <comment>Terrain Blending</comment>
+  </data>
+  <data name="SettingsGraphicsGroundClutterShadowCasting" xml:space="preserve">
+    <value>投射阴影</value>
+    <comment>Cast Shadows</comment>
+  </data>
+  <data name="SettingsGraphicsOceanRegion" xml:space="preserve">
+    <value>海洋</value>
+    <comment>Ocean</comment>
+  </data>
+  <data name="SettingsGraphicsOcean" xml:space="preserve">
+    <value>海洋</value>
+    <comment>Ocean</comment>
+  </data>
+  <data name="SettingsGraphicsOceanSimulationQuality" xml:space="preserve">
+    <value>模拟质量</value>
+    <comment>Simulation Quality</comment>
+  </data>
+  <data name="SettingsGraphicsOceanHeightQueries" xml:space="preserve">
+    <value>高度查询</value>
+    <comment>Height queries</comment>
+  </data>
+  <data name="SettingsGraphicsPlanetaryRingsRegion" xml:space="preserve">
+    <value>行星环</value>
+    <comment>Planetary rings</comment>
+  </data>
+  <data name="SettingsGraphicsPlanetaryRings" xml:space="preserve">
+    <value>环</value>
+    <comment>Rings</comment>
+  </data>
+  <data name="SettingsGraphicsPlanetaryRingsVolumetricDust" xml:space="preserve">
+    <value>体积尘埃</value>
+    <comment>Volumetric dust</comment>
+  </data>
+  <data name="SettingsGraphicsPlanetaryRingsMeshes" xml:space="preserve">
+    <value>网格</value>
+    <comment>Meshes</comment>
+  </data>
+  <data name="SettingsGraphicsVolumetricsRegion" xml:space="preserve">
+    <value>体积效果</value>
+    <comment>Volumetrics</comment>
+  </data>
+  <data name="SettingsGraphicsVolumetricsAtmosphere" xml:space="preserve">
+    <value>大气</value>
+    <comment>Atmosphere</comment>
+  </data>
+  <data name="SettingsGraphicsVolumetricsGodrays" xml:space="preserve">
+    <value>体积光</value>
+    <comment>Godrays</comment>
+  </data>
+  <data name="SettingsGraphicsVolumetricsClouds" xml:space="preserve">
+    <value>云层</value>
+    <comment>Clouds</comment>
+  </data>
+  <data name="SettingsGraphicsVolumetricsPlumeTrails" xml:space="preserve">
+    <value>羽流轨迹</value>
+    <comment>Plume trails</comment>
+  </data>
+  <data name="SettingsGraphicsVolumetricsPlumeTrailShadows" xml:space="preserve">
+    <value>羽流轨迹阴影</value>
+    <comment>Plume trail shadows</comment>
+  </data>
+  <data name="SettingsGraphicsVolumetricsExplosions" xml:space="preserve">
+    <value>爆炸</value>
+    <comment>Explosions</comment>
+  </data>
+  <data name="SettingsGraphicsVolumetricsExplosionQuality" xml:space="preserve">
+    <value>爆炸质量</value>
+    <comment>Explosion quality</comment>
+  </data>
+  <data name="SettingsGraphicsVolumetricsMaxExplosionInstances" xml:space="preserve">
+    <value>最大爆炸实例数</value>
+    <comment>Maximum Explosion Instances</comment>
+  </data>
+  <data name="SettingsGraphicsVolumetricsCloudQuality" xml:space="preserve">
+    <value>云层与轨迹升采样</value>
+    <comment>Cloud and trails upscaling</comment>
+  </data>
+  <data name="SettingsGraphicsVolumetricsExhaustQuality" xml:space="preserve">
+    <value>尾焰质量</value>
+    <comment>Exhaust Quality</comment>
+  </data>
+  <data name="SettingsGraphicsVolumetricsMaxExhaustInstances" xml:space="preserve">
+    <value>最大尾焰实例数</value>
+    <comment>Maximum Exhaust Instances</comment>
+  </data>
+  <data name="SettingsGraphicsBloomsRegion" xml:space="preserve">
+    <value>泛光、太阳与镜头光晕</value>
+    <comment>Blooms, The Sun, and Lens Flares</comment>
+  </data>
+  <data name="SettingsGraphicsBloomsLensFlares" xml:space="preserve">
+    <value>镜头光晕</value>
+    <comment>Lens Flares</comment>
+  </data>
+  <data name="SettingsGraphicsBloomsLensFlareIntensities" xml:space="preserve">
+    <value>光晕强度</value>
+    <comment>Lens Flare Intensities</comment>
+  </data>
+  <data name="SettingsGraphicsBloomsGlobalBloom" xml:space="preserve">
+    <value>全局泛光</value>
+    <comment>Global Bloom</comment>
+  </data>
+  <data name="SettingsGraphicsBloomsThresholdBloom" xml:space="preserve">
+    <value>阈值泛光</value>
+    <comment>Threshold Bloom</comment>
+  </data>
+  <data name="SettingsGraphicsDistantGlintsRegion" xml:space="preserve">
+    <value>远距离反光</value>
+    <comment>Distant Glints</comment>
+  </data>
+  <data name="SettingsGraphicsDistantGlints" xml:space="preserve">
+    <value>显示远距离反光</value>
+    <comment>Show Distant Glints</comment>
+  </data>
+  <data name="SettingsGraphicsVesselEffectsRegion" xml:space="preserve">
+    <value>载具效果</value>
+    <comment>Vessel Effects</comment>
+  </data>
+  <data name="SettingsGraphicsVesselFrost" xml:space="preserve">
+    <value>霜</value>
+    <comment>Frost</comment>
+  </data>
+  <data name="SettingsGraphicsVesselWater" xml:space="preserve">
+    <value>水</value>
+    <comment>Water</comment>
+  </data>
+  <data name="SettingsGraphicsVesselDeformation" xml:space="preserve">
+    <value>撞击坑</value>
+    <comment>Impact Dents</comment>
+  </data>
+  <data name="SettingsGraphicsVesselDeformationQuality" xml:space="preserve">
+    <value>撞击坑表现质量</value>
+    <comment>Impact Dent Quality</comment>
+  </data>
+  <data name="SettingsGraphicsKittensRegion" xml:space="preserve">
+    <value>Kittens</value>
+    <comment>Kittens</comment>
+  </data>
+  <data name="SettingsGraphicsKittensFurQuality" xml:space="preserve">
+    <value>毛发质量</value>
+    <comment>Fur Quality</comment>
+  </data>
+  <data name="SettingsGraphicsParticlesRegion" xml:space="preserve">
+    <value>粒子</value>
+    <comment>Particles</comment>
+  </data>
+  <data name="SettingsGraphicsParticles" xml:space="preserve">
+    <value>粒子</value>
+    <comment>Particles</comment>
+  </data>
+  <data name="SettingsGraphicsParticleQuality" xml:space="preserve">
+    <value>粒子质量</value>
+    <comment>Particle Quality</comment>
+  </data>
+  <data name="SettingsGraphicsAmbientOcclusionRegion" xml:space="preserve">
+    <value>环境光遮蔽</value>
+    <comment>Ambient Occlusion</comment>
+  </data>
+  <data name="SettingsGraphicsAmbientOcclusionQuality" xml:space="preserve">
+    <value>质量</value>
+    <comment>Quality</comment>
+  </data>
+  <data name="SettingsGraphicsAmbientOcclusionBlurPasses" xml:space="preserve">
+    <value>模糊通道</value>
+    <comment>Blur Passes</comment>
+  </data>
+  <data name="SettingsGraphicsRaytracingRegion" xml:space="preserve">
+    <value>光线追踪</value>
+    <comment>Raytracing</comment>
+  </data>
+  <data name="SettingsGraphicsRaytracingIvaRayTracing" xml:space="preserve">
+    <value>IVA 光线追踪</value>
+    <comment>IVA Ray Tracing</comment>
+  </data>
+  <data name="SettingsGraphicsRaytracingReflectionBounces" xml:space="preserve">
+    <value>反射反弹次数</value>
+    <comment>Reflection Bounces</comment>
+  </data>
+  <data name="SettingsGraphicsRaytracingOpaqueReflectionResolutionScale" xml:space="preserve">
+    <value>不透明反射分辨率缩放</value>
+    <comment>Opaque Reflection Resolution Scale</comment>
+  </data>
+  <data name="SettingsGraphicsRaytracingTranslucentReflectionResolutionScale" xml:space="preserve">
+    <value>半透明反射分辨率缩放</value>
+    <comment>Translucent Reflection Resolution Scale</comment>
+  </data>
+  <data name="SettingsGraphicsRaytracingIndirectLightingBounces" xml:space="preserve">
+    <value>间接光照反弹次数</value>
+    <comment>Indirect Lighting Bounces</comment>
+  </data>
+  <data name="SettingsGraphicsRaytracingIndirectLightingResolutionScale" xml:space="preserve">
+    <value>间接光照分辨率缩放</value>
+    <comment>Indirect Lighting Resolution Scale</comment>
+  </data>
+  <data name="SettingsGraphicsRaytracingShadowResolutionScale" xml:space="preserve">
+    <value>阴影分辨率缩放</value>
+    <comment>Shadow Resolution Scale</comment>
+  </data>
+  <data name="SettingsGraphicsDebugRegion" xml:space="preserve">
+    <value>调试</value>
+    <comment>Debug</comment>
+  </data>
+  <data name="SettingsGraphicsDebugShaderHotReloading" xml:space="preserve">
+    <value>着色器热重载（启用需要重启）</value>
+    <comment>Shader hot reloading (enabling requires restart).</comment>
+  </data>
+  <data name="SettingsAudioGeneral" xml:space="preserve">
+    <value>常规</value>
+    <comment>General</comment>
+  </data>
+  <data name="SettingsAudioMasterVolume" xml:space="preserve">
+    <value>主音量</value>
+    <comment>Master Volume</comment>
+  </data>
+  <data name="SettingsAudioSfxVolume" xml:space="preserve">
+    <value>音效音量</value>
+    <comment>Sfx Volume</comment>
+  </data>
+  <data name="SettingsAudioUiVolume" xml:space="preserve">
+    <value>UI 音量</value>
+    <comment>UI Volume</comment>
+  </data>
+  <data name="SettingsAudioMusicVolume" xml:space="preserve">
+    <value>音乐音量</value>
+    <comment>Music Volume</comment>
+  </data>
+  <data name="SettingsInterfaceGeneral" xml:space="preserve">
+    <value>常规</value>
+    <comment>General</comment>
+  </data>
+  <data name="SettingsInterfaceCelestialNames" xml:space="preserve">
+    <value>天体名称</value>
+    <comment>Celestial Names</comment>
+  </data>
+  <data name="SettingsInterfaceLocationNames" xml:space="preserve">
+    <value>地点名称</value>
+    <comment>Location Names</comment>
+  </data>
+  <data name="SettingsInterfaceAutoHideMenuBar" xml:space="preserve">
+    <value>自动隐藏菜单栏</value>
+    <comment>Auto-Hide Menu Bar</comment>
+  </data>
+  <data name="SettingsInterfaceFrameStatistics" xml:space="preserve">
+    <value>帧统计</value>
+    <comment>Frame Statistics</comment>
+  </data>
+  <data name="SettingsInterfaceManualOrbitLineVisibility" xml:space="preserve">
+    <value>手动轨道线可见性</value>
+    <comment>Manual Orbit Line Visibility</comment>
+  </data>
+  <data name="SettingsInterfaceMapGridToggle" xml:space="preserve">
+    <value>地图网格开关</value>
+    <comment>Map Grid Toggle</comment>
+  </data>
+  <data name="SettingsInterfaceCrewPortraitCameras" xml:space="preserve">
+    <value>乘员肖像摄像机</value>
+    <comment>Crew Portrait Cameras</comment>
+  </data>
+  <data name="SettingsInterfaceCameraJumpTime" xml:space="preserve">
+    <value>摄像机跳转时间</value>
+    <comment>Camera Jump Time</comment>
+  </data>
+  <data name="SettingsInterfaceMouseHoverHighlightColor" xml:space="preserve">
+    <value>鼠标悬停高亮颜色</value>
+    <comment>Mouse Hover Highlight Color</comment>
+  </data>
+  <data name="SettingsInterfaceGaugesRegion" xml:space="preserve">
+    <value>仪表</value>
+    <comment>Gauges</comment>
+  </data>
+  <data name="SettingsInterfaceGaugesSharpness" xml:space="preserve">
+    <value>锐度</value>
+    <comment>Sharpness</comment>
+  </data>
+  <data name="SettingsInterfaceGaugeScale" xml:space="preserve">
+    <value>HUD 缩放</value>
+    <comment>HUD Scale</comment>
+  </data>
+  <data name="SettingsInterfaceFontRegion" xml:space="preserve">
+    <value>字体</value>
+    <comment>Font</comment>
+  </data>
+  <data name="SettingsInterfaceFont" xml:space="preserve">
+    <value>字体</value>
+    <comment>Font</comment>
+  </data>
+  <data name="SettingsInterfaceScale" xml:space="preserve">
+    <value>界面缩放</value>
+    <comment>Interface Scale</comment>
+  </data>
+  <data name="SettingsInterfaceFontDensity" xml:space="preserve">
+    <value>密度</value>
+    <comment>Density</comment>
+  </data>
+  <data name="SettingsInterfaceFontPixelSnap" xml:space="preserve">
+    <value>像素对齐</value>
+    <comment>Pixel Snap</comment>
+  </data>
+  <data name="SettingsInterfaceOrbitLinesRegion" xml:space="preserve">
+    <value>轨道线</value>
+    <comment>Orbit Lines</comment>
+  </data>
+  <data name="SettingsInterfaceOrbitTrackColor" xml:space="preserve">
+    <value>轨道颜色</value>
+    <comment>Track Color</comment>
+  </data>
+  <data name="SettingsInterfaceOrbitPatchColor" xml:space="preserve">
+    <value>轨道段颜色</value>
+    <comment>Patch Color</comment>
+  </data>
+  <data name="SettingsInterfaceOrbitBurnColor" xml:space="preserve">
+    <value>点火颜色</value>
+    <comment>Burn Color</comment>
+  </data>
+  <data name="SettingsInterfaceOrbitBurnPathColor" xml:space="preserve">
+    <value>点火路径颜色</value>
+    <comment>Burn Path Color</comment>
+  </data>
+  <data name="SettingsInterfaceOrbitInactiveColor" xml:space="preserve">
+    <value>非活动颜色</value>
+    <comment>Inactive Color</comment>
+  </data>
+  <data name="SettingsInterfaceEditorRegion" xml:space="preserve">
+    <value>编辑器</value>
+    <comment>Editor</comment>
+  </data>
+  <data name="SettingsInterfaceEditorHideEdgeOnRotationRings" xml:space="preserve">
+    <value>隐藏旋转环边缘</value>
+    <comment>Hide Edge-On Rotation Rings</comment>
+  </data>
+  <data name="SettingsInterfaceSystemRegion" xml:space="preserve">
+    <value>系统</value>
+    <comment>System</comment>
+  </data>
+  <data name="SettingsInterfaceSystemConfigPopup" xml:space="preserve">
+    <value>配置弹窗</value>
+    <comment>Config Popup</comment>
+  </data>
+  <data name="SettingsInterfaceSystemWelcomePopup" xml:space="preserve">
+    <value>欢迎弹窗</value>
+    <comment>Welcome Popup</comment>
+  </data>
+  <data name="SettingsInterfaceSystemCheckForUpdates" xml:space="preserve">
+    <value>检查更新</value>
+    <comment>Check for Updates</comment>
+  </data>
+  <data name="SettingsInterfaceSystemShowChangelogOnUpdated" xml:space="preserve">
+    <value>更新后显示更新日志</value>
+    <comment>Show Changelog on Updated</comment>
+  </data>
+  <data name="SettingsControlsCameraSensitivityRegion" xml:space="preserve">
+    <value>摄像机灵敏度</value>
+    <comment>Camera Sensitivity</comment>
+  </data>
+  <data name="SettingsControlsMouseLook" xml:space="preserve">
+    <value>鼠标观察</value>
+    <comment>Mouse Look</comment>
+  </data>
+  <data name="SettingsControlsRoll" xml:space="preserve">
+    <value>滚转</value>
+    <comment>Roll</comment>
+  </data>
+  <data name="SettingsControlsEditorFreeCamScroll" xml:space="preserve">
+    <value>编辑器自由摄像机滚轮移动摄像机</value>
+    <comment>Editor Free Camera Scroll Moves Camera</comment>
+  </data>
+  <data name="SettingsControlsKeyAssignmentsRegion" xml:space="preserve">
+    <value>按键绑定</value>
+    <comment>Key Assignments</comment>
+  </data>
+  <data name="SettingsSimulationPerformanceRegion" xml:space="preserve">
+    <value>性能</value>
+    <comment>Performance</comment>
+  </data>
+  <data name="SettingsSimulationOrbitSolvers" xml:space="preserve">
+    <value>轨道解算器</value>
+    <comment>Orbit Solvers</comment>
+  </data>
+  <data name="SettingsSimulationMinTargetFramerate" xml:space="preserve">
+    <value>最小目标帧率</value>
+    <comment>Minimum Target Framerate</comment>
+  </data>
+  <data name="SettingsSimulationMaxFlightComputerRate" xml:space="preserve">
+    <value>最大飞行计算机速率</value>
+    <comment>Maximum Flight Computer Rate</comment>
+  </data>
+  <data name="SettingsSimulationGroundClutterRegion" xml:space="preserve">
+    <value>地面回波</value>
+    <comment>Ground Clutter</comment>
+  </data>
+  <data name="SettingsSimulationGroundClutterCollisions" xml:space="preserve">
+    <value>[实验] 启用碰撞</value>
+    <comment>[Experimental] Enable Collisions</comment>
+  </data>
+  <data name="SettingsConsoleOnBoot" xml:space="preserve">
+  <value>OnBoot</value>
+  <comment>OnBoot</comment>
+</data>
+  <data name="SettingsConsoleOnLoad" xml:space="preserve">
+  <value>OnLoad</value>
+  <comment>OnLoad</comment>
+</data>
+  <data name="FlightComputerTooltipNoBurn" xml:space="preserve">
+    <value>当前没有点火。</value>
+    <comment>No burn currently exists.</comment>
+  </data>
+  <data name="FlightComputerTooltipBurnNotTransferred" xml:space="preserve">
+    <value>请先将出发点火转移到飞行计划。</value>
+    <comment>Transfer the departure burn to your flight plan first.</comment>
+  </data>
+  <data name="FlightComputerTooltipNoTarget" xml:space="preserve">
+    <value>当前未设置目标。</value>
+    <comment>No target currently set.</comment>
+  </data>
+  <data name="FlightComputerTooltipNoEngine" xml:space="preserve">
+    <value>当前没有激活的发动机。</value>
+    <comment>No engine is currently active.</comment>
+  </data>
+  <data name="FlightComputerTooltipBurnEmpty" xml:space="preserve">
+    <value>点火时长为空。</value>
+    <comment>Burn duration is empty.</comment>
+  </data>
+  <data name="FlightComputerTooltipNoControl" xml:space="preserve">
+    <value>没有载具控制模块。</value>
+    <comment>No vehicle control module.</comment>
+  </data>
+  <data name="KLF_Settings_Title" xml:space="preserve">
+    <value>设置</value>
+    <comment>SETTINGS</comment>
+  </data>
+  <data name="KLF_Settings_Output" xml:space="preserve">
+    <value>输出</value>
+    <comment>OUTPUT</comment>
+  </data>
+  <data name="KLF_Settings_CameraAndFrame" xml:space="preserve">
+    <value>相机与帧率</value>
+    <comment>CAMERA AND FRAME</comment>
+  </data>
+  <data name="KLF_Settings_Display" xml:space="preserve">
+    <value>显示器</value>
+    <comment>DISPLAY</comment>
+  </data>
+  <data name="KLF_Settings_Unlimited" xml:space="preserve">
+    <value>无限制</value>
+    <comment>Unlimited</comment>
+  </data>
+  <data name="KLF_Settings_Fps" xml:space="preserve">
+    <value>&#32;帧/秒</value>
+    <comment> FPS</comment>
+  </data>
+  <data name="KLF_Settings_Apply" xml:space="preserve">
+    <value>应用</value>
+    <comment>APPLY</comment>
+  </data>
+  <data name="KLF_Settings_Reset" xml:space="preserve">
+    <value>重置</value>
+    <comment>RESET</comment>
+  </data>
+  <data name="KLF_Settings_Discard" xml:space="preserve">
+    <value>放弃更改</value>
+    <comment>DISCARD</comment>
+  </data>
+  <data name="KLF_Settings_ResetKeys" xml:space="preserve">
+    <value>重置按键</value>
+    <comment>RESET KEYS</comment>
+  </data>
+  <data name="KLF_Settings_Close" xml:space="preserve">
+    <value>关闭</value>
+    <comment>CLOSE</comment>
+  </data>
+  <data name="KLF_Settings_NoPendingChanges" xml:space="preserve">
+    <value>没有待应用的更改</value>
+    <comment>NO PENDING CHANGES</comment>
+  </data>
+  <data name="KLF_Settings_TabPending" xml:space="preserve">
+    <value>&#32;个标签待应用</value>
+    <comment> TAB PENDING</comment>
+  </data>
+  <data name="KLF_Settings_TabsPending" xml:space="preserve">
+    <value>&#32;个标签待应用</value>
+    <comment> TABS PENDING</comment>
+  </data>
+  <data name="KLF_Settings_Pending" xml:space="preserve">
+    <value>&#32;待应用</value>
+    <comment> PENDING</comment>
+  </data>
+  <data name="KLF_Settings_RestartRequired" xml:space="preserve">
+    <value>应用后需要重启</value>
+    <comment>RESTART REQUIRED ON APPLY</comment>
+  </data>
+  <data name="KLF_Settings_ModsRegion" xml:space="preserve">
+    <value>模组</value>
+    <comment>Mods</comment>
+  </data>
+  <data name="KLF_SettingsTab_Display" xml:space="preserve">
+    <value>显示</value>
+    <comment>DISPLAY</comment>
+  </data>
+  <data name="KLF_SettingsTab_Graphics" xml:space="preserve">
+    <value>图形</value>
+    <comment>GRAPHICS</comment>
+  </data>
+  <data name="KLF_SettingsTab_Audio" xml:space="preserve">
+    <value>音频</value>
+    <comment>AUDIO</comment>
+  </data>
+  <data name="KLF_SettingsTab_Interface" xml:space="preserve">
+    <value>界面</value>
+    <comment>INTERFACE</comment>
+  </data>
+  <data name="KLF_SettingsTab_Controls" xml:space="preserve">
+    <value>控制</value>
+    <comment>CONTROLS</comment>
+  </data>
+  <data name="KLF_SettingsTab_Simulation" xml:space="preserve">
+    <value>模拟</value>
+    <comment>SIMULATION</comment>
+  </data>
+  <data name="KLF_SettingsTab_Console" xml:space="preserve">
+    <value>控制台</value>
+    <comment>CONSOLE</comment>
+  </data>
+  <data name="KLF_SettingsTab_Mods" xml:space="preserve">
+    <value>模组</value>
+    <comment>MODS</comment>
+  </data>
+  <data name="KLF_Settings_Enum_Windowed" xml:space="preserve">
+    <value>窗口化</value>
+    <comment>Windowed</comment>
+  </data>
+  <data name="KLF_Settings_Enum_Borderless" xml:space="preserve">
+    <value>无边框</value>
+    <comment>Borderless</comment>
+  </data>
+  <data name="KLF_Settings_Enum_Fullscreen" xml:space="preserve">
+    <value>全屏</value>
+    <comment>Fullscreen</comment>
+  </data>
+  <data name="KLF_Settings_Enum_Disabled" xml:space="preserve">
+    <value>禁用</value>
+    <comment>Disabled</comment>
+  </data>
+  <data name="KLF_Settings_Enum_Cmaa2" xml:space="preserve">
+    <value>CMAA 2</value>
+    <comment>Cmaa2</comment>
+  </data>
+  <data name="KLF_Settings_Enum_MultisampleX2" xml:space="preserve">
+    <value>多重采样 X2</value>
+    <comment>Multisample X2</comment>
+  </data>
+  <data name="KLF_Settings_Enum_MultisampleX4" xml:space="preserve">
+    <value>多重采样 X4</value>
+    <comment>Multisample X4</comment>
+  </data>
+  <data name="KLF_Settings_Enum_MultisampleX8" xml:space="preserve">
+    <value>多重采样 X8</value>
+    <comment>Multisample X8</comment>
+  </data>
+  <data name="KLF_Settings_Enum_Unlimited" xml:space="preserve">
+    <value>无限制</value>
+    <comment>Unlimited</comment>
+  </data>
+  <data name="KLF_Settings_Enum_OneFrame" xml:space="preserve">
+    <value>单帧</value>
+    <comment>One Frame</comment>
+  </data>
+  <data name="KLF_Settings_Enum_Off" xml:space="preserve">
+    <value>关闭</value>
+    <comment>Off</comment>
+  </data>
+  <data name="KLF_Settings_Enum_Low" xml:space="preserve">
+    <value>低</value>
+    <comment>Low</comment>
+  </data>
+  <data name="KLF_Settings_Enum_Medium" xml:space="preserve">
+    <value>中</value>
+    <comment>Medium</comment>
+  </data>
+  <data name="KLF_Settings_Enum_High" xml:space="preserve">
+    <value>高</value>
+    <comment>High</comment>
+  </data>
+  <data name="KLF_Settings_Enum_Ultra" xml:space="preserve">
+    <value>极高</value>
+    <comment>Ultra</comment>
+  </data>
+  <data name="KLF_Settings_Enum_Extreme" xml:space="preserve">
+    <value>极限</value>
+    <comment>Extreme</comment>
+  </data>
+  <data name="KLF_Settings_Enum_VeryLow" xml:space="preserve">
+    <value>极低</value>
+    <comment>Very Low</comment>
+  </data>
+  <data name="KLF_Settings_Enum_Hard" xml:space="preserve">
+    <value>硬阴影</value>
+    <comment>Hard</comment>
+  </data>
+  <data name="KLF_Settings_Enum_Pcf" xml:space="preserve">
+    <value>PCF</value>
+    <comment>Pcf</comment>
+  </data>
+  <data name="KLF_Settings_Enum_Pcss" xml:space="preserve">
+    <value>PCSS</value>
+    <comment>Pcss</comment>
+  </data>
+  <data name="KLF_Settings_Enum_Uncharted" xml:space="preserve">
+    <value>Uncharted</value>
+    <comment>Uncharted</comment>
+  </data>
+  <data name="KLF_Settings_Enum_Agx" xml:space="preserve">
+    <value>AgX</value>
+    <comment>Agx</comment>
+  </data>
+  <data name="KLF_Settings_Enum_AcesFitted" xml:space="preserve">
+    <value>ACES Fitted</value>
+    <comment>Aces Fitted</comment>
+  </data>
+  <data name="KLF_Settings_Enum_Aces" xml:space="preserve">
+    <value>ACES</value>
+    <comment>Aces</comment>
+  </data>
+  <data name="KLF_Settings_Enum_Filmic" xml:space="preserve">
+    <value>电影</value>
+    <comment>Filmic</comment>
+  </data>
+  <data name="KLF_Settings_Enum_RomBinDaHouse" xml:space="preserve">
+    <value>Rom Bin Da House</value>
+    <comment>Rom Bin Da House</comment>
+  </data>
+  <data name="KLF_Settings_Enum_ReinhardSimple" xml:space="preserve">
+    <value>Reinhard 简单</value>
+    <comment>Reinhard Simple</comment>
+  </data>
+  <data name="KLF_Settings_Enum_ReinhardLuma" xml:space="preserve">
+    <value>Reinhard 亮度</value>
+    <comment>Reinhard Luma</comment>
+  </data>
+  <data name="KLF_Settings_Enum_GranTurismo" xml:space="preserve">
+    <value>Gran Turismo</value>
+    <comment>Gran Turismo</comment>
+  </data>
+  <data name="KLF_Settings_Enum_Linear" xml:space="preserve">
+    <value>线性</value>
+    <comment>Linear</comment>
+  </data>
+  <data name="KLF_Settings_Enum_Hable" xml:space="preserve">
+    <value>Hable</value>
+    <comment>Hable</comment>
+  </data>
+</root>
