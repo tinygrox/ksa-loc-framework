@@ -40,6 +40,15 @@ public static class GameSettingsPatch
         return codes;
     }
 
+    [HarmonyPatch("DrawKeyAssignmentRow")]
+    [HarmonyTranspiler]
+    public static IEnumerable<CodeInstruction> DrawKeyAssignmentRowTranspiler(IEnumerable<CodeInstruction> instructions)
+    {
+        List<CodeInstruction> codes = new List<CodeInstruction>(instructions);
+        SettingsEnumLocalization.LocalizeInputActionNameCalls(codes);
+        return codes;
+    }
+
     private static void ReplaceSettingsText(List<CodeInstruction> codes)
     {
         TranspilerTools.ReplaceLocalizedLiteral(codes, nameof(GameStrings.KLF_Settings_Title));

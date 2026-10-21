@@ -7,7 +7,7 @@ namespace KsaLocFramework.HarmonyPatches;
 [HarmonyPatch(typeof(ConfirmModPopup))]
 public static class ConfirmModPopupPatch
 {
-    [HarmonyPatch(MethodType.Constructor)]
+    [HarmonyPatch(MethodType.Constructor, new[] { typeof(ModEntry) })]
     [HarmonyTranspiler]
     public static IEnumerable<CodeInstruction> ConstructorTranspiler(IEnumerable<CodeInstruction> instructions)
     {

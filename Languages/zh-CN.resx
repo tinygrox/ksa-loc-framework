@@ -152,6 +152,10 @@ The 'Font' value is a special entry that will be used to select which game font 
     <value>否</value>
     <comment>No</comment>
   </data>
+  <data name="KLF_UI_Select" xml:space="preserve">
+    <value>选择</value>
+    <comment>SELECT</comment>
+  </data>
   <data name="KLF_WelcomePopup_Title" xml:space="preserve">
     <value>欢迎</value>
     <comment>WELCOME</comment>
@@ -283,6 +287,30 @@ The 'Font' value is a special entry that will be used to select which game font 
   <data name="KLF_ConfirmModPopup_Enable" xml:space="preserve">
     <value>启用</value>
     <comment>Enable</comment>
+  </data>
+  <data name="KLF_KeyAssignmentPopup_Input" xml:space="preserve">
+    <value>输入</value>
+    <comment>INPUT</comment>
+  </data>
+  <data name="KLF_KeyAssignmentPopup_Prompt" xml:space="preserve">
+    <value>请按下一个按键或鼠标按钮</value>
+    <comment>PRESS A KEY OR MOUSE BUTTON</comment>
+  </data>
+  <data name="KLF_KeyAssignmentPopup_Held" xml:space="preserve">
+    <value>已按下</value>
+    <comment>HELD</comment>
+  </data>
+  <data name="KLF_PartTreeSelectionPopup_Title" xml:space="preserve">
+    <value>选择部件树</value>
+    <comment>SELECT PART TREE</comment>
+  </data>
+  <data name="KLF_PartTreeSelectionPopup_Description" xml:space="preserve">
+    <value>请选择要保存的部件树。</value>
+    <comment>Select a part tree to save.</comment>
+  </data>
+  <data name="KLF_PartTreeSelectionPopup_ActiveVehicleDescription" xml:space="preserve">
+    <value>请选择要设为当前载具的部件树。</value>
+    <comment>Select a part tree to make the active vehicle.</comment>
   </data>
   <data name="AlertSimulationPaused" xml:space="preserve">
     <value>模拟已暂停</value>
@@ -1359,5 +1387,413 @@ The 'Font' value is a special entry that will be used to select which game font 
   <data name="KLF_Settings_Enum_Hable" xml:space="preserve">
     <value>Hable</value>
     <comment>Hable</comment>
+  </data>
+  <data name="KLF_InputAction_Forward" xml:space="preserve">
+    <value>前进</value>
+    <comment>Forward</comment>
+  </data>
+  <data name="KLF_InputAction_Backward" xml:space="preserve">
+    <value>后退</value>
+    <comment>Backward</comment>
+  </data>
+  <data name="KLF_InputAction_Left" xml:space="preserve">
+    <value>左移</value>
+    <comment>Left</comment>
+  </data>
+  <data name="KLF_InputAction_Right" xml:space="preserve">
+    <value>右移</value>
+    <comment>Right</comment>
+  </data>
+  <data name="KLF_InputAction_RollLeft" xml:space="preserve">
+    <value>向左滚转</value>
+    <comment>Roll Left</comment>
+  </data>
+  <data name="KLF_InputAction_RollRight" xml:space="preserve">
+    <value>向右滚转</value>
+    <comment>Roll Right</comment>
+  </data>
+  <data name="KLF_InputAction_TranslateForward" xml:space="preserve">
+    <value>平移前进</value>
+    <comment>Translate Forward</comment>
+  </data>
+  <data name="KLF_InputAction_TranslateBackward" xml:space="preserve">
+    <value>平移后退</value>
+    <comment>Translate Backward</comment>
+  </data>
+  <data name="KLF_InputAction_TranslateLeft" xml:space="preserve">
+    <value>平移左移</value>
+    <comment>Translate Left</comment>
+  </data>
+  <data name="KLF_InputAction_TranslateRight" xml:space="preserve">
+    <value>平移右移</value>
+    <comment>Translate Right</comment>
+  </data>
+  <data name="KLF_InputAction_TranslateUp" xml:space="preserve">
+    <value>平移上升</value>
+    <comment>Translate Up</comment>
+  </data>
+  <data name="KLF_InputAction_TranslateDown" xml:space="preserve">
+    <value>平移下降</value>
+    <comment>Translate Down</comment>
+  </data>
+  <data name="KLF_InputAction_CameraUp" xml:space="preserve">
+    <value>相机上移</value>
+    <comment>Camera Up</comment>
+  </data>
+  <data name="KLF_InputAction_CameraDown" xml:space="preserve">
+    <value>相机下移</value>
+    <comment>Camera Down</comment>
+  </data>
+  <data name="KLF_InputAction_Sprint" xml:space="preserve">
+    <value>冲刺</value>
+    <comment>Sprint</comment>
+  </data>
+  <data name="KLF_InputAction_ToggleUi" xml:space="preserve">
+    <value>切换界面</value>
+    <comment>Toggle Ui</comment>
+  </data>
+  <data name="KLF_InputAction_CameraMode" xml:space="preserve">
+    <value>相机模式</value>
+    <comment>Camera Mode</comment>
+  </data>
+  <data name="KLF_InputAction_SimSpeedIncrease" xml:space="preserve">
+    <value>提高时间加速</value>
+    <comment>Sim Speed Increase</comment>
+  </data>
+  <data name="KLF_InputAction_SimSpeedDecrease" xml:space="preserve">
+    <value>降低时间加速</value>
+    <comment>Sim Speed Decrease</comment>
+  </data>
+  <data name="KLF_InputAction_SimSpeedDefault" xml:space="preserve">
+    <value>时间加速归零</value>
+    <comment>Sim Speed Default</comment>
+  </data>
+  <data name="KLF_InputAction_FieldOfViewIncrease" xml:space="preserve">
+    <value>增大视野</value>
+    <comment>Field Of View Increase</comment>
+  </data>
+  <data name="KLF_InputAction_FieldOfViewDecrease" xml:space="preserve">
+    <value>减小视野</value>
+    <comment>Field Of View Decrease</comment>
+  </data>
+  <data name="KLF_InputAction_Cancel" xml:space="preserve">
+    <value>取消</value>
+    <comment>Cancel</comment>
+  </data>
+  <data name="KLF_InputAction_ToggleConsole" xml:space="preserve">
+    <value>切换控制台</value>
+    <comment>Toggle Console</comment>
+  </data>
+  <data name="KLF_InputAction_ToggleMap" xml:space="preserve">
+    <value>切换地图</value>
+    <comment>Toggle Map</comment>
+  </data>
+  <data name="KLF_InputAction_OpenGameSettings" xml:space="preserve">
+    <value>打开游戏设置</value>
+    <comment>Open Game Settings</comment>
+  </data>
+  <data name="KLF_InputAction_CameraReferenceFrame" xml:space="preserve">
+    <value>相机参考系</value>
+    <comment>Camera Reference Frame</comment>
+  </data>
+  <data name="KLF_InputAction_VesselNext" xml:space="preserve">
+    <value>下一飞行器</value>
+    <comment>Vessel Next</comment>
+  </data>
+  <data name="KLF_InputAction_VesselPrevious" xml:space="preserve">
+    <value>上一飞行器</value>
+    <comment>Vessel Previous</comment>
+  </data>
+  <data name="KLF_InputAction_CelestialNext" xml:space="preserve">
+    <value>下一天体</value>
+    <comment>Celestial Next</comment>
+  </data>
+  <data name="KLF_InputAction_CelestialPrevious" xml:space="preserve">
+    <value>上一天体</value>
+    <comment>Celestial Previous</comment>
+  </data>
+  <data name="KLF_InputAction_ToggleFps" xml:space="preserve">
+    <value>切换帧率显示</value>
+    <comment>Toggle Fps</comment>
+  </data>
+  <data name="KLF_InputAction_ToggleStabilization" xml:space="preserve">
+    <value>切换姿态稳定</value>
+    <comment>Toggle Stabilization</comment>
+  </data>
+  <data name="KLF_InputAction_ToggleManualThrustMode" xml:space="preserve">
+    <value>切换手动推力模式</value>
+    <comment>Toggle Manual Thrust Mode</comment>
+  </data>
+  <data name="KLF_InputAction_ToggleTransferPlan" xml:space="preserve">
+    <value>切换转移计划</value>
+    <comment>Toggle Transfer Plan</comment>
+  </data>
+  <data name="KLF_InputAction_ToggleFlightPlan" xml:space="preserve">
+    <value>切换飞行计划</value>
+    <comment>Toggle Flight Plan</comment>
+  </data>
+  <data name="KLF_InputAction_MapUp" xml:space="preserve">
+    <value>地图上移</value>
+    <comment>Map Up</comment>
+  </data>
+  <data name="KLF_InputAction_MapDown" xml:space="preserve">
+    <value>地图下移</value>
+    <comment>Map Down</comment>
+  </data>
+  <data name="KLF_InputAction_MapLeft" xml:space="preserve">
+    <value>地图左移</value>
+    <comment>Map Left</comment>
+  </data>
+  <data name="KLF_InputAction_MapRight" xml:space="preserve">
+    <value>地图右移</value>
+    <comment>Map Right</comment>
+  </data>
+  <data name="KLF_InputAction_MapForward" xml:space="preserve">
+    <value>地图前进</value>
+    <comment>Map Forward</comment>
+  </data>
+  <data name="KLF_InputAction_MapBackward" xml:space="preserve">
+    <value>地图后退</value>
+    <comment>Map Backward</comment>
+  </data>
+  <data name="KLF_InputAction_MapCenter" xml:space="preserve">
+    <value>地图居中</value>
+    <comment>Map Center</comment>
+  </data>
+  <data name="KLF_InputAction_MapControlVehicleToggle" xml:space="preserve">
+    <value>地图控制飞行器切换</value>
+    <comment>Map Control Vehicle Toggle</comment>
+  </data>
+  <data name="KLF_InputAction_ToggleGroundTracking" xml:space="preserve">
+    <value>切换地面跟踪</value>
+    <comment>Toggle Ground Tracking</comment>
+  </data>
+  <data name="KLF_InputAction_MainEngineStartup" xml:space="preserve">
+    <value>主发动机启动</value>
+    <comment>Main Engine Startup</comment>
+  </data>
+  <data name="KLF_InputAction_MainEngineShutdown" xml:space="preserve">
+    <value>主发动机关机</value>
+    <comment>Main Engine Shutdown</comment>
+  </data>
+  <data name="KLF_InputAction_MainEngineThrottleUp" xml:space="preserve">
+    <value>主发动机增大油门</value>
+    <comment>Main Engine Throttle Up</comment>
+  </data>
+  <data name="KLF_InputAction_MainEngineThrottleDown" xml:space="preserve">
+    <value>主发动机减小油门</value>
+    <comment>Main Engine Throttle Down</comment>
+  </data>
+  <data name="KLF_InputAction_ToggleEditor" xml:space="preserve">
+    <value>切换编辑器</value>
+    <comment>Toggle Editor</comment>
+  </data>
+  <data name="KLF_InputAction_ToggleResources" xml:space="preserve">
+    <value>切换资源面板</value>
+    <comment>Toggle Resources</comment>
+  </data>
+  <data name="KLF_InputAction_ToggleSaveMenu" xml:space="preserve">
+    <value>切换存档菜单</value>
+    <comment>Toggle Save Menu</comment>
+  </data>
+  <data name="KLF_InputAction_EditorCameraFocus" xml:space="preserve">
+    <value>编辑器相机聚焦</value>
+    <comment>Editor Camera Focus</comment>
+  </data>
+  <data name="KLF_InputAction_ToggleStagingWindow" xml:space="preserve">
+    <value>切换分级窗口</value>
+    <comment>Toggle Staging Window</comment>
+  </data>
+  <data name="KLF_InputAction_ToggleEditorPartWindow" xml:space="preserve">
+    <value>切换编辑器零件窗口</value>
+    <comment>Toggle Editor Part Window</comment>
+  </data>
+  <data name="KLF_InputAction_IVASwitchToNextSeat" xml:space="preserve">
+    <value>舱内视角切换至下一座位</value>
+    <comment>I V A Switch To Next Seat</comment>
+  </data>
+  <data name="KLF_InputAction_ToggleThreadProfiler" xml:space="preserve">
+    <value>切换线程分析器</value>
+    <comment>Toggle Thread Profiler</comment>
+  </data>
+  <data name="KLF_InputAction_ToggleUniverseManifest" xml:space="preserve">
+    <value>切换宇宙清单</value>
+    <comment>Toggle Universe Manifest</comment>
+  </data>
+  <data name="KLF_InputAction_ToggleTargetTracking" xml:space="preserve">
+    <value>切换目标跟踪</value>
+    <comment>Toggle Target Tracking</comment>
+  </data>
+  <data name="KLF_InputAction_ToggleLights" xml:space="preserve">
+    <value>切换灯光</value>
+    <comment>Toggle Lights</comment>
+  </data>
+  <data name="KLF_InputAction_EditorPartPitchDown" xml:space="preserve">
+    <value>编辑器零件俯仰下压</value>
+    <comment>Editor Part Pitch Down</comment>
+  </data>
+  <data name="KLF_InputAction_EditorPartPitchUp" xml:space="preserve">
+    <value>编辑器零件俯仰上抬</value>
+    <comment>Editor Part Pitch Up</comment>
+  </data>
+  <data name="KLF_InputAction_EditorYawPartLeft" xml:space="preserve">
+    <value>编辑器零件向左偏航</value>
+    <comment>Editor Yaw Part Left</comment>
+  </data>
+  <data name="KLF_InputAction_EditorYawPartRight" xml:space="preserve">
+    <value>编辑器零件向右偏航</value>
+    <comment>Editor Yaw Part Right</comment>
+  </data>
+  <data name="KLF_InputAction_EditorRollPartLeft" xml:space="preserve">
+    <value>编辑器零件向左滚转</value>
+    <comment>Editor Roll Part Left</comment>
+  </data>
+  <data name="KLF_InputAction_EditorRollPartRight" xml:space="preserve">
+    <value>编辑器零件向右滚转</value>
+    <comment>Editor Roll Part Right</comment>
+  </data>
+  <data name="KLF_InputAction_EditorResetPartRotation" xml:space="preserve">
+    <value>编辑器重置零件旋转</value>
+    <comment>Editor Reset Part Rotation</comment>
+  </data>
+  <data name="KLF_InputAction_EditorPlaceMode" xml:space="preserve">
+    <value>编辑器放置模式</value>
+    <comment>Editor Place Mode</comment>
+  </data>
+  <data name="KLF_InputAction_EditorTranslateMode" xml:space="preserve">
+    <value>编辑器平移模式</value>
+    <comment>Editor Translate Mode</comment>
+  </data>
+  <data name="KLF_InputAction_EditorRotateMode" xml:space="preserve">
+    <value>编辑器旋转模式</value>
+    <comment>Editor Rotate Mode</comment>
+  </data>
+  <data name="KLF_InputAction_EditorScaleMode" xml:space="preserve">
+    <value>编辑器缩放模式</value>
+    <comment>Editor Scale Mode</comment>
+  </data>
+  <data name="KLF_InputAction_EditorToggleSymmetry" xml:space="preserve">
+    <value>编辑器切换对称</value>
+    <comment>Editor Toggle Symmetry</comment>
+  </data>
+  <data name="KLF_InputAction_EditorPrevSymmetryMode" xml:space="preserve">
+    <value>编辑器上一对称模式</value>
+    <comment>Editor Prev Symmetry Mode</comment>
+  </data>
+  <data name="KLF_InputAction_EditorNextSymmetryMode" xml:space="preserve">
+    <value>编辑器下一对称模式</value>
+    <comment>Editor Next Symmetry Mode</comment>
+  </data>
+  <data name="KLF_InputAction_EditorToggleSnapping" xml:space="preserve">
+    <value>编辑器切换吸附</value>
+    <comment>Editor Toggle Snapping</comment>
+  </data>
+  <data name="KLF_InputAction_EditorToggleSymmetryInheritance" xml:space="preserve">
+    <value>编辑器切换对称继承</value>
+    <comment>Editor Toggle Symmetry Inheritance</comment>
+  </data>
+  <data name="KLF_InputAction_EditorDelete" xml:space="preserve">
+    <value>编辑器删除</value>
+    <comment>Editor Delete</comment>
+  </data>
+  <data name="KLF_InputAction_EditorDuplicate" xml:space="preserve">
+    <value>编辑器复制</value>
+    <comment>Editor Duplicate</comment>
+  </data>
+  <data name="KLF_InputAction_EditorToggleFreeCamera" xml:space="preserve">
+    <value>编辑器切换自由相机</value>
+    <comment>Editor Toggle Free Camera</comment>
+  </data>
+  <data name="KLF_InputAction_EditorFreeCamUp" xml:space="preserve">
+    <value>编辑器自由相机上移</value>
+    <comment>Editor Free Cam Up</comment>
+  </data>
+  <data name="KLF_InputAction_EditorFreeCamDown" xml:space="preserve">
+    <value>编辑器自由相机下移</value>
+    <comment>Editor Free Cam Down</comment>
+  </data>
+  <data name="KLF_InputAction_EditorFreeCamFast" xml:space="preserve">
+    <value>编辑器自由相机加速</value>
+    <comment>Editor Free Cam Fast</comment>
+  </data>
+  <data name="KLF_InputAction_EditorFreeCamSlow" xml:space="preserve">
+    <value>编辑器自由相机减速</value>
+    <comment>Editor Free Cam Slow</comment>
+  </data>
+  <data name="KLF_InputAction_DefaultHUDLayout" xml:space="preserve">
+    <value>默认 HUD 布局</value>
+    <comment>Default H U D Layout</comment>
+  </data>
+  <data name="KLF_InputAction_PreviousHUDLayout" xml:space="preserve">
+    <value>上一 HUD 布局</value>
+    <comment>Previous H U D Layout</comment>
+  </data>
+  <data name="KLF_InputAction_NextHUDLayout" xml:space="preserve">
+    <value>下一 HUD 布局</value>
+    <comment>Next H U D Layout</comment>
+  </data>
+  <data name="KLF_InputAction_HUDLayout0" xml:space="preserve">
+    <value>HUD 布局 0</value>
+    <comment>H U D Layout0</comment>
+  </data>
+  <data name="KLF_InputAction_HUDLayout1" xml:space="preserve">
+    <value>HUD 布局 1</value>
+    <comment>H U D Layout1</comment>
+  </data>
+  <data name="KLF_InputAction_HUDLayout2" xml:space="preserve">
+    <value>HUD 布局 2</value>
+    <comment>H U D Layout2</comment>
+  </data>
+  <data name="KLF_InputAction_HUDLayout3" xml:space="preserve">
+    <value>HUD 布局 3</value>
+    <comment>H U D Layout3</comment>
+  </data>
+  <data name="KLF_InputAction_HUDLayout4" xml:space="preserve">
+    <value>HUD 布局 4</value>
+    <comment>H U D Layout4</comment>
+  </data>
+  <data name="KLF_InputAction_HUDLayout5" xml:space="preserve">
+    <value>HUD 布局 5</value>
+    <comment>H U D Layout5</comment>
+  </data>
+  <data name="KLF_InputAction_HUDLayout6" xml:space="preserve">
+    <value>HUD 布局 6</value>
+    <comment>H U D Layout6</comment>
+  </data>
+  <data name="KLF_InputAction_HUDLayout7" xml:space="preserve">
+    <value>HUD 布局 7</value>
+    <comment>H U D Layout7</comment>
+  </data>
+  <data name="KLF_InputAction_HUDLayout8" xml:space="preserve">
+    <value>HUD 布局 8</value>
+    <comment>H U D Layout8</comment>
+  </data>
+  <data name="KLF_InputAction_HUDLayout9" xml:space="preserve">
+    <value>HUD 布局 9</value>
+    <comment>H U D Layout9</comment>
+  </data>
+  <data name="KLF_InputAction_Screenshot" xml:space="preserve">
+    <value>截图</value>
+    <comment>Screenshot</comment>
+  </data>
+  <data name="KLF_InputAction_ToggleRCS" xml:space="preserve">
+    <value>切换 RCS</value>
+    <comment>Toggle R C S</comment>
+  </data>
+  <data name="KLF_InputAction_ToggleKittenRoster" xml:space="preserve">
+    <value>切换小猫名册</value>
+    <comment>Toggle Kitten Roster</comment>
+  </data>
+  <data name="KLF_InputAction_ToggleCrewAssignment" xml:space="preserve">
+    <value>切换乘员分配</value>
+    <comment>Toggle Crew Assignment</comment>
+  </data>
+  <data name="KLF_InputAction_Grab" xml:space="preserve">
+    <value>抓取</value>
+    <comment>Grab</comment>
+  </data>
+  <data name="KLF_InputAction_Board" xml:space="preserve">
+    <value>登乘</value>
+    <comment>Board</comment>
   </data>
 </root>

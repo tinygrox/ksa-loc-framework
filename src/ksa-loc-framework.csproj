@@ -16,7 +16,7 @@
     <Reference Include="$(GamePath)/Planet.Render.Core.dll" Private="false" />
     <Reference Include="$(GamePath)/Tomlet.dll" Private="false" />
     <Reference Include="$(GamePath)/Brutal.*.dll" Private="false" />
-    <Reference Include="$(GamePath)/StarMap-0.4.7/0Harmony.dll" Private="false" />
+    <Reference Include="$(StarMapPath)/0Harmony.dll" Private="false" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="StarMap.API" Version="0.3.6">

@@ -35,11 +35,30 @@ internal static class SettingsEnumLocalization
 
     public static void LocalizeNameCalls(List<CodeInstruction> codes)
     {
-        MethodInfo replacement = AccessTools.Method(typeof(SettingsUiText), nameof(SettingsUiText.LocalizeEnumName));
+        InsertCalls(
+            codes,
+            EnumNameMethods.Contains,
+            AccessTools.Method(typeof(SettingsUiText), nameof(SettingsUiText.LocalizeEnumName)));
+    }
+
+    public static void LocalizeInputActionNameCalls(List<CodeInstruction> codes)
+    {
+        MethodInfo getInputActionName = AccessTools.Method(
+            typeof(EnumCollection<InputAction, string>),
+            "GetName",
+            new[] { typeof(InputAction) });
+        InsertCalls(
+            codes,
+            method => method == getInputActionName,
+            AccessTools.Method(typeof(SettingsUiText), nameof(SettingsUiText.LocalizeInputActionName)));
+    }
+
+    private static void InsertCalls(List<CodeInstruction> codes, Predicate<MethodInfo> isTarget, MethodInfo replacement)
+    {
         for (int i = 0; i < codes.Count; i++)
         {
             if ((codes[i].opcode == OpCodes.Call || codes[i].opcode == OpCodes.Callvirt) &&
-                codes[i].operand is MethodInfo method && EnumNameMethods.Contains(method))
+                codes[i].operand is MethodInfo method && isTarget(method))
             {
                 codes.Insert(i + 1, new CodeInstruction(OpCodes.Call, replacement));
                 i++;
