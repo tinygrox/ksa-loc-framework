@@ -148,6 +148,10 @@ The 'Font' value is a special entry that will be used to select which game font 
     <value>始终显示</value>
     <comment>Always Show</comment>
   </data>
+  <data name="KLF_UI_AlwaysCheck" xml:space="preserve">
+    <value>始终检查</value>
+    <comment>Always Check</comment>
+  </data>
   <data name="KLF_UI_No" xml:space="preserve">
     <value>否</value>
     <comment>No</comment>
@@ -155,6 +159,18 @@ The 'Font' value is a special entry that will be used to select which game font 
   <data name="KLF_UI_Select" xml:space="preserve">
     <value>选择</value>
     <comment>SELECT</comment>
+  </data>
+  <data name="KLF_UI_Save" xml:space="preserve">
+    <value>保存</value>
+    <comment>Save</comment>
+  </data>
+  <data name="KLF_UI_Discard" xml:space="preserve">
+    <value>放弃</value>
+    <comment>Discard</comment>
+  </data>
+  <data name="KLF_UI_Get" xml:space="preserve">
+    <value>获取</value>
+    <comment>GET</comment>
   </data>
   <data name="KLF_WelcomePopup_Title" xml:space="preserve">
     <value>欢迎</value>
@@ -311,6 +327,847 @@ The 'Font' value is a special entry that will be used to select which game font 
   <data name="KLF_PartTreeSelectionPopup_ActiveVehicleDescription" xml:space="preserve">
     <value>请选择要设为当前载具的部件树。</value>
     <comment>Select a part tree to make the active vehicle.</comment>
+  </data>
+  <data name="KLF_RequiresRestartPopup_Title" xml:space="preserve">
+    <value>需要重启</value>
+    <comment>REQUIRES RESTART</comment>
+  </data>
+  <data name="KLF_RequiresRestartPopup_Body" xml:space="preserve">
+    <value>更改需要重启游戏后才能生效。</value>
+    <comment>The game needs to be restarted for the changes to take effect.</comment>
+  </data>
+  <data name="KLF_RequiresRestartPopup_Restart" xml:space="preserve">
+    <value>重启</value>
+    <comment>Restart</comment>
+  </data>
+  <data name="KLF_RequiresRestartPopup_Continue" xml:space="preserve">
+    <value>继续</value>
+    <comment>Continue</comment>
+  </data>
+  <data name="KLF_RequiresRestartPopup_Discard" xml:space="preserve">
+    <value>放弃</value>
+    <comment>Discard</comment>
+  </data>
+  <data name="KLF_StringInputPopup_Prompt" xml:space="preserve">
+    <value>请输入文件名以继续。</value>
+    <comment>Please enter a filename to continue.</comment>
+  </data>
+  <data name="KLF_StringInputPopup_InvalidName" xml:space="preserve">
+    <value>名称至少需要包含一个字母或数字。</value>
+    <comment>A name needs at least one letter or number.</comment>
+  </data>
+  <data name="KLF_StringInputPopup_WillSaveAs" xml:space="preserve">
+    <value>将保存为 "{Name}"</value>
+    <comment>Will be saved as "{Name}"</comment>
+  </data>
+  <data name="KLF_UnsavedSettingChanges_Title" xml:space="preserve">
+    <value>未保存的设置更改</value>
+    <comment>UNSAVED SETTING CHANGES</comment>
+  </data>
+  <data name="KLF_UnsavedSettingChanges_Body" xml:space="preserve">
+    <value>你有未保存的更改，这些更改将不会生效，确定要放弃吗？</value>
+    <comment>You have unsaved changes which will not be applied, do you want to discard these?</comment>
+  </data>
+  <data name="KLF_UpdateAvailablePopup_Title" xml:space="preserve">
+    <value>有可用更新</value>
+    <comment>UPDATE AVAILABLE</comment>
+  </data>
+  <data name="KLF_UpdateAvailablePopup_YourVersion" xml:space="preserve">
+    <value>当前版本</value>
+    <comment>YOUR VERSION</comment>
+  </data>
+  <data name="KLF_UpdateAvailablePopup_AvailableVersion" xml:space="preserve">
+    <value>可用版本</value>
+    <comment>AVAILABLE VERSION</comment>
+  </data>
+  <data name="KLF_UpdateAvailablePopup_Message" xml:space="preserve">
+    <value>游戏有新版本可用。如需更新，请选择下面的选项；否则请选择取消。</value>
+    <comment>A new update for the game is available. Select an option below if you want to update the game, otherwise select cancel.</comment>
+  </data>
+  <data name="KLF_EscMenu_Title" xml:space="preserve">
+    <value>已暂停</value>
+    <comment>PAUSED</comment>
+  </data>
+  <data name="KLF_EscMenu_Resume" xml:space="preserve">
+    <value>继续游戏</value>
+    <comment>RESUME</comment>
+  </data>
+  <data name="KLF_EscMenu_SaveLoad" xml:space="preserve">
+    <value>保存 / 载入</value>
+    <comment>SAVE/LOAD</comment>
+  </data>
+  <data name="KLF_EscMenu_ExitEditor" xml:space="preserve">
+    <value>退出编辑器</value>
+    <comment>EXIT EDITOR</comment>
+  </data>
+  <data name="KLF_EscMenu_NewVehicle" xml:space="preserve">
+    <value>新建载具</value>
+    <comment>NEW VEHICLE</comment>
+  </data>
+  <data name="KLF_EscMenu_LaunchVehicle" xml:space="preserve">
+    <value>发射载具</value>
+    <comment>LAUNCH VEHICLE</comment>
+  </data>
+  <data name="KLF_EscMenu_RecoverVehicle" xml:space="preserve">
+    <value>回收载具</value>
+    <comment>RECOVER VEHICLE</comment>
+  </data>
+  <data name="KLF_EscMenu_Quit" xml:space="preserve">
+    <value>退出游戏</value>
+    <comment>QUIT</comment>
+  </data>
+  <data name="KLF_EscMenu_SimulationPaused" xml:space="preserve">
+    <value>模拟已暂停</value>
+    <comment>SIMULATION PAUSED</comment>
+  </data>
+  <data name="KLF_EscMenu_RecoverTitle" xml:space="preserve">
+    <value>回收</value>
+    <comment>RECOVER</comment>
+  </data>
+  <data name="KLF_EscMenu_RecoverMessage" xml:space="preserve">
+    <value>确定要回收 {Vehicle} 吗？</value>
+    <comment>Are you sure you want to recover {Vehicle}?</comment>
+  </data>
+  <data name="KLF_VehicleEditor_GizmoPlace" xml:space="preserve">
+    <value>放置</value>
+    <comment>PLACE</comment>
+  </data>
+  <data name="KLF_VehicleEditor_GizmoTranslate" xml:space="preserve">
+    <value>平移</value>
+    <comment>TRANS</comment>
+  </data>
+  <data name="KLF_VehicleEditor_GizmoRotate" xml:space="preserve">
+    <value>旋转</value>
+    <comment>ROTATE</comment>
+  </data>
+  <data name="KLF_VehicleEditor_GizmoScale" xml:space="preserve">
+    <value>缩放</value>
+    <comment>SCALE</comment>
+  </data>
+  <data name="KLF_VehicleEditor_GizmoFrameAsmb" xml:space="preserve">
+    <value>装配</value>
+    <comment>ASMB</comment>
+  </data>
+  <data name="KLF_VehicleEditor_GizmoFrameLocal" xml:space="preserve">
+    <value>局部</value>
+    <comment>LOCAL</comment>
+  </data>
+  <data name="KLF_VehicleEditor_SymmetryNone" xml:space="preserve">
+    <value>无</value>
+    <comment>NONE</comment>
+  </data>
+  <data name="KLF_VehicleEditor_LabelInherit" xml:space="preserve">
+    <value>继承</value>
+    <comment>INHERIT</comment>
+  </data>
+  <data name="KLF_VehicleEditor_LabelSnap" xml:space="preserve">
+    <value>吸附</value>
+    <comment>SNAP</comment>
+  </data>
+  <data name="KLF_VehicleEditor_CameraFree" xml:space="preserve">
+    <value>自由</value>
+    <comment>FREE</comment>
+  </data>
+  <data name="KLF_VehicleEditor_CameraOrbit" xml:space="preserve">
+    <value>环绕</value>
+    <comment>ORBIT</comment>
+  </data>
+  <data name="KLF_VehicleEditor_ProjectionOrtho" xml:space="preserve">
+    <value>正交</value>
+    <comment>ORTHO</comment>
+  </data>
+  <data name="KLF_VehicleEditor_ProjectionPersp" xml:space="preserve">
+    <value>透视</value>
+    <comment>PERSP</comment>
+  </data>
+  <data name="KLF_VehicleEditor_SnapTop" xml:space="preserve">
+    <value>切换到顶视图</value>
+    <comment>Snap camera to top view</comment>
+  </data>
+  <data name="KLF_VehicleEditor_SnapBottom" xml:space="preserve">
+    <value>切换到底视图</value>
+    <comment>Snap camera to bottom view</comment>
+  </data>
+  <data name="KLF_VehicleEditor_SnapRight" xml:space="preserve">
+    <value>切换到右视图</value>
+    <comment>Snap camera to right view</comment>
+  </data>
+  <data name="KLF_VehicleEditor_SnapLeft" xml:space="preserve">
+    <value>切换到左视图</value>
+    <comment>Snap camera to left view</comment>
+  </data>
+  <data name="KLF_VehicleEditor_SnapBack" xml:space="preserve">
+    <value>切换到后视图</value>
+    <comment>Snap camera to back view</comment>
+  </data>
+  <data name="KLF_VehicleEditor_SnapFront" xml:space="preserve">
+    <value>切换到前视图</value>
+    <comment>Snap camera to front view</comment>
+  </data>
+  <data name="KLF_VehicleEditor_PlaceMode" xml:space="preserve">
+    <value>放置模式 [{Key}]</value>
+    <comment>Place Mode [</comment>
+  </data>
+  <data name="KLF_VehicleEditor_TranslateMode" xml:space="preserve">
+    <value>平移模式 [{Key}]</value>
+    <comment>Translate Mode [</comment>
+  </data>
+  <data name="KLF_VehicleEditor_RotateMode" xml:space="preserve">
+    <value>旋转模式 [{Key}]</value>
+    <comment>Rotation Mode [</comment>
+  </data>
+  <data name="KLF_VehicleEditor_ScaleMode" xml:space="preserve">
+    <value>缩放模式 [{Key}]</value>
+    <comment>Scale Mode [</comment>
+  </data>
+  <data name="KLF_VehicleEditor_ReferenceFrame" xml:space="preserve">
+    <value>参考系：{Frame}</value>
+    <comment>Reference Frame: </comment>
+  </data>
+  <data name="KLF_VehicleEditor_FrameAsmbHint" xml:space="preserve">
+    <value>装配（点击切换到局部）</value>
+    <comment>ASMB (click for Local)</comment>
+  </data>
+  <data name="KLF_VehicleEditor_FrameLocalHint" xml:space="preserve">
+    <value>局部（点击切换到装配）</value>
+    <comment>Local (click for ASMB)</comment>
+  </data>
+  <data name="KLF_VehicleEditor_Symmetry" xml:space="preserve">
+    <value>对称：{State} [{Key}]</value>
+    <comment>Symmetry: </comment>
+  </data>
+  <data name="KLF_VehicleEditor_SymmetryInheritance" xml:space="preserve">
+    <value>对称继承：{State} [{Key}]</value>
+    <comment>Symmetry Inheritance: </comment>
+  </data>
+  <data name="KLF_VehicleEditor_AngleSnapping" xml:space="preserve">
+    <value>角度吸附：{State} [{Key}]</value>
+    <comment>Angle Snapping: </comment>
+  </data>
+  <data name="KLF_VehicleEditor_Enabled" xml:space="preserve">
+    <value>已启用</value>
+    <comment>Enabled [</comment>
+  </data>
+  <data name="KLF_VehicleEditor_Disabled" xml:space="preserve">
+    <value>已禁用</value>
+    <comment>Disabled [</comment>
+  </data>
+  <data name="KLF_VehicleEditor_Bin" xml:space="preserve">
+    <value>删除区</value>
+    <comment>BIN</comment>
+  </data>
+  <data name="KLF_VehicleEditor_BinDragHint" xml:space="preserve">
+    <value>删除区：将部件拖到此处即可删除</value>
+    <comment>Bin: drag a part here to delete it</comment>
+  </data>
+  <data name="KLF_VehicleEditor_DropToDelete" xml:space="preserve">
+    <value>松开即可删除部件</value>
+    <comment>Drop part here to delete</comment>
+  </data>
+  <data name="KLF_VehicleEditor_TransformTitle" xml:space="preserve">
+    <value>变换</value>
+    <comment>TRS</comment>
+  </data>
+  <data name="KLF_VehicleEditor_Translation" xml:space="preserve">
+    <value>平移 (XYZ)</value>
+    <comment>Translation (XYZ)</comment>
+  </data>
+  <data name="KLF_VehicleEditor_Rotation" xml:space="preserve">
+    <value>旋转（四元数 WXYZ）</value>
+    <comment>Rotation (Quat: WXYZ)</comment>
+  </data>
+  <data name="KLF_VehicleEditor_Scale" xml:space="preserve">
+    <value>缩放 (XYZ)</value>
+    <comment>Scale (XYZ)</comment>
+  </data>
+  <data name="KLF_VehicleEditor_Apply" xml:space="preserve">
+    <value>应用</value>
+    <comment>Apply</comment>
+  </data>
+  <data name="KLF_VehicleEditor_LaunchTitle" xml:space="preserve">
+    <value>发射</value>
+    <comment>LAUNCH</comment>
+  </data>
+  <data name="KLF_VehicleEditor_VehicleName" xml:space="preserve">
+    <value>载具名称</value>
+    <comment>Vehicle Name</comment>
+  </data>
+  <data name="KLF_VehicleEditor_LaunchBody" xml:space="preserve">
+    <value>发射天体</value>
+    <comment>Launch Body</comment>
+  </data>
+  <data name="KLF_VehicleEditor_CrewAssignment" xml:space="preserve">
+    <value>乘员分配</value>
+    <comment>CREW ASSIGNMENT</comment>
+  </data>
+  <data name="KLF_VehicleEditor_LaunchVehicle" xml:space="preserve">
+    <value>发射载具</value>
+    <comment>LAUNCH VEHICLE</comment>
+  </data>
+  <data name="KLF_VehicleEditor_NoCrewAssigned" xml:space="preserve">
+    <value>未分配乘员</value>
+    <comment>NO CREW ASSIGNED</comment>
+  </data>
+  <data name="KLF_VehicleEditor_NoCrewMessage" xml:space="preserve">
+    <value>没有为任何座位分配小猫。仍要发射吗？</value>
+    <comment>No kittens have been assigned to any seat. Launch anyway?</comment>
+  </data>
+  <data name="KLF_VehicleEditor_CameraFreeHint" xml:space="preserve">
+    <value>相机：自由（点击切换到环绕）</value>
+    <comment>Camera: Free (click for Orbit)</comment>
+  </data>
+  <data name="KLF_VehicleEditor_CameraOrbitHint" xml:space="preserve">
+    <value>相机：环绕（点击切换到自由）[{Key}]</value>
+    <comment>Camera: Orbit (click for Free) [</comment>
+  </data>
+  <data name="KLF_VehicleEditor_ProjectionOrthoHint" xml:space="preserve">
+    <value>投影：正交（点击切换到透视）</value>
+    <comment>Projection: Orthographic (click for Perspective)</comment>
+  </data>
+  <data name="KLF_VehicleEditor_ProjectionPerspHint" xml:space="preserve">
+    <value>投影：透视（点击切换到正交）</value>
+    <comment>Projection: Perspective (click for Orthographic)</comment>
+  </data>
+  <data name="KLF_VehicleEditor_ModeTranslate" xml:space="preserve">
+    <value>平移</value>
+    <comment>Translate</comment>
+  </data>
+  <data name="KLF_VehicleEditor_ModeRotate" xml:space="preserve">
+    <value>旋转</value>
+    <comment>Rotate</comment>
+  </data>
+  <data name="KLF_VehicleEditor_ModeScale" xml:space="preserve">
+    <value>缩放</value>
+    <comment>Scale</comment>
+  </data>
+  <data name="KLF_VehicleEditor_SelectPart" xml:space="preserve">
+    <value>请选择一个部件以{Mode}</value>
+    <comment>Select a part to </comment>
+  </data>
+  <data name="KLF_VehicleEditor_SwitchVehicle" xml:space="preserve">
+    <value>切换载具</value>
+    <comment>SWITCH VEHICLE</comment>
+  </data>
+  <data name="KLF_VehicleEditor_NewVehicleTitle" xml:space="preserve">
+    <value>新建载具？</value>
+    <comment>NEW VEHICLE?</comment>
+  </data>
+  <data name="KLF_VehicleEditor_NewVehicleMessage" xml:space="preserve">
+    <value>确定要清除当前载具并新建一个吗？</value>
+    <comment>Do you want to clear the current vehicle and create a new one?</comment>
+  </data>
+  <data name="KLF_VehicleEditor_ClearAndCreate" xml:space="preserve">
+    <value>清除并新建</value>
+    <comment>CLEAR &amp; CREATE</comment>
+  </data>
+  <data name="KLF_VehicleEditor_UnsavedVehicles" xml:space="preserve">
+    <value>未保存的载具</value>
+    <comment>UNSAVED VEHICLES</comment>
+  </data>
+  <data name="KLF_VehicleEditor_UnsavedNewVehicleMessage" xml:space="preserve">
+    <value>这些载具有未保存的更改，如果不保存，新建载具时将会丢失：</value>
+    <comment>These vehicles have unsaved changes and will be lost when you start a new vehicle unless you save them:</comment>
+  </data>
+  <data name="KLF_VehicleEditor_UnsavedExitMessage" xml:space="preserve">
+    <value>这些载具有未保存的更改，如果不保存，退出编辑器时将会丢失：</value>
+    <comment>These vehicles have unsaved changes and will be lost when you exit the editor unless you save them:</comment>
+  </data>
+  <data name="KLF_VehicleEditor_Save" xml:space="preserve">
+    <value>保存</value>
+    <comment>SAVE</comment>
+  </data>
+  <data name="KLF_VehicleEditor_SaveVehicle" xml:space="preserve">
+    <value>保存载具</value>
+    <comment>SAVE VEHICLE</comment>
+  </data>
+  <data name="KLF_VehicleEditor_NewVehicleAnyway" xml:space="preserve">
+    <value>仍要新建载具</value>
+    <comment>NEW VEHICLE ANYWAY</comment>
+  </data>
+  <data name="KLF_VehicleEditor_ExitAnyway" xml:space="preserve">
+    <value>仍然退出</value>
+    <comment>EXIT ANYWAY</comment>
+  </data>
+  <data name="KLF_VehicleEditor_All" xml:space="preserve">
+    <value>全部</value>
+    <comment>All</comment>
+  </data>
+  <data name="KLF_VehicleEditor_AllSizes" xml:space="preserve">
+    <value>所有尺寸</value>
+    <comment>All Sizes</comment>
+  </data>
+  <data name="KLF_VehicleEditor_Delete" xml:space="preserve">
+    <value>删除</value>
+    <comment>DELETE</comment>
+  </data>
+  <data name="KLF_VehicleEditor_AddPrefix" xml:space="preserve">
+    <value>添加 {Part}</value>
+    <comment>Add </comment>
+  </data>
+  <data name="KLF_VehicleEditor_DecouplerPrefix" xml:space="preserve">
+    <value>分离器 '</value>
+    <comment>Decoupler '</comment>
+  </data>
+  <data name="KLF_VehicleEditor_TankCount" xml:space="preserve">
+    <value>{Count} 个储箱</value>
+    <comment> tank</comment>
+  </data>
+  <data name="KLF_VehicleEditor_TankPrefix" xml:space="preserve">
+    <value>储箱 '</value>
+    <comment>Tank '</comment>
+  </data>
+  <data name="KLF_VehicleEditor_SeatPrefix" xml:space="preserve">
+    <value>座位 {Seat}</value>
+    <comment>Seat </comment>
+  </data>
+  <data name="KLF_VehicleEditor_ExistingVehicle" xml:space="preserve">
+    <value>{Vehicle}（现有载具）</value>
+    <comment> (Existing Vehicle)</comment>
+  </data>
+  <data name="KLF_VehicleEditor_ToggleResourceDisplay" xml:space="preserve">
+    <value>切换资源显示</value>
+    <comment>Toggle Resource Display</comment>
+  </data>
+  <data name="KLF_VehicleEditor_MakeVehicleRoot" xml:space="preserve">
+    <value>设为载具根部件</value>
+    <comment>Make Vehicle Root</comment>
+  </data>
+  <data name="KLF_VehicleEditor_Reroot" xml:space="preserve">
+    <value>重设根部</value>
+    <comment>Reroot</comment>
+  </data>
+  <data name="KLF_VehicleEditor_HideFuelFlow" xml:space="preserve">
+    <value>隐藏燃料流</value>
+    <comment>Hide Fuel Flow</comment>
+  </data>
+  <data name="KLF_VehicleEditor_VisualizeFuelFlow" xml:space="preserve">
+    <value>显示燃料流</value>
+    <comment>Visualize Fuel Flow</comment>
+  </data>
+  <data name="KLF_VehicleEditor_FuelFlow" xml:space="preserve">
+    <value>燃料流</value>
+    <comment>Fuel Flow</comment>
+  </data>
+  <data name="KLF_VehicleEditor_ConnectFuelLine" xml:space="preserve">
+    <value>连接燃料管线</value>
+    <comment>Connect Fuel Line</comment>
+  </data>
+  <data name="KLF_VehicleEditor_ConnectFuelLineHint" xml:space="preserve">
+    <value>然后点击另一个带燃料端口的部件以连接管线。
+点击空白处取消。</value>
+    <comment>Then click another part with a fuel port to run a line to it.\nClick empty space to cancel.</comment>
+  </data>
+  <data name="KLF_VehicleEditor_CancelFuelLine" xml:space="preserve">
+    <value>取消燃料管线</value>
+    <comment>Cancel Fuel Line</comment>
+  </data>
+  <data name="KLF_VehicleEditor_FuelLines" xml:space="preserve">
+    <value>燃料管线</value>
+    <comment>Fuel Lines</comment>
+  </data>
+  <data name="KLF_VehicleEditor_FuelLineEnabled" xml:space="preserve">
+    <value>燃料管线已启用</value>
+    <comment>Fuel line enabled</comment>
+  </data>
+  <data name="KLF_VehicleEditor_FuelLineDirectionHint" xml:space="preserve">
+    <value>相对此部件允许燃料流动的方向。点击可循环切换。</value>
+    <comment>Direction fuel is allowed to flow, relative to this part. Click to cycle.</comment>
+  </data>
+  <data name="KLF_VehicleEditor_DeleteFuelLine" xml:space="preserve">
+    <value>删除此燃料管线</value>
+    <comment>Delete this fuel line</comment>
+  </data>
+  <data name="KLF_VehicleEditor_CopyTree" xml:space="preserve">
+    <value>复制部件树</value>
+    <comment>Copy Tree</comment>
+  </data>
+  <data name="KLF_VehicleEditor_HighlightParent" xml:space="preserve">
+    <value>高亮父部件</value>
+    <comment>Highlight Parent</comment>
+  </data>
+  <data name="KLF_VehicleEditor_HighlightSymmetry" xml:space="preserve">
+    <value>高亮对称部件</value>
+    <comment>Highlight Symmetry</comment>
+  </data>
+  <data name="KLF_VehicleEditor_CreateNewVehicle" xml:space="preserve">
+    <value>创建新载具</value>
+    <comment>Create New Vehicle</comment>
+  </data>
+  <data name="KLF_VehicleEditor_Connections" xml:space="preserve">
+    <value>连接</value>
+    <comment>Connections</comment>
+  </data>
+  <data name="KLF_VehicleEditor_SubParts" xml:space="preserve">
+    <value>子部件</value>
+    <comment>SubParts</comment>
+  </data>
+  <data name="KLF_VehicleEditor_AddSubParts" xml:space="preserve">
+    <value>添加子部件</value>
+    <comment>Add SubParts</comment>
+  </data>
+  <data name="KLF_VehicleEditor_ResourceGroup" xml:space="preserve">
+    <value>资源组</value>
+    <comment>ResourceGroup</comment>
+  </data>
+  <data name="KLF_VehicleEditor_DecouplerEnabled" xml:space="preserve">
+    <value>分离器已启用</value>
+    <comment>Decoupler Enabled</comment>
+  </data>
+  <data name="KLF_VehicleEditor_DecouplerHint" xml:space="preserve">
+    <value>关闭时，此分离器不会触发，并从序列窗口中隐藏。</value>
+    <comment>When off, this decoupler will not fire and is hidden from the sequence window.</comment>
+  </data>
+  <data name="KLF_VehicleEditor_Propellant" xml:space="preserve">
+    <value>推进剂</value>
+    <comment>Propellant</comment>
+  </data>
+  <data name="KLF_VehicleEditor_ConfigureTanks" xml:space="preserve">
+    <value>单独配置各储箱</value>
+    <comment>Configure tanks individually</comment>
+  </data>
+  <data name="KLF_VehicleEditor_Refill" xml:space="preserve">
+    <value>加注</value>
+    <comment>Refill</comment>
+  </data>
+  <data name="KLF_VehicleEditor_Battery" xml:space="preserve">
+    <value>电池</value>
+    <comment>Battery</comment>
+  </data>
+  <data name="KLF_VehicleEditor_Charge" xml:space="preserve">
+    <value>电量</value>
+    <comment>Charge</comment>
+  </data>
+  <data name="KLF_VehicleEditor_Crew" xml:space="preserve">
+    <value>乘员</value>
+    <comment>Crew</comment>
+  </data>
+  <data name="KLF_VehicleEditor_Auto" xml:space="preserve">
+    <value>自动</value>
+    <comment>Auto</comment>
+  </data>
+  <data name="KLF_VehicleEditor_Manual" xml:space="preserve">
+    <value>手动</value>
+    <comment>Manual</comment>
+  </data>
+  <data name="KLF_VehicleEditor_None" xml:space="preserve">
+    <value>无</value>
+    <comment>None</comment>
+  </data>
+  <data name="KLF_VehicleEditor_ContentsNone" xml:space="preserve">
+    <value>无（{Mode}）</value>
+    <comment>None ({Mode})</comment>
+  </data>
+  <data name="KLF_VehicleEditor_ContentsAssigned" xml:space="preserve">
+    <value>{Mix}（{Mode}）</value>
+    <comment>{Mix} ({Mode})</comment>
+  </data>
+  <data name="KLF_VehicleEditor_RoleAffinity" xml:space="preserve">
+    <value>角色适用：</value>
+    <comment>Role Affinity:</comment>
+  </data>
+  <data name="KLF_VehicleEditor_RoleAffinityHint" xml:space="preserve">
+    <value>此储箱自动为其提供推进剂的使用者类型。</value>
+    <comment>Which consumer kinds this tank automatically provides propellant for.</comment>
+  </data>
+  <data name="KLF_VehicleEditor_PropellantUse" xml:space="preserve">
+    <value>推进剂使用</value>
+    <comment>Propellant Use</comment>
+  </data>
+  <data name="KLF_VehicleEditor_PropellantUseHint" xml:space="preserve">
+    <value>关闭时，任何设备都无法从此储箱抽取推进剂。</value>
+    <comment>When off, nothing can draw propellant from this tank.</comment>
+  </data>
+  <data name="KLF_VehicleEditor_Contents" xml:space="preserve">
+    <value>内容物</value>
+    <comment>Contents</comment>
+  </data>
+  <data name="KLF_VehicleEditor_VolumePrefix" xml:space="preserve">
+    <value>容量 - {Substance}</value>
+    <comment>Volume - </comment>
+  </data>
+  <data name="KLF_VehicleEditor_FuelLineSameVehicle" xml:space="preserve">
+    <value>燃料管线两端必须位于同一载具</value>
+    <comment>Fuel line endpoints must be on the same vehicle</comment>
+  </data>
+  <data name="KLF_VehicleEditor_FuelLineSamePart" xml:space="preserve">
+    <value>两个燃料端口位于同一部件</value>
+    <comment>Both fuel ports are on the same part</comment>
+  </data>
+  <data name="KLF_VehicleEditor_FuelLineDuplicate" xml:space="preserve">
+    <value>这些部件之间已有燃料管线</value>
+    <comment>These parts already share a fuel line</comment>
+  </data>
+  <data name="KLF_VehicleEditor_NoFuelPort" xml:space="preserve">
+    <value>该部件没有燃料端口</value>
+    <comment>That part has no fuel port</comment>
+  </data>
+  <data name="KLF_VehicleEditor_FuelLineEmptyDonor" xml:space="preserve">
+    <value>供给储箱为空——加注前管线不会流动</value>
+    <comment>Donor tank is empty - line won't flow until it's fuelled</comment>
+  </data>
+  <data name="KLF_VehicleEditor_FuelLineMixMismatch" xml:space="preserve">
+    <value>供给方与接收方推进剂不同——管线不会流动</value>
+    <comment>Donor and receiver hold different propellants - line won't flow</comment>
+  </data>
+  <data name="KLF_VehicleEditor_ThrustProfile" xml:space="preserve">
+    <value>推力曲线</value>
+    <comment>Thrust Profile</comment>
+  </data>
+  <data name="KLF_VehicleEditor_Mixed" xml:space="preserve">
+    <value>混合</value>
+    <comment>Mixed</comment>
+  </data>
+  <data name="KLF_VehicleEditor_GrainCrossSection" xml:space="preserve">
+    <value>{Description}（药柱截面：{Shape}）</value>
+    <comment>{Description} (grain cross-section: {Shape})</comment>
+  </data>
+  <data name="KLF_VehicleEditor_ReactionColon" xml:space="preserve">
+    <value>反应：</value>
+    <comment>Reaction:</comment>
+  </data>
+  <data name="KLF_VehicleEditor_Reaction" xml:space="preserve">
+    <value>反应</value>
+    <comment>Reaction</comment>
+  </data>
+  <data name="KLF_VehicleEditor_NoMotor" xml:space="preserve">
+    <value>无（无发动机）</value>
+    <comment>None (no motor)</comment>
+  </data>
+  <data name="KLF_VehicleEditor_ConfigureNozzles" xml:space="preserve">
+    <value>单独配置各喷管</value>
+    <comment>Configure nozzles individually</comment>
+  </data>
+  <data name="KLF_VehicleEditor_NozzleExpansionHint" xml:space="preserve">
+    <value>相对于发动机的膨胀比。提高单个喷管的比值会降低其推力，并使推力偏离该喷管。</value>
+    <comment>Expansion relative to the motor's. Raising one nozzle's throttles it back, tilting the cluster's thrust away from it.</comment>
+  </data>
+  <data name="KLF_VehicleEditor_NozzleOn" xml:space="preserve">
+    <value>喷管 {Nozzle}</value>
+    <comment>Nozzle on </comment>
+  </data>
+  <data name="KLF_VehicleEditor_AreaRatioMultiplier" xml:space="preserve">
+    <value>面积比系数</value>
+    <comment>Area Ratio Multiplier</comment>
+  </data>
+  <data name="KLF_VehicleEditor_SolidGrain" xml:space="preserve">
+    <value>固体药柱</value>
+    <comment>Solid Grain</comment>
+  </data>
+  <data name="KLF_VehicleEditor_SegmentsInStack" xml:space="preserve">
+    <value>{Count} 段药柱</value>
+    <comment> segments in stack</comment>
+  </data>
+  <data name="KLF_VehicleEditor_ConfigureSegments" xml:space="preserve">
+    <value>单独配置各药柱段</value>
+    <comment>Configure segments individually</comment>
+  </data>
+  <data name="KLF_VehicleEditor_ThrustProfileColon" xml:space="preserve">
+    <value>推力曲线：</value>
+    <comment>Thrust Profile:</comment>
+  </data>
+  <data name="KLF_VehicleEditor_AllGrainsFull" xml:space="preserve">
+    <value>所有药柱段都已加满。</value>
+    <comment>All grain segments are already full.</comment>
+  </data>
+  <data name="KLF_VehicleEditor_StackInvalid" xml:space="preserve">
+    <value>堆叠无效：{Error}</value>
+    <comment>Stack invalid: </comment>
+  </data>
+  <data name="KLF_VehicleEditor_NozzleAreaRatio" xml:space="preserve">
+    <value>喷管面积比</value>
+    <comment>Nozzle Area Ratio</comment>
+  </data>
+  <data name="KLF_VehicleEditor_NozzleAreaRatioHint" xml:space="preserve">
+    <value>数值越低，燃烧时间越长，但推力与比冲越低。</value>
+    <comment>Lower values extend burn time at the cost of thrust and specific impulse.</comment>
+  </data>
+  <data name="KLF_VehicleEditor_AutoNozzleHint" xml:space="preserve">
+    <value>根据推进剂的设计燃烧室压力自动确定喷管尺寸。</value>
+    <comment>Size the nozzle automatically for the propellant's design chamber pressure.</comment>
+  </data>
+  <data name="KLF_VehicleEditor_GrainSurfaceHint" xml:space="preserve">
+    <value>药柱初始燃烧面太小，无法在此喷管下维持自持的燃烧室压力。请提高初始推力。</value>
+    <comment>The grain's initial burning surface is too small to hold a self-sustaining chamber pressure through this nozzle. Raise the initial thrust.</comment>
+  </data>
+  <data name="KLF_VehicleEditor_IgnitionThrust" xml:space="preserve">
+    <value>点火推力：</value>
+    <comment>Ignition Thrust:</comment>
+  </data>
+  <data name="KLF_VehicleEditor_SpecificImpulse" xml:space="preserve">
+    <value>比冲：</value>
+    <comment>Specific Impulse:</comment>
+  </data>
+  <data name="KLF_VehicleEditor_BurnTime" xml:space="preserve">
+    <value>燃烧时间：</value>
+    <comment>Burn Time:</comment>
+  </data>
+  <data name="KLF_VehicleEditor_UnburnableGrain" xml:space="preserve">
+    <value>不可燃药柱：</value>
+    <comment>Unburnable Grain:</comment>
+  </data>
+  <data name="KLF_VehicleEditor_UnburnableGrainHint" xml:space="preserve">
+    <value>燃烧室压力低于最低值后剩余的推进剂。更高的面积比和/或更平的药柱能燃烧得更充分。</value>
+    <comment>Propellant left over after chamber pressure drops below the minimum. A higher area ratio and/or flatter grain burns deeper.</comment>
+  </data>
+  <data name="KLF_VehicleEditor_ThrustCurve" xml:space="preserve">
+    <value>推力曲线图</value>
+    <comment>Thrust Curve</comment>
+  </data>
+  <data name="KLF_VehicleEditor_MaxChamberPressure" xml:space="preserve">
+    <value>最大燃烧室压力：</value>
+    <comment>Max Chamber Pressure:</comment>
+  </data>
+  <data name="KLF_VehicleEditor_MaxChamberPressureHint" xml:space="preserve">
+    <value>燃烧过程中达到的最高燃烧室压力，主要取决于喷管喉部面积。</value>
+    <comment>Highest chamber pressure reached during the burn. This depends strongly on nozzle throat area.</comment>
+  </data>
+  <data name="KLF_VehicleEditor_MaxBurnRate" xml:space="preserve">
+    <value>最大燃速：</value>
+    <comment>Max Burn Rate:</comment>
+  </data>
+  <data name="KLF_VehicleEditor_MaxBurnRateHint" xml:space="preserve">
+    <value>最大燃烧室压力下燃烧面啃入药柱的速度，主要取决于燃烧室压力。</value>
+    <comment>The speed at which the burning surface eats into the grain at max chamber pressure. This depends strongly on chamber pressure.</comment>
+  </data>
+  <data name="KLF_VehicleEditor_NozzleThroatArea" xml:space="preserve">
+    <value>喷管喉部面积：</value>
+    <comment>Nozzle Throat Area:</comment>
+  </data>
+  <data name="KLF_VehicleEditor_NozzleThroatAreaHint" xml:space="preserve">
+    <value>喷管喉部面积，即燃气必须通过的开口。</value>
+    <comment>Area of the nozzle throat, which is the opening that the combustion gases must pass through.</comment>
+  </data>
+  <data name="KLF_VehicleEditor_Parachute" xml:space="preserve">
+    <value>降落伞</value>
+    <comment>Parachute</comment>
+  </data>
+  <data name="KLF_VehicleEditor_ChutesOn" xml:space="preserve">
+    <value>降落伞 '</value>
+    <comment>Chutes on '</comment>
+  </data>
+  <data name="KLF_VehicleEditor_Canopies" xml:space="preserve">
+    <value>伞盖数</value>
+    <comment>Canopies</comment>
+  </data>
+  <data name="KLF_VehicleEditor_CanopiesHint" xml:space="preserve">
+    <value>此容器内装入的伞盖数量。它们一同展开并共用调校。</value>
+    <comment>Number of canopies packed in this container. They deploy together and share tuning.</comment>
+  </data>
+  <data name="KLF_VehicleEditor_CanopyColor" xml:space="preserve">
+    <value>伞盖颜色</value>
+    <comment>Canopy Color</comment>
+  </data>
+  <data name="KLF_VehicleEditor_CanopyColorHint" xml:space="preserve">
+    <value>伞盖布料图案。</value>
+    <comment>Canopy fabric pattern.</comment>
+  </data>
+  <data name="KLF_VehicleEditor_Diameter" xml:space="preserve">
+    <value>直径</value>
+    <comment>Diameter</comment>
+  </data>
+  <data name="KLF_VehicleEditor_DiameterHint" xml:space="preserve">
+    <value>完全展开时的伞盖直径。决定阻力面积与包装质量，此部件内所有降落伞共用。</value>
+    <comment>Canopy diameter when fully open. Sets drag area and packed mass, shared by every chute in this part.</comment>
+  </data>
+  <data name="KLF_VehicleEditor_ReefRatio" xml:space="preserve">
+    <value>收伞比例</value>
+    <comment>Reef Ratio</comment>
+  </data>
+  <data name="KLF_VehicleEditor_ReefRatioHint" xml:space="preserve">
+    <value>收伞状态下伞盖直径相对全开的比例。</value>
+    <comment>Reefed canopy diameter as a fraction of full.</comment>
+  </data>
+  <data name="KLF_VehicleEditor_ReefDuration" xml:space="preserve">
+    <value>收伞时长</value>
+    <comment>Reef Duration</comment>
+  </data>
+  <data name="KLF_VehicleEditor_ReefDurationHint" xml:space="preserve">
+    <value>解除收伞前保持收伞状态的时间。</value>
+    <comment>Time held reefed before disreefing.</comment>
+  </data>
+  <data name="KLF_VehicleEditor_RiserLength" xml:space="preserve">
+    <value>吊索长度</value>
+    <comment>Riser Length</comment>
+  </data>
+  <data name="KLF_VehicleEditor_RiserLengthHint" xml:space="preserve">
+    <value>吊索长度（米）。</value>
+    <comment>Length in meters of the riser line.</comment>
+  </data>
+  <data name="KLF_VehicleEditor_DeployAltitude" xml:space="preserve">
+    <value>展开高度</value>
+    <comment>Deploy Altitude</comment>
+  </data>
+  <data name="KLF_VehicleEditor_DeployAltitudeHint" xml:space="preserve">
+    <value>已待命降落伞的展开高度门限。</value>
+    <comment>Altitude gate for an armed chute.</comment>
+  </data>
+  <data name="KLF_VehicleEditor_Off" xml:space="preserve">
+    <value>关闭</value>
+    <comment>off</comment>
+  </data>
+  <data name="KLF_VehicleEditor_GLimit" xml:space="preserve">
+    <value>G 值上限</value>
+    <comment>G-Limit</comment>
+  </data>
+  <data name="KLF_VehicleEditor_GLimitHint" xml:space="preserve">
+    <value>只有当预计峰值减速度低于此 G 值时才会解除收伞。</value>
+    <comment>Disreef only once predicted peak deceleration would stay under this many g.</comment>
+  </data>
+  <data name="KLF_VehicleEditor_CutInSequence" xml:space="preserve">
+    <value>加入切割序列</value>
+    <comment>Cut In Sequence</comment>
+  </data>
+  <data name="KLF_VehicleEditor_CutInSequenceHint" xml:space="preserve">
+    <value>向序列中加入切割环节，使这些降落伞的切割可以分级执行。</value>
+    <comment>Adds a cut element to the sequence so cutting these chutes can be staged.</comment>
+  </data>
+  <data name="KLF_VehicleEditingSpace_RefillConsumables" xml:space="preserve">
+    <value>补充消耗品</value>
+    <comment>REFILL CONSUMABLES</comment>
+  </data>
+  <data name="KLF_VehicleEditingSpace_Resources" xml:space="preserve">
+    <value>资源</value>
+    <comment>RESOURCES</comment>
+  </data>
+  <data name="KLF_VehicleEditingSpace_AutoGroups" xml:space="preserve">
+    <value>自动分组</value>
+    <comment>AUTO GROUPS</comment>
+  </data>
+  <data name="KLF_VehicleEditingSpace_RefillFullHint" xml:space="preserve">
+    <value>此载具的所有资源都已达到最大容量。</value>
+    <comment>Every resource on this vehicle is already at max capacity.</comment>
+  </data>
+  <data name="KLF_VehicleEditingSpace_RefillHint" xml:space="preserve">
+    <value>将此载具的所有资源补充至最大容量。</value>
+    <comment>Fill every resource on this vehicle to max capacity.</comment>
+  </data>
+  <data name="KLF_VehicleEditingSpace_AutoGroupHint" xml:space="preserve">
+    <value>自动资源分组。关闭后可手动管理资源组。</value>
+    <comment>Automatic resource grouping. Switch off to manage resource groups manually.</comment>
+  </data>
+  <data name="KLF_VehicleEditingSpace_OpenGroupsHint" xml:space="preserve">
+    <value>打开资源组窗口</value>
+    <comment>Open the Resource Groups window</comment>
+  </data>
+  <data name="KLF_VehicleLaunchMenu_FillAllSeats" xml:space="preserve">
+    <value>填满所有载具座位</value>
+    <comment>Fill ALL vehicle seats</comment>
+  </data>
+  <data name="KLF_VehicleLaunchMenu_FillSeats" xml:space="preserve">
+    <value>填满座位</value>
+    <comment>Fill Seats</comment>
+  </data>
+  <data name="KLF_VehicleLaunchMenu_SavesSuffix" xml:space="preserve">
+    <value>{Count} 个存档</value>
+    <comment> SAVES</comment>
+  </data>
+  <data name="KLF_VehicleLaunchMenu_VehicleSave" xml:space="preserve">
+    <value>载具存档</value>
+    <comment>Vehicle Save</comment>
+  </data>
+  <data name="KLF_VehicleLaunchMenu_SeatLabel" xml:space="preserve">
+    <value>{Part}（{Seat}）</value>
+    <comment>{Part} ({Seat})</comment>
   </data>
   <data name="AlertSimulationPaused" xml:space="preserve">
     <value>模拟已暂停</value>
@@ -1795,5 +2652,647 @@ The 'Font' value is a special entry that will be used to select which game font 
   <data name="KLF_InputAction_Board" xml:space="preserve">
     <value>登乘</value>
     <comment>Board</comment>
+  </data>
+  <data name="KLF_VehicleEditor_Segment" xml:space="preserve">
+    <value>药柱段 '{Part}' 位于 {Owner}</value>
+    <comment>Segment '{Part}' on {Owner}</comment>
+  </data>
+  <data name="KLF_VehicleEditor_WontIgnite" xml:space="preserve">
+    <value>无法点火：点火时压力（{Pressure}）低于推进剂的最低压力（{Minimum}）</value>
+    <comment>Won't ignite: pressure at ignition ({Pressure}) is below the propellant's minimum ({Minimum})</comment>
+  </data>
+  <data name="KLF_VehicleEditor_FuelLineTooLongMessage" xml:space="preserve">
+    <value>燃料管线过长：{Length} m（上限 {Max} m）</value>
+    <comment>Fuel line too long: {Length} m (max {Max} m)</comment>
+  </data>
+  <data name="KLF_VehicleEditor_TimePrefix" xml:space="preserve">
+    <value>时间：</value>
+    <comment>Time: </comment>
+  </data>
+  <data name="KLF_VehicleEditor_TimeThrust" xml:space="preserve">
+    <value> 秒
+推力：</value>
+    <comment> s
+Thrust: </comment>
+  </data>
+  <data name="KLF_VehicleEditor_IspLine" xml:space="preserve">
+    <value>
+比冲：</value>
+    <comment>
+Isp: </comment>
+  </data>
+  <data name="KLF_VehicleEditor_TimeChamber" xml:space="preserve">
+    <value> 秒
+燃烧室压力：</value>
+    <comment> s
+Chamber Pressure: </comment>
+  </data>
+  <data name="KLF_TransferPlanner_Title" xml:space="preserve">
+    <value>转移规划</value>
+    <comment>TRANSFER PLANNING</comment>
+  </data>
+  <data name="KLF_TransferPlanner_Plan" xml:space="preserve">
+    <value>规划</value>
+    <comment>PLAN</comment>
+  </data>
+  <data name="KLF_TransferPlanner_PlanType" xml:space="preserve">
+    <value>规划类型</value>
+    <comment>PLAN TYPE</comment>
+  </data>
+  <data name="KLF_TransferPlanner_Source" xml:space="preserve">
+    <value>起点</value>
+    <comment>SOURCE</comment>
+  </data>
+  <data name="KLF_TransferPlanner_Destination" xml:space="preserve">
+    <value>目的地</value>
+    <comment>DESTINATION</comment>
+  </data>
+  <data name="KLF_TransferPlanner_NoneAvailable" xml:space="preserve">
+    <value>无可用目标</value>
+    <comment>NONE AVAILABLE</comment>
+  </data>
+  <data name="KLF_TransferPlanner_TransferWindow" xml:space="preserve">
+    <value>转移窗口</value>
+    <comment>TRANSFER WINDOW</comment>
+  </data>
+  <data name="KLF_TransferPlanner_TimeOfFlight" xml:space="preserve">
+    <value>飞行时间</value>
+    <comment>TIME OF FLIGHT</comment>
+  </data>
+  <data name="KLF_TransferPlanner_TimeUnit" xml:space="preserve">
+    <value>时间单位</value>
+    <comment>TIME UNIT</comment>
+  </data>
+  <data name="KLF_TransferPlanner_MinTimeOfFlight" xml:space="preserve">
+    <value>最短飞行时间</value>
+    <comment>MINIMUM TIME OF FLIGHT</comment>
+  </data>
+  <data name="KLF_TransferPlanner_MaxTimeOfFlight" xml:space="preserve">
+    <value>最长飞行时间</value>
+    <comment>MAXIMUM TIME OF FLIGHT</comment>
+  </data>
+  <data name="KLF_TransferPlanner_Threads" xml:space="preserve">
+    <value>线程数</value>
+    <comment>THREADS</comment>
+  </data>
+  <data name="KLF_TransferPlanner_SetTarget" xml:space="preserve">
+    <value>设为目标</value>
+    <comment>SET TARGET</comment>
+  </data>
+  <data name="KLF_TransferPlanner_ShowAlignment" xml:space="preserve">
+    <value>显示母体/目标对齐</value>
+    <comment>SHOW PARENT/TARGET ALIGNMENT</comment>
+  </data>
+  <data name="KLF_TransferPlanner_MustHaveValidOrbit" xml:space="preserve">
+    <value>需要有效轨道</value>
+    <comment>MUST HAVE A VALID ORBIT</comment>
+  </data>
+  <data name="KLF_TransferPlanner_Calculate" xml:space="preserve">
+    <value>计算</value>
+    <comment>CALCULATE</comment>
+  </data>
+  <data name="KLF_TransferPlanner_Recalculate" xml:space="preserve">
+    <value>重新计算</value>
+    <comment>RE-CALCULATE</comment>
+  </data>
+  <data name="KLF_TransferPlanner_NoSourceVehicle" xml:space="preserve">
+    <value>没有起点飞行器</value>
+    <comment>NO SOURCE VEHICLE</comment>
+  </data>
+  <data name="KLF_TransferPlanner_NoValidApsis" xml:space="preserve">
+    <value>该轨道上没有有效拱点</value>
+    <comment>NO VALID APSIS ON THIS ORBIT</comment>
+  </data>
+  <data name="KLF_TransferPlanner_PreviewSelected" xml:space="preserve">
+    <value>预览选中转移</value>
+    <comment>PREVIEW SELECTED TRANSFER</comment>
+  </data>
+  <data name="KLF_TransferPlanner_PreviewSelectedFlightPlan" xml:space="preserve">
+    <value>预览选中转移的飞行计划</value>
+    <comment>PREVIEW SELECTED TRANSFER FLIGHT PLAN</comment>
+  </data>
+  <data name="KLF_TransferPlanner_PreviewLambert" xml:space="preserve">
+    <value>预览兰伯特转移</value>
+    <comment>PREVIEW LAMBERT TRANSFER</comment>
+  </data>
+  <data name="KLF_TransferPlanner_BestTransfer" xml:space="preserve">
+    <value>最佳转移</value>
+    <comment>BEST TRANSFER</comment>
+  </data>
+  <data name="KLF_TransferPlanner_SelectBestDv" xml:space="preserve">
+    <value>选择最佳 ΔV</value>
+    <comment>SELECT BEST DV</comment>
+  </data>
+  <data name="KLF_TransferPlanner_SelectBestDvRelSpeed" xml:space="preserve">
+    <value>选择最佳 ΔV + 拦截速度</value>
+    <comment>SELECT BEST DV + INTERCEPT VEL</comment>
+  </data>
+  <data name="KLF_TransferPlanner_SelectedTransfer" xml:space="preserve">
+    <value>选中转移</value>
+    <comment>SELECTED TRANSFER</comment>
+  </data>
+  <data name="KLF_TransferPlanner_NoSolution" xml:space="preserve">
+    <value>未找到可行解</value>
+    <comment>NO SOLUTION FOUND</comment>
+  </data>
+  <data name="KLF_TransferPlanner_DepartureFlightTimeDv" xml:space="preserve">
+    <value>出发时间 × 飞行时间 - ΔV</value>
+    <comment>DEPARTURE × FLIGHT TIME - DV</comment>
+  </data>
+  <data name="KLF_TransferPlanner_Calculating" xml:space="preserve">
+    <value>计算中…</value>
+    <comment>CALCULATING…</comment>
+  </data>
+  <data name="KLF_TransferPlanner_TransferSelected" xml:space="preserve">
+    <value>已选中转移</value>
+    <comment>TRANSFER SELECTED</comment>
+  </data>
+  <data name="KLF_TransferPlanner_NoSelection" xml:space="preserve">
+    <value>未选择转移</value>
+    <comment>NO SELECTION</comment>
+  </data>
+  <data name="KLF_TransferPlanner_Create" xml:space="preserve">
+    <value>创建</value>
+    <comment>CREATE</comment>
+  </data>
+  <data name="KLF_TransferPlanner_Dv" xml:space="preserve">
+    <value>ΔV</value>
+    <comment>ΔV</comment>
+  </data>
+  <data name="KLF_TransferPlanner_Depart" xml:space="preserve">
+    <value>出发</value>
+    <comment>DEPART</comment>
+  </data>
+  <data name="KLF_TransferPlanner_Transit" xml:space="preserve">
+    <value>航行</value>
+    <comment>TRANSIT</comment>
+  </data>
+  <data name="KLF_TransferPlanner_InterceptVelocity" xml:space="preserve">
+    <value>拦截速度</value>
+    <comment>INTERCEPT VELOCITY</comment>
+  </data>
+  <data name="KLF_TransferPlanner_ClosestApproach" xml:space="preserve">
+    <value>最近接近距离</value>
+    <comment>CLOSEST APPROACH</comment>
+  </data>
+  <data name="KLF_TransferPlanner_None" xml:space="preserve">
+    <value>无</value>
+    <comment>NONE</comment>
+  </data>
+  <data name="KLF_TransferPlanner_SpeedUpBurnIn" xml:space="preserve">
+    <value>距加速点火</value>
+    <comment>SPEED UP BURN IN</comment>
+  </data>
+  <data name="KLF_TransferPlanner_SlowDownBurnIn" xml:space="preserve">
+    <value>距减速点火</value>
+    <comment>SLOW DOWN BURN IN</comment>
+  </data>
+  <data name="KLF_TransferPlanner_ArrivesIn" xml:space="preserve">
+    <value>距抵达</value>
+    <comment>ARRIVES IN</comment>
+  </data>
+  <data name="KLF_TransferPlanner_ArrivalPeriapsis" xml:space="preserve">
+    <value>抵达近拱点</value>
+    <comment>ARRIVAL PERIAPSIS</comment>
+  </data>
+  <data name="KLF_TransferPlanner_PlannedSpeedUpBurn" xml:space="preserve">
+    <value>计划加速点火</value>
+    <comment>PLANNED SPEED UP BURN</comment>
+  </data>
+  <data name="KLF_TransferPlanner_PlannedSlowDownBurn" xml:space="preserve">
+    <value>计划减速点火</value>
+    <comment>PLANNED SLOW DOWN BURN</comment>
+  </data>
+  <data name="KLF_TransferPlanner_NoStarNearby" xml:space="preserve">
+    <value>附近没有恒星</value>
+    <comment>NO STAR NEARBY</comment>
+  </data>
+  <data name="KLF_TransferPlanner_NoOtherStar" xml:space="preserve">
+    <value>没有其他恒星</value>
+    <comment>NO OTHER STAR</comment>
+  </data>
+  <data name="KLF_TransferPlanner_Departing" xml:space="preserve">
+    <value>出发恒星</value>
+    <comment>DEPARTING</comment>
+  </data>
+  <data name="KLF_TransferPlanner_Crossing" xml:space="preserve">
+    <value>星际跨越</value>
+    <comment>CROSSING</comment>
+  </data>
+  <data name="KLF_TransferPlanner_Distance" xml:space="preserve">
+    <value>距离</value>
+    <comment>DISTANCE</comment>
+  </data>
+  <data name="KLF_TransferPlanner_NoAntimatterDrive" xml:space="preserve">
+    <value>没有运行中的反物质引擎</value>
+    <comment>NO ACTIVE ANTIMATTER DRIVE</comment>
+  </data>
+  <data name="KLF_TransferPlanner_MaxSpeed" xml:space="preserve">
+    <value>最大速度</value>
+    <comment>MAX SPEED</comment>
+  </data>
+  <data name="KLF_TransferPlanner_DepartureAntimatter" xml:space="preserve">
+    <value>加速点火反物质用量</value>
+    <comment>SPEED UP BURN ANTIMATTER</comment>
+  </data>
+  <data name="KLF_TransferPlanner_BrakeAntimatter" xml:space="preserve">
+    <value>减速点火反物质用量</value>
+    <comment>SLOW DOWN BURN ANTIMATTER</comment>
+  </data>
+  <data name="KLF_TransferPlanner_FinalSpeed" xml:space="preserve">
+    <value>最终速度</value>
+    <comment>FINAL SPEED</comment>
+  </data>
+  <data name="KLF_TransferPlanner_CircularSpeedAtPeriapsis" xml:space="preserve">
+    <value>近拱点圆轨道速度</value>
+    <comment>CIRCULAR SPEED AT PERIAPSIS</comment>
+  </data>
+  <data name="KLF_TransferPlanner_SpeedUpBurn" xml:space="preserve">
+    <value>加速点火</value>
+    <comment>SPEED UP BURN</comment>
+  </data>
+  <data name="KLF_TransferPlanner_Coast" xml:space="preserve">
+    <value>滑行</value>
+    <comment>COAST</comment>
+  </data>
+  <data name="KLF_TransferPlanner_CoastTime" xml:space="preserve">
+    <value>滑行时间</value>
+    <comment>COAST TIME</comment>
+  </data>
+  <data name="KLF_TransferPlanner_HydrogenScooped" xml:space="preserve">
+    <value>收集的氢</value>
+    <comment>HYDROGEN SCOOPED</comment>
+  </data>
+  <data name="KLF_TransferPlanner_SlowDownBurn" xml:space="preserve">
+    <value>减速点火</value>
+    <comment>SLOW DOWN BURN</comment>
+  </data>
+  <data name="KLF_TransferPlanner_BrakeOutOfAntimatter" xml:space="preserve">
+    <value>减速点火时反物质耗尽</value>
+    <comment>SLOW DOWN BURN RUNS OUT OF ANTIMATTER</comment>
+  </data>
+  <data name="KLF_TransferPlanner_NotEnoughRoom" xml:space="preserve">
+    <value>剩余距离不足以减速</value>
+    <comment>NOT ENOUGH ROOM LEFT TO SLOW DOWN</comment>
+  </data>
+  <data name="KLF_TransferPlanner_Journey" xml:space="preserve">
+    <value>航程</value>
+    <comment>JOURNEY</comment>
+  </data>
+  <data name="KLF_TransferPlanner_MustDepartFromBodyOrbit" xml:space="preserve">
+    <value>必须从环绕该恒星的天体轨道出发</value>
+    <comment>MUST DEPART FROM A BODY ORBITING THE STAR</comment>
+  </data>
+  <data name="KLF_TransferPlanner_NoDepartureFound" xml:space="preserve">
+    <value>该速度下未找到出发方案</value>
+    <comment>NO DEPARTURE FOUND AT THIS SPEED</comment>
+  </data>
+  <data name="KLF_TransferPlanner_SpeedUpBurnGoesNowhere" xml:space="preserve">
+    <value>加速点火无法抵达任何目标</value>
+    <comment>THE SPEED UP BURN GOES NOWHERE</comment>
+  </data>
+  <data name="KLF_TransferPlanner_BurnTime" xml:space="preserve">
+    <value>点火时长</value>
+    <comment>BURN TIME</comment>
+  </data>
+  <data name="KLF_TransferPlanner_EndsAt" xml:space="preserve">
+    <value>结束于</value>
+    <comment>ENDS AT</comment>
+  </data>
+  <data name="KLF_TransferPlanner_AntimatterUsed" xml:space="preserve">
+    <value>反物质耗尽</value>
+    <comment>ANTIMATTER USED</comment>
+  </data>
+  <data name="KLF_TransferPlanner_HydrogenUsed" xml:space="preserve">
+    <value>氢耗尽</value>
+    <comment>HYDROGEN USED</comment>
+  </data>
+  <data name="KLF_TransferPlanner_Halfway" xml:space="preserve">
+    <value>航程中点</value>
+    <comment>HALFWAY</comment>
+  </data>
+  <data name="KLF_TransferPlanner_VesselBurnedAway" xml:space="preserve">
+    <value>飞行器已烧毁</value>
+    <comment>VESSEL BURNED AWAY</comment>
+  </data>
+  <data name="KLF_TransferPlanner_TargetSpeed" xml:space="preserve">
+    <value>到达目标速度</value>
+    <comment>TARGET SPEED</comment>
+  </data>
+  <data name="KLF_TransferPlanner_SpeedAfter" xml:space="preserve">
+    <value>之后速度</value>
+    <comment>SPEED AFTER</comment>
+  </data>
+  <data name="KLF_TransferPlanner_Antimatter" xml:space="preserve">
+    <value>反物质</value>
+    <comment>ANTIMATTER</comment>
+  </data>
+  <data name="KLF_TransferPlanner_Hydrogen" xml:space="preserve">
+    <value>氢</value>
+    <comment>HYDROGEN</comment>
+  </data>
+  <data name="KLF_TransferPlanner_TargetPeriapsis" xml:space="preserve">
+    <value>目标近拱点</value>
+    <comment>TARGET PERIAPSIS</comment>
+  </data>
+  <data name="KLF_TransferPlanner_ApproachCorrection" xml:space="preserve">
+    <value>接近修正</value>
+    <comment>APPROACH CORRECTION</comment>
+  </data>
+  <data name="KLF_TransferPlanner_Arriving" xml:space="preserve">
+    <value>抵达</value>
+    <comment>ARRIVING</comment>
+  </data>
+  <data name="KLF_TransferPlanner_NoCorrectionFound" xml:space="preserve">
+    <value>未找到修正方案</value>
+    <comment>NO CORRECTION FOUND</comment>
+  </data>
+  <data name="KLF_TransferPlanner_CalculatingCorrection" xml:space="preserve">
+    <value>正在计算修正…</value>
+    <comment>CALCULATING CORRECTION…</comment>
+  </data>
+  <data name="KLF_TransferPlanner_Periapsis" xml:space="preserve">
+    <value>近拱点</value>
+    <comment>PERIAPSIS</comment>
+  </data>
+  <data name="KLF_TransferPlanner_Correction" xml:space="preserve">
+    <value>修正</value>
+    <comment>CORRECTION</comment>
+  </data>
+  <data name="KLF_TransferPlanner_Leaving" xml:space="preserve">
+    <value>离开段</value>
+    <comment>LEAVING</comment>
+  </data>
+  <data name="KLF_TransferPlanner_AfterSlowingDown" xml:space="preserve">
+    <value>减速后</value>
+    <comment>AFTER SLOWING DOWN</comment>
+  </data>
+  <data name="KLF_TransferPlanner_TransferPoint" xml:space="preserve">
+    <value>转移点</value>
+    <comment>TRANSFER POINT</comment>
+  </data>
+  <data name="KLF_TransferPlanner_Time" xml:space="preserve">
+    <value>时间</value>
+    <comment>TIME</comment>
+  </data>
+  <data name="KLF_TransferPlanner_RelativeVelocity" xml:space="preserve">
+    <value>相对速度</value>
+    <comment>REL VELOCITY</comment>
+  </data>
+  <data name="KLF_TransferPlanner_Closest" xml:space="preserve">
+    <value>最近</value>
+    <comment>CLOSEST</comment>
+  </data>
+  <data name="KLF_TransferPlanner_Position" xml:space="preserve">
+    <value>坐标</value>
+    <comment>POS</comment>
+  </data>
+  <data name="KLF_TransferPlanner_NotEnoughDeltaV" xml:space="preserve">
+    <value>ΔV 不足：</value>
+    <comment>NOT ENOUGH DELTA-V: </comment>
+  </data>
+  <data name="KLF_TransferPlanner_DeltaVShortUnit" xml:space="preserve">
+    <value> m/s</value>
+    <comment> m/s SHORT</comment>
+  </data>
+  <data name="KLF_TransferPlanner_NotEnough" xml:space="preserve">
+    <value>不足：</value>
+    <comment>NOT ENOUGH </comment>
+  </data>
+  <data name="KLF_TransferPlanner_ShortfallSeparator" xml:space="preserve">
+    <value>，还差 </value>
+    <comment>: </comment>
+  </data>
+  <data name="KLF_TransferPlanner_Short" xml:space="preserve">
+    <value> </value>
+    <comment> SHORT</comment>
+  </data>
+  <data name="KLF_TransferPlanner_TransferTypeHohmann" xml:space="preserve">
+    <value>霍曼转移</value>
+    <comment>Hohmann</comment>
+  </data>
+  <data name="KLF_TransferPlanner_TransferTypeCircularizeApoapsis" xml:space="preserve">
+    <value>圆化远拱点</value>
+    <comment>Circularize Apoapsis</comment>
+  </data>
+  <data name="KLF_TransferPlanner_TransferTypeCircularizePeriapsis" xml:space="preserve">
+    <value>圆化近拱点</value>
+    <comment>Circularize Periapsis</comment>
+  </data>
+  <data name="KLF_TransferPlanner_TransferTypeInterstellar" xml:space="preserve">
+    <value>星际转移</value>
+    <comment>Interstellar</comment>
+  </data>
+  <data name="KLF_TransferPlanner_TimeUnitSeconds" xml:space="preserve">
+    <value>秒</value>
+    <comment>Seconds</comment>
+  </data>
+  <data name="KLF_TransferPlanner_TimeUnitMinutes" xml:space="preserve">
+    <value>分</value>
+    <comment>Minutes</comment>
+  </data>
+  <data name="KLF_TransferPlanner_TimeUnitHours" xml:space="preserve">
+    <value>小时</value>
+    <comment>Hours</comment>
+  </data>
+  <data name="KLF_TransferPlanner_TimeUnitDays" xml:space="preserve">
+    <value>天</value>
+    <comment>Days</comment>
+  </data>
+  <data name="KLF_TransferPlanner_TimeUnitWeeks" xml:space="preserve">
+    <value>周</value>
+    <comment>Weeks</comment>
+  </data>
+  <data name="KLF_TransferPlanner_TimeUnitYears" xml:space="preserve">
+    <value>年</value>
+    <comment>Years</comment>
+  </data>
+  <data name="KLF_PartArchetypes_Mass" xml:space="preserve">
+    <value>
+质量：</value>
+    <comment>
+Mass: </comment>
+  </data>
+  <data name="KLF_PartArchetypes_Volume" xml:space="preserve">
+    <value>
+容积：</value>
+    <comment>
+Volume: </comment>
+  </data>
+  <data name="KLF_PartArchetypes_PowerGenerated" xml:space="preserve">
+    <value>
+发电功率：</value>
+    <comment>
+Power Generated: </comment>
+  </data>
+  <data name="KLF_PartArchetypes_BatteryCapacity" xml:space="preserve">
+    <value>
+电池容量：</value>
+    <comment>
+Battery Capacity: </comment>
+  </data>
+  <data name="KLF_PartArchetypes_PowerUsed" xml:space="preserve">
+    <value>
+用电功率：</value>
+    <comment>
+Power Used: </comment>
+  </data>
+  <data name="KLF_PartArchetypes_Engine" xml:space="preserve">
+    <value>发动机</value>
+    <comment>Engine</comment>
+  </data>
+  <data name="KLF_PartArchetypes_PerThruster" xml:space="preserve">
+    <value>每台推进器</value>
+    <comment>Per Thruster</comment>
+  </data>
+  <data name="KLF_PartArchetypes_ThrustSeaLevel" xml:space="preserve">
+    <value>推力（海平面）：</value>
+    <comment>Thrust (SL): </comment>
+  </data>
+  <data name="KLF_PartArchetypes_ThrustVacuum" xml:space="preserve">
+    <value>推力（真空）：</value>
+    <comment>Thrust (Vac): </comment>
+  </data>
+  <data name="KLF_PartArchetypes_IspSeaLevel" xml:space="preserve">
+    <value>比冲（海平面）：</value>
+    <comment>Isp (SL): </comment>
+  </data>
+  <data name="KLF_PartArchetypes_IspVacuum" xml:space="preserve">
+    <value>比冲（真空）：</value>
+    <comment>Isp (Vac): </comment>
+  </data>
+  <data name="KLF_PartArchetypes_Propellant" xml:space="preserve">
+    <value>
+└─ 推进剂：</value>
+    <comment>
+└─ Propellant: </comment>
+  </data>
+  <data name="KLF_PartArchetypes_ListSeparator" xml:space="preserve">
+    <value>、</value>
+    <comment>, </comment>
+  </data>
+  <data name="KLF_PartArchetypes_RoleAffinity" xml:space="preserve">
+    <value>
+储罐用途：</value>
+    <comment>
+Role Affinity: </comment>
+  </data>
+  <data name="KLF_PartArchetypes_Thruster" xml:space="preserve">
+    <value>推进器</value>
+    <comment>Thruster</comment>
+  </data>
+  <data name="KLF_PartArchetypes_DecouplerForce" xml:space="preserve">
+    <value>
+分离力：</value>
+    <comment>
+Decoupler Force: </comment>
+  </data>
+  <data name="KLF_Part_OpenDetails" xml:space="preserve">
+    <value>打开详情</value>
+    <comment>Open Details</comment>
+  </data>
+  <data name="KLF_Part_UnfocusCamera" xml:space="preserve">
+    <value>取消镜头跟随</value>
+    <comment>UnFocus Camera</comment>
+  </data>
+  <data name="KLF_Part_FocusCamera" xml:space="preserve">
+    <value>镜头跟随此部件</value>
+    <comment>Focus Camera</comment>
+  </data>
+  <data name="KLF_Part_Decoupler" xml:space="preserve">
+    <value>分离器</value>
+    <comment>Decoupler</comment>
+  </data>
+  <data name="KLF_Part_DecouplerHint" xml:space="preserve">
+    <value>关闭后该分离器不会动作，并从程序段窗口中隐藏。</value>
+    <comment>When off, this decoupler is inert and hidden from the sequence window.</comment>
+  </data>
+  <data name="KLF_Part_Active" xml:space="preserve">
+    <value>启用</value>
+    <comment>Active</comment>
+  </data>
+  <data name="KLF_Part_PropellantUseHint" xml:space="preserve">
+    <value>关闭后没有任何设备能从此储罐抽取推进剂。</value>
+    <comment>When off, nothing can draw propellant from this tank.</comment>
+  </data>
+  <data name="KLF_Part_TankDrainHint" xml:space="preserve">
+    <value>将此储罐的内容输送至其他已打开部件窗口中所有设为「注入」的储罐。会消耗电力。</value>
+    <comment>Drain this tank into every tank set to In on another open part window. Uses electrical power.</comment>
+  </data>
+  <data name="KLF_Part_TankFillHint" xml:space="preserve">
+    <value>从其他已打开部件窗口中所有设为「排出」的储罐充注此储罐。会消耗电力。</value>
+    <comment>Fill this tank from every tank set to Out on another open part window. Uses electrical power.</comment>
+  </data>
+  <data name="KLF_Part_InertMass" xml:space="preserve">
+    <value>干重</value>
+    <comment>Inert Mass</comment>
+  </data>
+  <data name="KLF_Part_MaxPressure" xml:space="preserve">
+    <value>最大压力</value>
+    <comment>Max Pressure</comment>
+  </data>
+  <data name="KLF_Part_StackInvalid" xml:space="preserve">
+    <value>堆叠无效</value>
+    <comment>Stack Invalid</comment>
+  </data>
+  <data name="KLF_Part_AreaRatioSized" xml:space="preserve">
+    <value>面积比（已定尺寸）</value>
+    <comment>Area Ratio (sized)</comment>
+  </data>
+  <data name="KLF_Part_Expansion" xml:space="preserve">
+    <value>扩张倍率</value>
+    <comment>Expansion</comment>
+  </data>
+  <data name="KLF_Part_Enter" xml:space="preserve">
+    <value>进入 </value>
+    <comment>Enter </comment>
+  </data>
+  <data name="KLF_Part_ChutesOn" xml:space="preserve">
+    <value>此部件上的降落伞：</value>
+    <comment>Chutes on </comment>
+  </data>
+  <data name="KLF_Part_Decouple" xml:space="preserve">
+    <value>分离</value>
+    <comment>Decouple</comment>
+  </data>
+  <data name="KLF_Part_DecouplerHeader" xml:space="preserve">
+    <value>分离器 '</value>
+    <comment>Decoupler '</comment>
+  </data>
+  <data name="KLF_Part_Electricity" xml:space="preserve">
+    <value>电力</value>
+    <comment>Electricity</comment>
+  </data>
+  <data name="KLF_Part_TransferOut" xml:space="preserve">
+    <value>排出###tankxferout</value>
+    <comment>Out###tankxferout</comment>
+  </data>
+  <data name="KLF_Part_TransferIn" xml:space="preserve">
+    <value>注入###tankxferin</value>
+    <comment>In###tankxferin</comment>
+  </data>
+  <data name="KLF_Part_ControlFromHere" xml:space="preserve">
+    <value>从此处控制###controlfromhere</value>
+    <comment>Control From Here###controlfromhere</comment>
+  </data>
+  <data name="KLF_Part_ControlFromHereConnector" xml:space="preserve">
+    <value>从此处控制：</value>
+    <comment>Control From Here: </comment>
+  </data>
+  <data name="KLF_Part_TankHeader" xml:space="preserve">
+    <value>储罐 '</value>
+    <comment>Tank '</comment>
+  </data>
+  <data name="KLF_Part_GrainSegmentHeader" xml:space="preserve">
+    <value>药柱段 '</value>
+    <comment>Grain Segment '</comment>
+  </data>
+  <data name="KLF_Part_EngineCoreHeader" xml:space="preserve">
+    <value>发动机核心 '</value>
+    <comment>Engine Core '</comment>
+  </data>
+  <data name="KLF_Part_NozzleHeader" xml:space="preserve">
+    <value>喷管 '</value>
+    <comment>Nozzle '</comment>
   </data>
 </root>

@@ -37,6 +37,11 @@ public static class FontManagerPatch
             FontManager.SmallFont = atlas.AddFontFromFileTTF(smallPath, fontSize * 0.8f, glyphRanges: CjkGlyphRanges);
             ImGuiHelper.SetTooltipFont(FontManager.SmallFont);
         }
+
+        if (FontManager.Fonts.TryGetValue(GameSettings.GetFontName(), out ImFontPtr interfaceFont))
+        {
+            ImGui.GetIO().FontDefault = interfaceFont;
+        }
     }
 
     [HarmonyPatch(nameof(FontManager.RegisterFont))]

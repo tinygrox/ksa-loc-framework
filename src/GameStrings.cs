@@ -1,4 +1,5 @@
-﻿using Brutal.Localization;
+using Brutal.Localization;
+// ReSharper disable InconsistentNaming
 
 namespace KsaLocFramework;
 
@@ -9,8 +10,12 @@ public static class GameStrings
     public static readonly LString KLF_UI_Cancel = LStrings.Create("KLF_UI_Cancel", "CANCEL");
     public static readonly LString KLF_UI_Okay = LStrings.Create("KLF_UI_Okay", "OKAY");
     public static readonly LString KLF_UI_AlwaysShow = LStrings.Create("KLF_UI_AlwaysShow", "Always Show");
+    public static readonly LString KLF_UI_AlwaysCheck = LStrings.Create("KLF_UI_AlwaysCheck", "Always Check");
     public static readonly LString KLF_UI_No = LStrings.Create("KLF_UI_No", "No");
     public static readonly LString KLF_UI_Select = LStrings.Create("KLF_UI_Select", "SELECT");
+    public static readonly LString KLF_UI_Save = LStrings.Create("KLF_UI_Save", "Save");
+    public static readonly LString KLF_UI_Discard = LStrings.Create("KLF_UI_Discard", "Discard");
+    public static readonly LString KLF_UI_Get = LStrings.Create("KLF_UI_Get", "GET");
     public static readonly LString KLF_WelcomePopup_Title = LStrings.Create("KLF_WelcomePopup_Title", "WELCOME");
     public static readonly LString KLF_WelcomePopup_Text =
         LStrings.Create("KLF_WelcomePopup_Text", "Welcome to the KSA pre-alpha.<Separator/>The game currently has you controlling a craft named 'Rocket'. Press <Action:VesselNext />, <Action:VesselPrevious/> to swap between several available craft.<NewLine/>You can press <Action:CameraReferenceFrame/> to switch between the camera modes, or hold right click to pan the camera around. Most UI elements can be repositioned, resized and hidden, by clicking and dragging.<NewLine/>KSA uses fairly traditional craft controls, which can be viewed in the 'Controls' section of the settings menus by pressing <Action:OpenGameSettings/>.<NewLine/>Press <Action:ToggleMap/> to toggle between craft view, and map view. The map view can be useful for planning burns for encounters and exploring the solar system, but controls slightly change while in this mode. You can also use this to prepare burns by left clicking on a point in the orbit.<NewLine/>In the menu bar, you can use 'Universe' -> 'Goto' and you can instantly move to other celestial objects as well as using 'View' -> 'Orbit Lines' to enable or disable orbit lines for the many available celestials. Many other in progress features can be accessed by exploring the menu bar.<NewLine/>Time compression can be increased using <Action:SimSpeedIncrease/> and decreased with <Action:SimSpeedDecrease/>. Ground Tracking can be toggled with <Action:ToggleGroundTracking/> and transfer planning with <Action:ToggleTransferPlan/>.<Separator/>");
@@ -58,6 +63,269 @@ public static class GameStrings
         LStrings.Create("KLF_PartTreeSelectionPopup_Description", "Select a part tree to save.");
     public static readonly LString KLF_PartTreeSelectionPopup_ActiveVehicleDescription =
         LStrings.Create("KLF_PartTreeSelectionPopup_ActiveVehicleDescription", "Select a part tree to make the active vehicle.");
+    public static readonly LString KLF_RequiresRestartPopup_Title = LStrings.Create("KLF_RequiresRestartPopup_Title", "REQUIRES RESTART");
+    public static readonly LString KLF_RequiresRestartPopup_Body =
+        LStrings.Create("KLF_RequiresRestartPopup_Body", "The game needs to be restarted for the changes to take effect.");
+    public static readonly LString KLF_RequiresRestartPopup_Restart = LStrings.Create("KLF_RequiresRestartPopup_Restart", "Restart");
+    public static readonly LString KLF_RequiresRestartPopup_Continue = LStrings.Create("KLF_RequiresRestartPopup_Continue", "Continue");
+    public static readonly LString KLF_RequiresRestartPopup_Discard = LStrings.Create("KLF_RequiresRestartPopup_Discard", "Discard");
+    public static readonly LString KLF_StringInputPopup_Prompt =
+        LStrings.Create("KLF_StringInputPopup_Prompt", "Please enter a filename to continue.");
+    public static readonly LString KLF_StringInputPopup_InvalidName =
+        LStrings.Create("KLF_StringInputPopup_InvalidName", "A name needs at least one letter or number.");
+    public static readonly LString KLF_StringInputPopup_WillSaveAs =
+        LStrings.Create("KLF_StringInputPopup_WillSaveAs", "Will be saved as \"{Name}\"");
+    public static readonly LString KLF_UnsavedSettingChanges_Title = LStrings.Create("KLF_UnsavedSettingChanges_Title", "UNSAVED SETTING CHANGES");
+    public static readonly LString KLF_UnsavedSettingChanges_Body =
+        LStrings.Create("KLF_UnsavedSettingChanges_Body", "You have unsaved changes which will not be applied, do you want to discard these?");
+    public static readonly LString KLF_UpdateAvailablePopup_Title = LStrings.Create("KLF_UpdateAvailablePopup_Title", "UPDATE AVAILABLE");
+    public static readonly LString KLF_UpdateAvailablePopup_YourVersion = LStrings.Create("KLF_UpdateAvailablePopup_YourVersion", "YOUR VERSION");
+    public static readonly LString KLF_UpdateAvailablePopup_AvailableVersion = LStrings.Create("KLF_UpdateAvailablePopup_AvailableVersion", "AVAILABLE VERSION");
+    public static readonly LString KLF_UpdateAvailablePopup_Message =
+        LStrings.Create("KLF_UpdateAvailablePopup_Message", "A new update for the game is available. Select an option below if you want to update the game, otherwise select cancel.");
+    public static readonly LString KLF_EscMenu_Title = LStrings.Create("KLF_EscMenu_Title", "PAUSED");
+    public static readonly LString KLF_EscMenu_Resume = LStrings.Create("KLF_EscMenu_Resume", "RESUME");
+    public static readonly LString KLF_EscMenu_SaveLoad = LStrings.Create("KLF_EscMenu_SaveLoad", "SAVE/LOAD");
+    public static readonly LString KLF_EscMenu_ExitEditor = LStrings.Create("KLF_EscMenu_ExitEditor", "EXIT EDITOR");
+    public static readonly LString KLF_EscMenu_NewVehicle = LStrings.Create("KLF_EscMenu_NewVehicle", "NEW VEHICLE");
+    public static readonly LString KLF_EscMenu_LaunchVehicle = LStrings.Create("KLF_EscMenu_LaunchVehicle", "LAUNCH VEHICLE");
+    public static readonly LString KLF_EscMenu_RecoverVehicle = LStrings.Create("KLF_EscMenu_RecoverVehicle", "RECOVER VEHICLE");
+    public static readonly LString KLF_EscMenu_Quit = LStrings.Create("KLF_EscMenu_Quit", "QUIT");
+    public static readonly LString KLF_EscMenu_SimulationPaused = LStrings.Create("KLF_EscMenu_SimulationPaused", "SIMULATION PAUSED");
+    public static readonly LString KLF_EscMenu_RecoverTitle = LStrings.Create("KLF_EscMenu_RecoverTitle", "RECOVER");
+    public static readonly LString KLF_EscMenu_RecoverMessage =
+        LStrings.Create("KLF_EscMenu_RecoverMessage", "Are you sure you want to recover {Vehicle}?");
+    public static readonly LString KLF_VehicleEditor_GizmoPlace = LStrings.Create("KLF_VehicleEditor_GizmoPlace", "PLACE");
+    public static readonly LString KLF_VehicleEditor_GizmoTranslate = LStrings.Create("KLF_VehicleEditor_GizmoTranslate", "TRANS");
+    public static readonly LString KLF_VehicleEditor_GizmoRotate = LStrings.Create("KLF_VehicleEditor_GizmoRotate", "ROTATE");
+    public static readonly LString KLF_VehicleEditor_GizmoScale = LStrings.Create("KLF_VehicleEditor_GizmoScale", "SCALE");
+    public static readonly LString KLF_VehicleEditor_GizmoFrameAsmb = LStrings.Create("KLF_VehicleEditor_GizmoFrameAsmb", "ASMB");
+    public static readonly LString KLF_VehicleEditor_GizmoFrameLocal = LStrings.Create("KLF_VehicleEditor_GizmoFrameLocal", "LOCAL");
+    public static readonly LString KLF_VehicleEditor_SymmetryNone = LStrings.Create("KLF_VehicleEditor_SymmetryNone", "NONE");
+    public static readonly LString KLF_VehicleEditor_LabelInherit = LStrings.Create("KLF_VehicleEditor_LabelInherit", "INHERIT");
+    public static readonly LString KLF_VehicleEditor_LabelSnap = LStrings.Create("KLF_VehicleEditor_LabelSnap", "SNAP");
+    public static readonly LString KLF_VehicleEditor_CameraFree = LStrings.Create("KLF_VehicleEditor_CameraFree", "FREE");
+    public static readonly LString KLF_VehicleEditor_CameraOrbit = LStrings.Create("KLF_VehicleEditor_CameraOrbit", "ORBIT");
+    public static readonly LString KLF_VehicleEditor_ProjectionOrtho = LStrings.Create("KLF_VehicleEditor_ProjectionOrtho", "ORTHO");
+    public static readonly LString KLF_VehicleEditor_ProjectionPersp = LStrings.Create("KLF_VehicleEditor_ProjectionPersp", "PERSP");
+    public static readonly LString KLF_VehicleEditor_SnapTop = LStrings.Create("KLF_VehicleEditor_SnapTop", "Snap camera to top view");
+    public static readonly LString KLF_VehicleEditor_SnapBottom = LStrings.Create("KLF_VehicleEditor_SnapBottom", "Snap camera to bottom view");
+    public static readonly LString KLF_VehicleEditor_SnapRight = LStrings.Create("KLF_VehicleEditor_SnapRight", "Snap camera to right view");
+    public static readonly LString KLF_VehicleEditor_SnapLeft = LStrings.Create("KLF_VehicleEditor_SnapLeft", "Snap camera to left view");
+    public static readonly LString KLF_VehicleEditor_SnapBack = LStrings.Create("KLF_VehicleEditor_SnapBack", "Snap camera to back view");
+    public static readonly LString KLF_VehicleEditor_SnapFront = LStrings.Create("KLF_VehicleEditor_SnapFront", "Snap camera to front view");
+    public static readonly LString KLF_VehicleEditor_PlaceMode = LStrings.Create("KLF_VehicleEditor_PlaceMode", "Place Mode [{Key}]");
+    public static readonly LString KLF_VehicleEditor_TranslateMode = LStrings.Create("KLF_VehicleEditor_TranslateMode", "Translate Mode [{Key}]");
+    public static readonly LString KLF_VehicleEditor_RotateMode = LStrings.Create("KLF_VehicleEditor_RotateMode", "Rotation Mode [{Key}]");
+    public static readonly LString KLF_VehicleEditor_ScaleMode = LStrings.Create("KLF_VehicleEditor_ScaleMode", "Scale Mode [{Key}]");
+    public static readonly LString KLF_VehicleEditor_ReferenceFrame = LStrings.Create("KLF_VehicleEditor_ReferenceFrame", "Reference Frame: {Frame}");
+    public static readonly LString KLF_VehicleEditor_FrameAsmbHint = LStrings.Create("KLF_VehicleEditor_FrameAsmbHint", "ASMB (click for Local)");
+    public static readonly LString KLF_VehicleEditor_FrameLocalHint = LStrings.Create("KLF_VehicleEditor_FrameLocalHint", "Local (click for ASMB)");
+    public static readonly LString KLF_VehicleEditor_Symmetry = LStrings.Create("KLF_VehicleEditor_Symmetry", "Symmetry: {State} [{Key}]");
+    public static readonly LString KLF_VehicleEditor_SymmetryInheritance = LStrings.Create("KLF_VehicleEditor_SymmetryInheritance", "Symmetry Inheritance: {State} [{Key}]");
+    public static readonly LString KLF_VehicleEditor_AngleSnapping = LStrings.Create("KLF_VehicleEditor_AngleSnapping", "Angle Snapping: {State} [{Key}]");
+    public static readonly LString KLF_VehicleEditor_Enabled = LStrings.Create("KLF_VehicleEditor_Enabled", "Enabled");
+    public static readonly LString KLF_VehicleEditor_Disabled = LStrings.Create("KLF_VehicleEditor_Disabled", "Disabled");
+    public static readonly LString KLF_VehicleEditor_Bin = LStrings.Create("KLF_VehicleEditor_Bin", "BIN");
+    public static readonly LString KLF_VehicleEditor_BinDragHint = LStrings.Create("KLF_VehicleEditor_BinDragHint", "Bin: drag a part here to delete it");
+    public static readonly LString KLF_VehicleEditor_DropToDelete = LStrings.Create("KLF_VehicleEditor_DropToDelete", "Drop part here to delete");
+    public static readonly LString KLF_VehicleEditor_TransformTitle = LStrings.Create("KLF_VehicleEditor_TransformTitle", "TRS");
+    public static readonly LString KLF_VehicleEditor_Translation = LStrings.Create("KLF_VehicleEditor_Translation", "Translation (XYZ)");
+    public static readonly LString KLF_VehicleEditor_Rotation = LStrings.Create("KLF_VehicleEditor_Rotation", "Rotation (Quat: WXYZ)");
+    public static readonly LString KLF_VehicleEditor_Scale = LStrings.Create("KLF_VehicleEditor_Scale", "Scale (XYZ)");
+    public static readonly LString KLF_VehicleEditor_Apply = LStrings.Create("KLF_VehicleEditor_Apply", "Apply");
+    public static readonly LString KLF_VehicleEditor_LaunchTitle = LStrings.Create("KLF_VehicleEditor_LaunchTitle", "LAUNCH");
+    public static readonly LString KLF_VehicleEditor_VehicleName = LStrings.Create("KLF_VehicleEditor_VehicleName", "Vehicle Name");
+    public static readonly LString KLF_VehicleEditor_LaunchBody = LStrings.Create("KLF_VehicleEditor_LaunchBody", "Launch Body");
+    public static readonly LString KLF_VehicleEditor_CrewAssignment = LStrings.Create("KLF_VehicleEditor_CrewAssignment", "CREW ASSIGNMENT");
+    public static readonly LString KLF_VehicleEditor_LaunchVehicle = LStrings.Create("KLF_VehicleEditor_LaunchVehicle", "LAUNCH VEHICLE");
+    public static readonly LString KLF_VehicleEditor_NoCrewAssigned = LStrings.Create("KLF_VehicleEditor_NoCrewAssigned", "NO CREW ASSIGNED");
+    public static readonly LString KLF_VehicleEditor_NoCrewMessage =
+        LStrings.Create("KLF_VehicleEditor_NoCrewMessage", "No kittens have been assigned to any seat. Launch anyway?");
+    public static readonly LString KLF_VehicleEditor_CameraFreeHint = LStrings.Create("KLF_VehicleEditor_CameraFreeHint", "Camera: Free (click for Orbit)");
+    public static readonly LString KLF_VehicleEditor_CameraOrbitHint = LStrings.Create("KLF_VehicleEditor_CameraOrbitHint", "Camera: Orbit (click for Free) [{Key}]");
+    public static readonly LString KLF_VehicleEditor_ProjectionOrthoHint =
+        LStrings.Create("KLF_VehicleEditor_ProjectionOrthoHint", "Projection: Orthographic (click for Perspective)");
+    public static readonly LString KLF_VehicleEditor_ProjectionPerspHint =
+        LStrings.Create("KLF_VehicleEditor_ProjectionPerspHint", "Projection: Perspective (click for Orthographic)");
+    public static readonly LString KLF_VehicleEditor_ModeTranslate = LStrings.Create("KLF_VehicleEditor_ModeTranslate", "Translate");
+    public static readonly LString KLF_VehicleEditor_ModeRotate = LStrings.Create("KLF_VehicleEditor_ModeRotate", "Rotate");
+    public static readonly LString KLF_VehicleEditor_ModeScale = LStrings.Create("KLF_VehicleEditor_ModeScale", "Scale");
+    public static readonly LString KLF_VehicleEditor_SelectPart = LStrings.Create("KLF_VehicleEditor_SelectPart", "Select a part to {Mode}");
+    public static readonly LString KLF_VehicleEditor_SwitchVehicle = LStrings.Create("KLF_VehicleEditor_SwitchVehicle", "SWITCH VEHICLE");
+    public static readonly LString KLF_VehicleEditor_NewVehicleTitle = LStrings.Create("KLF_VehicleEditor_NewVehicleTitle", "NEW VEHICLE?");
+    public static readonly LString KLF_VehicleEditor_NewVehicleMessage =
+        LStrings.Create("KLF_VehicleEditor_NewVehicleMessage", "Do you want to clear the current vehicle and create a new one?");
+    public static readonly LString KLF_VehicleEditor_ClearAndCreate = LStrings.Create("KLF_VehicleEditor_ClearAndCreate", "CLEAR & CREATE");
+    public static readonly LString KLF_VehicleEditor_UnsavedVehicles = LStrings.Create("KLF_VehicleEditor_UnsavedVehicles", "UNSAVED VEHICLES");
+    public static readonly LString KLF_VehicleEditor_UnsavedNewVehicleMessage =
+        LStrings.Create("KLF_VehicleEditor_UnsavedNewVehicleMessage", "These vehicles have unsaved changes and will be lost when you start a new vehicle unless you save them:");
+    public static readonly LString KLF_VehicleEditor_UnsavedExitMessage =
+        LStrings.Create("KLF_VehicleEditor_UnsavedExitMessage", "These vehicles have unsaved changes and will be lost when you exit the editor unless you save them:");
+    public static readonly LString KLF_VehicleEditor_Save = LStrings.Create("KLF_VehicleEditor_Save", "SAVE");
+    public static readonly LString KLF_VehicleEditor_SaveVehicle = LStrings.Create("KLF_VehicleEditor_SaveVehicle", "SAVE VEHICLE");
+    public static readonly LString KLF_VehicleEditor_NewVehicleAnyway = LStrings.Create("KLF_VehicleEditor_NewVehicleAnyway", "NEW VEHICLE ANYWAY");
+    public static readonly LString KLF_VehicleEditor_ExitAnyway = LStrings.Create("KLF_VehicleEditor_ExitAnyway", "EXIT ANYWAY");
+    public static readonly LString KLF_VehicleEditor_All = LStrings.Create("KLF_VehicleEditor_All", "All");
+    public static readonly LString KLF_VehicleEditor_AllSizes = LStrings.Create("KLF_VehicleEditor_AllSizes", "All Sizes");
+    public static readonly LString KLF_VehicleEditor_Delete = LStrings.Create("KLF_VehicleEditor_Delete", "DELETE");
+    public static readonly LString KLF_VehicleEditor_AddPrefix = LStrings.Create("KLF_VehicleEditor_AddPrefix", "Add {Part}");
+    public static readonly LString KLF_VehicleEditor_DecouplerPrefix = LStrings.Create("KLF_VehicleEditor_DecouplerPrefix", "Decoupler '");
+    public static readonly LString KLF_VehicleEditor_TankCount = LStrings.Create("KLF_VehicleEditor_TankCount", "{Count} tank(s)");
+    public static readonly LString KLF_VehicleEditor_TankPrefix = LStrings.Create("KLF_VehicleEditor_TankPrefix", "Tank '");
+    public static readonly LString KLF_VehicleEditor_SeatPrefix = LStrings.Create("KLF_VehicleEditor_SeatPrefix", "Seat {Seat}");
+    public static readonly LString KLF_VehicleEditor_ExistingVehicle = LStrings.Create("KLF_VehicleEditor_ExistingVehicle", "{Vehicle} (Existing Vehicle)");
+    public static readonly LString KLF_VehicleEditor_ToggleResourceDisplay =
+        LStrings.Create("KLF_VehicleEditor_ToggleResourceDisplay", "Toggle Resource Display");
+    public static readonly LString KLF_VehicleEditor_MakeVehicleRoot = LStrings.Create("KLF_VehicleEditor_MakeVehicleRoot", "Make Vehicle Root");
+    public static readonly LString KLF_VehicleEditor_Reroot = LStrings.Create("KLF_VehicleEditor_Reroot", "Reroot");
+    public static readonly LString KLF_VehicleEditor_HideFuelFlow = LStrings.Create("KLF_VehicleEditor_HideFuelFlow", "Hide Fuel Flow");
+    public static readonly LString KLF_VehicleEditor_VisualizeFuelFlow =
+        LStrings.Create("KLF_VehicleEditor_VisualizeFuelFlow", "Visualize Fuel Flow");
+    public static readonly LString KLF_VehicleEditor_FuelFlow = LStrings.Create("KLF_VehicleEditor_FuelFlow", "Fuel Flow");
+    public static readonly LString KLF_VehicleEditor_ConnectFuelLine = LStrings.Create("KLF_VehicleEditor_ConnectFuelLine", "Connect Fuel Line");
+    public static readonly LString KLF_VehicleEditor_ConnectFuelLineHint =
+        LStrings.Create("KLF_VehicleEditor_ConnectFuelLineHint", "Then click another part with a fuel port to run a line to it.\nClick empty space to cancel.");
+    public static readonly LString KLF_VehicleEditor_CancelFuelLine = LStrings.Create("KLF_VehicleEditor_CancelFuelLine", "Cancel Fuel Line");
+    public static readonly LString KLF_VehicleEditor_FuelLines = LStrings.Create("KLF_VehicleEditor_FuelLines", "Fuel Lines");
+    public static readonly LString KLF_VehicleEditor_FuelLineEnabled = LStrings.Create("KLF_VehicleEditor_FuelLineEnabled", "Fuel line enabled");
+    public static readonly LString KLF_VehicleEditor_FuelLineDirectionHint =
+        LStrings.Create("KLF_VehicleEditor_FuelLineDirectionHint", "Direction fuel is allowed to flow, relative to this part. Click to cycle.");
+    public static readonly LString KLF_VehicleEditor_DeleteFuelLine = LStrings.Create("KLF_VehicleEditor_DeleteFuelLine", "Delete this fuel line");
+    public static readonly LString KLF_VehicleEditor_CopyTree = LStrings.Create("KLF_VehicleEditor_CopyTree", "Copy Tree");
+    public static readonly LString KLF_VehicleEditor_HighlightParent = LStrings.Create("KLF_VehicleEditor_HighlightParent", "Highlight Parent");
+    public static readonly LString KLF_VehicleEditor_HighlightSymmetry = LStrings.Create("KLF_VehicleEditor_HighlightSymmetry", "Highlight Symmetry");
+    public static readonly LString KLF_VehicleEditor_CreateNewVehicle = LStrings.Create("KLF_VehicleEditor_CreateNewVehicle", "Create New Vehicle");
+    public static readonly LString KLF_VehicleEditor_Connections = LStrings.Create("KLF_VehicleEditor_Connections", "Connections");
+    public static readonly LString KLF_VehicleEditor_SubParts = LStrings.Create("KLF_VehicleEditor_SubParts", "SubParts");
+    public static readonly LString KLF_VehicleEditor_AddSubParts = LStrings.Create("KLF_VehicleEditor_AddSubParts", "Add SubParts");
+    public static readonly LString KLF_VehicleEditor_ResourceGroup = LStrings.Create("KLF_VehicleEditor_ResourceGroup", "ResourceGroup");
+    public static readonly LString KLF_VehicleEditor_DecouplerEnabled = LStrings.Create("KLF_VehicleEditor_DecouplerEnabled", "Decoupler Enabled");
+    public static readonly LString KLF_VehicleEditor_DecouplerHint =
+        LStrings.Create("KLF_VehicleEditor_DecouplerHint", "When off, this decoupler will not fire and is hidden from the sequence window.");
+    public static readonly LString KLF_VehicleEditor_Propellant = LStrings.Create("KLF_VehicleEditor_Propellant", "Propellant");
+    public static readonly LString KLF_VehicleEditor_ConfigureTanks = LStrings.Create("KLF_VehicleEditor_ConfigureTanks", "Configure tanks individually");
+    public static readonly LString KLF_VehicleEditor_Refill = LStrings.Create("KLF_VehicleEditor_Refill", "Refill");
+    public static readonly LString KLF_VehicleEditor_Battery = LStrings.Create("KLF_VehicleEditor_Battery", "Battery");
+    public static readonly LString KLF_VehicleEditor_Charge = LStrings.Create("KLF_VehicleEditor_Charge", "Charge");
+    public static readonly LString KLF_VehicleEditor_Crew = LStrings.Create("KLF_VehicleEditor_Crew", "Crew");
+    public static readonly LString KLF_VehicleEditor_Auto = LStrings.Create("KLF_VehicleEditor_Auto", "Auto");
+    public static readonly LString KLF_VehicleEditor_Manual = LStrings.Create("KLF_VehicleEditor_Manual", "Manual");
+    public static readonly LString KLF_VehicleEditor_None = LStrings.Create("KLF_VehicleEditor_None", "None");
+    public static readonly LString KLF_VehicleEditor_ContentsNone = LStrings.Create("KLF_VehicleEditor_ContentsNone", "None ({Mode})");
+    public static readonly LString KLF_VehicleEditor_ContentsAssigned = LStrings.Create("KLF_VehicleEditor_ContentsAssigned", "{Mix} ({Mode})");
+    public static readonly LString KLF_VehicleEditor_RoleAffinity = LStrings.Create("KLF_VehicleEditor_RoleAffinity", "Role Affinity:");
+    public static readonly LString KLF_VehicleEditor_RoleAffinityHint =
+        LStrings.Create("KLF_VehicleEditor_RoleAffinityHint", "Which consumer kinds this tank automatically provides propellant for.");
+    public static readonly LString KLF_VehicleEditor_PropellantUse = LStrings.Create("KLF_VehicleEditor_PropellantUse", "Propellant Use");
+    public static readonly LString KLF_VehicleEditor_PropellantUseHint =
+        LStrings.Create("KLF_VehicleEditor_PropellantUseHint", "When off, nothing can draw propellant from this tank.");
+    public static readonly LString KLF_VehicleEditor_Contents = LStrings.Create("KLF_VehicleEditor_Contents", "Contents");
+    public static readonly LString KLF_VehicleEditor_VolumePrefix = LStrings.Create("KLF_VehicleEditor_VolumePrefix", "Volume - {Substance}");
+    public static readonly LString KLF_VehicleEditor_FuelLineSameVehicle =
+        LStrings.Create("KLF_VehicleEditor_FuelLineSameVehicle", "Fuel line endpoints must be on the same vehicle");
+    public static readonly LString KLF_VehicleEditor_FuelLineSamePart =
+        LStrings.Create("KLF_VehicleEditor_FuelLineSamePart", "Both fuel ports are on the same part");
+    public static readonly LString KLF_VehicleEditor_FuelLineDuplicate =
+        LStrings.Create("KLF_VehicleEditor_FuelLineDuplicate", "These parts already share a fuel line");
+    public static readonly LString KLF_VehicleEditor_NoFuelPort = LStrings.Create("KLF_VehicleEditor_NoFuelPort", "That part has no fuel port");
+    public static readonly LString KLF_VehicleEditor_FuelLineTooLongMessage =
+        LStrings.Create("KLF_VehicleEditor_FuelLineTooLongMessage", "Fuel line too long: {Length} m (max {Max} m)");
+    public static readonly LString KLF_VehicleEditor_FuelLineEmptyDonor =
+        LStrings.Create("KLF_VehicleEditor_FuelLineEmptyDonor", "Donor tank is empty - line won't flow until it's fuelled");
+    public static readonly LString KLF_VehicleEditor_FuelLineMixMismatch =
+        LStrings.Create("KLF_VehicleEditor_FuelLineMixMismatch", "Donor and receiver hold different propellants - line won't flow");
+    public static readonly LString KLF_VehicleEditor_ThrustProfile = LStrings.Create("KLF_VehicleEditor_ThrustProfile", "Thrust Profile");
+    public static readonly LString KLF_VehicleEditor_Mixed = LStrings.Create("KLF_VehicleEditor_Mixed", "Mixed");
+    public static readonly LString KLF_VehicleEditor_GrainCrossSection =
+        LStrings.Create("KLF_VehicleEditor_GrainCrossSection", "{Description} (grain cross-section: {Shape})");
+    public static readonly LString KLF_VehicleEditor_ReactionColon = LStrings.Create("KLF_VehicleEditor_ReactionColon", "Reaction:");
+    public static readonly LString KLF_VehicleEditor_Reaction = LStrings.Create("KLF_VehicleEditor_Reaction", "Reaction");
+    public static readonly LString KLF_VehicleEditor_NoMotor = LStrings.Create("KLF_VehicleEditor_NoMotor", "None (no motor)");
+    public static readonly LString KLF_VehicleEditor_ConfigureNozzles = LStrings.Create("KLF_VehicleEditor_ConfigureNozzles", "Configure nozzles individually");
+    public static readonly LString KLF_VehicleEditor_NozzleExpansionHint =
+        LStrings.Create("KLF_VehicleEditor_NozzleExpansionHint", "Expansion relative to the motor's. Raising one nozzle's throttles it back, tilting the cluster's thrust away from it.");
+    public static readonly LString KLF_VehicleEditor_NozzleOn = LStrings.Create("KLF_VehicleEditor_NozzleOn", "Nozzle on {Nozzle}");
+    public static readonly LString KLF_VehicleEditor_AreaRatioMultiplier = LStrings.Create("KLF_VehicleEditor_AreaRatioMultiplier", "Area Ratio Multiplier");
+    public static readonly LString KLF_VehicleEditor_SolidGrain = LStrings.Create("KLF_VehicleEditor_SolidGrain", "Solid Grain");
+    public static readonly LString KLF_VehicleEditor_SegmentsInStack = LStrings.Create("KLF_VehicleEditor_SegmentsInStack", "{Count} segments in stack");
+    public static readonly LString KLF_VehicleEditor_ConfigureSegments = LStrings.Create("KLF_VehicleEditor_ConfigureSegments", "Configure segments individually");
+    public static readonly LString KLF_VehicleEditor_ThrustProfileColon = LStrings.Create("KLF_VehicleEditor_ThrustProfileColon", "Thrust Profile:");
+    public static readonly LString KLF_VehicleEditor_AllGrainsFull = LStrings.Create("KLF_VehicleEditor_AllGrainsFull", "All grain segments are already full.");
+    public static readonly LString KLF_VehicleEditor_StackInvalid = LStrings.Create("KLF_VehicleEditor_StackInvalid", "Stack invalid: {Error}");
+    public static readonly LString KLF_VehicleEditor_Segment =
+        LStrings.Create("KLF_VehicleEditor_Segment", "Segment '{Part}' on {Owner}");
+    public static readonly LString KLF_VehicleEditor_WontIgnite =
+        LStrings.Create("KLF_VehicleEditor_WontIgnite", "Won't ignite: pressure at ignition ({Pressure}) is below the propellant's minimum ({Minimum})");
+    public static readonly LString KLF_VehicleEditor_NozzleAreaRatio = LStrings.Create("KLF_VehicleEditor_NozzleAreaRatio", "Nozzle Area Ratio");
+    public static readonly LString KLF_VehicleEditor_NozzleAreaRatioHint =
+        LStrings.Create("KLF_VehicleEditor_NozzleAreaRatioHint", "Lower values extend burn time at the cost of thrust and specific impulse.");
+    public static readonly LString KLF_VehicleEditor_AutoNozzleHint =
+        LStrings.Create("KLF_VehicleEditor_AutoNozzleHint", "Size the nozzle automatically for the propellant's design chamber pressure.");
+    public static readonly LString KLF_VehicleEditor_GrainSurfaceHint =
+        LStrings.Create("KLF_VehicleEditor_GrainSurfaceHint", "The grain's initial burning surface is too small to hold a self-sustaining chamber pressure through this nozzle. Raise the initial thrust.");
+    public static readonly LString KLF_VehicleEditor_IgnitionThrust = LStrings.Create("KLF_VehicleEditor_IgnitionThrust", "Ignition Thrust:");
+    public static readonly LString KLF_VehicleEditor_SpecificImpulse = LStrings.Create("KLF_VehicleEditor_SpecificImpulse", "Specific Impulse:");
+    public static readonly LString KLF_VehicleEditor_BurnTime = LStrings.Create("KLF_VehicleEditor_BurnTime", "Burn Time:");
+    public static readonly LString KLF_VehicleEditor_UnburnableGrain = LStrings.Create("KLF_VehicleEditor_UnburnableGrain", "Unburnable Grain:");
+    public static readonly LString KLF_VehicleEditor_UnburnableGrainHint =
+        LStrings.Create("KLF_VehicleEditor_UnburnableGrainHint", "Propellant left over after chamber pressure drops below the minimum. A higher area ratio and/or flatter grain burns deeper.");
+    public static readonly LString KLF_VehicleEditor_ThrustCurve = LStrings.Create("KLF_VehicleEditor_ThrustCurve", "Thrust Curve");
+    public static readonly LString KLF_VehicleEditor_MaxChamberPressure = LStrings.Create("KLF_VehicleEditor_MaxChamberPressure", "Max Chamber Pressure:");
+    public static readonly LString KLF_VehicleEditor_MaxChamberPressureHint =
+        LStrings.Create("KLF_VehicleEditor_MaxChamberPressureHint", "Highest chamber pressure reached during the burn. This depends strongly on nozzle throat area.");
+    public static readonly LString KLF_VehicleEditor_MaxBurnRate = LStrings.Create("KLF_VehicleEditor_MaxBurnRate", "Max Burn Rate:");
+    public static readonly LString KLF_VehicleEditor_MaxBurnRateHint =
+        LStrings.Create("KLF_VehicleEditor_MaxBurnRateHint", "The speed at which the burning surface eats into the grain at max chamber pressure. This depends strongly on chamber pressure.");
+    public static readonly LString KLF_VehicleEditor_NozzleThroatArea = LStrings.Create("KLF_VehicleEditor_NozzleThroatArea", "Nozzle Throat Area:");
+    public static readonly LString KLF_VehicleEditor_NozzleThroatAreaHint =
+        LStrings.Create("KLF_VehicleEditor_NozzleThroatAreaHint", "Area of the nozzle throat, which is the opening that the combustion gases must pass through.");
+    public static readonly LString KLF_VehicleEditor_TimePrefix = LStrings.Create("KLF_VehicleEditor_TimePrefix", "Time: ");
+    public static readonly LString KLF_VehicleEditor_TimeThrust = LStrings.Create("KLF_VehicleEditor_TimeThrust", " s\nThrust: ");
+    public static readonly LString KLF_VehicleEditor_IspLine = LStrings.Create("KLF_VehicleEditor_IspLine", "\nIsp: ");
+    public static readonly LString KLF_VehicleEditor_TimeChamber = LStrings.Create("KLF_VehicleEditor_TimeChamber", " s\nChamber Pressure: ");
+    public static readonly LString KLF_VehicleEditor_Parachute = LStrings.Create("KLF_VehicleEditor_Parachute", "Parachute");
+    public static readonly LString KLF_VehicleEditor_ChutesOn = LStrings.Create("KLF_VehicleEditor_ChutesOn", "Chutes on '");
+    public static readonly LString KLF_VehicleEditor_Canopies = LStrings.Create("KLF_VehicleEditor_Canopies", "Canopies");
+    public static readonly LString KLF_VehicleEditor_CanopiesHint =
+        LStrings.Create("KLF_VehicleEditor_CanopiesHint", "Number of canopies packed in this container. They deploy together and share tuning.");
+    public static readonly LString KLF_VehicleEditor_CanopyColor = LStrings.Create("KLF_VehicleEditor_CanopyColor", "Canopy Color");
+    public static readonly LString KLF_VehicleEditor_CanopyColorHint = LStrings.Create("KLF_VehicleEditor_CanopyColorHint", "Canopy fabric pattern.");
+    public static readonly LString KLF_VehicleEditor_Diameter = LStrings.Create("KLF_VehicleEditor_Diameter", "Diameter");
+    public static readonly LString KLF_VehicleEditor_DiameterHint =
+        LStrings.Create("KLF_VehicleEditor_DiameterHint", "Canopy diameter when fully open. Sets drag area and packed mass, shared by every chute in this part.");
+    public static readonly LString KLF_VehicleEditor_ReefRatio = LStrings.Create("KLF_VehicleEditor_ReefRatio", "Reef Ratio");
+    public static readonly LString KLF_VehicleEditor_ReefRatioHint = LStrings.Create("KLF_VehicleEditor_ReefRatioHint", "Reefed canopy diameter as a fraction of full.");
+    public static readonly LString KLF_VehicleEditor_ReefDuration = LStrings.Create("KLF_VehicleEditor_ReefDuration", "Reef Duration");
+    public static readonly LString KLF_VehicleEditor_ReefDurationHint = LStrings.Create("KLF_VehicleEditor_ReefDurationHint", "Time held reefed before disreefing.");
+    public static readonly LString KLF_VehicleEditor_RiserLength = LStrings.Create("KLF_VehicleEditor_RiserLength", "Riser Length");
+    public static readonly LString KLF_VehicleEditor_RiserLengthHint = LStrings.Create("KLF_VehicleEditor_RiserLengthHint", "Length in meters of the riser line.");
+    public static readonly LString KLF_VehicleEditor_DeployAltitude = LStrings.Create("KLF_VehicleEditor_DeployAltitude", "Deploy Altitude");
+    public static readonly LString KLF_VehicleEditor_DeployAltitudeHint = LStrings.Create("KLF_VehicleEditor_DeployAltitudeHint", "Altitude gate for an armed chute.");
+    public static readonly LString KLF_VehicleEditor_Off = LStrings.Create("KLF_VehicleEditor_Off", "off");
+    public static readonly LString KLF_VehicleEditor_GLimit = LStrings.Create("KLF_VehicleEditor_GLimit", "G-Limit");
+    public static readonly LString KLF_VehicleEditor_GLimitHint =
+        LStrings.Create("KLF_VehicleEditor_GLimitHint", "Disreef only once predicted peak deceleration would stay under this many g.");
+    public static readonly LString KLF_VehicleEditor_CutInSequence = LStrings.Create("KLF_VehicleEditor_CutInSequence", "Cut In Sequence");
+    public static readonly LString KLF_VehicleEditor_CutInSequenceHint =
+        LStrings.Create("KLF_VehicleEditor_CutInSequenceHint", "Adds a cut element to the sequence so cutting these chutes can be staged.");
+    public static readonly LString KLF_VehicleEditingSpace_RefillConsumables =
+        LStrings.Create("KLF_VehicleEditingSpace_RefillConsumables", "REFILL CONSUMABLES");
+    public static readonly LString KLF_VehicleEditingSpace_Resources = LStrings.Create("KLF_VehicleEditingSpace_Resources", "RESOURCES");
+    public static readonly LString KLF_VehicleEditingSpace_AutoGroups = LStrings.Create("KLF_VehicleEditingSpace_AutoGroups", "AUTO GROUPS");
+    public static readonly LString KLF_VehicleEditingSpace_RefillFullHint =
+        LStrings.Create("KLF_VehicleEditingSpace_RefillFullHint", "Every resource on this vehicle is already at max capacity.");
+    public static readonly LString KLF_VehicleEditingSpace_RefillHint =
+        LStrings.Create("KLF_VehicleEditingSpace_RefillHint", "Fill every resource on this vehicle to max capacity.");
+    public static readonly LString KLF_VehicleEditingSpace_AutoGroupHint =
+        LStrings.Create("KLF_VehicleEditingSpace_AutoGroupHint", "Automatic resource grouping. Switch off to manage resource groups manually.");
+    public static readonly LString KLF_VehicleEditingSpace_OpenGroupsHint =
+        LStrings.Create("KLF_VehicleEditingSpace_OpenGroupsHint", "Open the Resource Groups window");
+    public static readonly LString KLF_VehicleLaunchMenu_FillAllSeats = LStrings.Create("KLF_VehicleLaunchMenu_FillAllSeats", "Fill ALL vehicle seats");
+    public static readonly LString KLF_VehicleLaunchMenu_FillSeats = LStrings.Create("KLF_VehicleLaunchMenu_FillSeats", "Fill Seats");
+    public static readonly LString KLF_VehicleLaunchMenu_SavesSuffix = LStrings.Create("KLF_VehicleLaunchMenu_SavesSuffix", "{Count} SAVES");
+    public static readonly LString KLF_VehicleLaunchMenu_VehicleSave = LStrings.Create("KLF_VehicleLaunchMenu_VehicleSave", "Vehicle Save");
+    public static readonly LString KLF_VehicleLaunchMenu_SeatLabel = LStrings.Create("KLF_VehicleLaunchMenu_SeatLabel", "{Part} ({Seat})");
     public static readonly LString KLF_Settings_Title = LStrings.Create("KLF_Settings_Title", "SETTINGS");
     public static readonly LString KLF_Settings_Output = LStrings.Create("KLF_Settings_Output", "OUTPUT");
     public static readonly LString KLF_Settings_CameraAndFrame = LStrings.Create("KLF_Settings_CameraAndFrame", "CAMERA AND FRAME");
@@ -216,4 +484,152 @@ public static class GameStrings
     public static readonly LString KLF_InputAction_ToggleCrewAssignment = LStrings.Create("KLF_InputAction_ToggleCrewAssignment", "Toggle Crew Assignment");
     public static readonly LString KLF_InputAction_Grab = LStrings.Create("KLF_InputAction_Grab", "Grab");
     public static readonly LString KLF_InputAction_Board = LStrings.Create("KLF_InputAction_Board", "Board");
+    public static readonly LString KLF_TransferPlanner_Title = LStrings.Create("KLF_TransferPlanner_Title", "TRANSFER PLANNING");
+    public static readonly LString KLF_TransferPlanner_Plan = LStrings.Create("KLF_TransferPlanner_Plan", "PLAN");
+    public static readonly LString KLF_TransferPlanner_PlanType = LStrings.Create("KLF_TransferPlanner_PlanType", "PLAN TYPE");
+    public static readonly LString KLF_TransferPlanner_Source = LStrings.Create("KLF_TransferPlanner_Source", "SOURCE");
+    public static readonly LString KLF_TransferPlanner_Destination = LStrings.Create("KLF_TransferPlanner_Destination", "DESTINATION");
+    public static readonly LString KLF_TransferPlanner_NoneAvailable = LStrings.Create("KLF_TransferPlanner_NoneAvailable", "NONE AVAILABLE");
+    public static readonly LString KLF_TransferPlanner_TransferWindow = LStrings.Create("KLF_TransferPlanner_TransferWindow", "TRANSFER WINDOW");
+    public static readonly LString KLF_TransferPlanner_TimeOfFlight = LStrings.Create("KLF_TransferPlanner_TimeOfFlight", "TIME OF FLIGHT");
+    public static readonly LString KLF_TransferPlanner_TimeUnit = LStrings.Create("KLF_TransferPlanner_TimeUnit", "TIME UNIT");
+    public static readonly LString KLF_TransferPlanner_MinTimeOfFlight = LStrings.Create("KLF_TransferPlanner_MinTimeOfFlight", "MINIMUM TIME OF FLIGHT");
+    public static readonly LString KLF_TransferPlanner_MaxTimeOfFlight = LStrings.Create("KLF_TransferPlanner_MaxTimeOfFlight", "MAXIMUM TIME OF FLIGHT");
+    public static readonly LString KLF_TransferPlanner_Threads = LStrings.Create("KLF_TransferPlanner_Threads", "THREADS");
+    public static readonly LString KLF_TransferPlanner_SetTarget = LStrings.Create("KLF_TransferPlanner_SetTarget", "SET TARGET");
+    public static readonly LString KLF_TransferPlanner_ShowAlignment = LStrings.Create("KLF_TransferPlanner_ShowAlignment", "SHOW PARENT/TARGET ALIGNMENT");
+    public static readonly LString KLF_TransferPlanner_MustHaveValidOrbit = LStrings.Create("KLF_TransferPlanner_MustHaveValidOrbit", "MUST HAVE A VALID ORBIT");
+    public static readonly LString KLF_TransferPlanner_Calculate = LStrings.Create("KLF_TransferPlanner_Calculate", "CALCULATE");
+    public static readonly LString KLF_TransferPlanner_Recalculate = LStrings.Create("KLF_TransferPlanner_Recalculate", "RE-CALCULATE");
+    public static readonly LString KLF_TransferPlanner_NoSourceVehicle = LStrings.Create("KLF_TransferPlanner_NoSourceVehicle", "NO SOURCE VEHICLE");
+    public static readonly LString KLF_TransferPlanner_NoValidApsis = LStrings.Create("KLF_TransferPlanner_NoValidApsis", "NO VALID APSIS ON THIS ORBIT");
+    public static readonly LString KLF_TransferPlanner_PreviewSelected = LStrings.Create("KLF_TransferPlanner_PreviewSelected", "PREVIEW SELECTED TRANSFER");
+    public static readonly LString KLF_TransferPlanner_PreviewSelectedFlightPlan = LStrings.Create("KLF_TransferPlanner_PreviewSelectedFlightPlan", "PREVIEW SELECTED TRANSFER FLIGHT PLAN");
+    public static readonly LString KLF_TransferPlanner_PreviewLambert = LStrings.Create("KLF_TransferPlanner_PreviewLambert", "PREVIEW LAMBERT TRANSFER");
+    public static readonly LString KLF_TransferPlanner_BestTransfer = LStrings.Create("KLF_TransferPlanner_BestTransfer", "BEST TRANSFER");
+    public static readonly LString KLF_TransferPlanner_SelectBestDv = LStrings.Create("KLF_TransferPlanner_SelectBestDv", "SELECT BEST DV");
+    public static readonly LString KLF_TransferPlanner_SelectBestDvRelSpeed = LStrings.Create("KLF_TransferPlanner_SelectBestDvRelSpeed", "SELECT BEST DV + INTERCEPT VEL");
+    public static readonly LString KLF_TransferPlanner_SelectedTransfer = LStrings.Create("KLF_TransferPlanner_SelectedTransfer", "SELECTED TRANSFER");
+    public static readonly LString KLF_TransferPlanner_NoSolution = LStrings.Create("KLF_TransferPlanner_NoSolution", "NO SOLUTION FOUND");
+    public static readonly LString KLF_TransferPlanner_DepartureFlightTimeDv = LStrings.Create("KLF_TransferPlanner_DepartureFlightTimeDv", "DEPARTURE × FLIGHT TIME - DV");
+    public static readonly LString KLF_TransferPlanner_Calculating = LStrings.Create("KLF_TransferPlanner_Calculating", "CALCULATING…");
+    public static readonly LString KLF_TransferPlanner_TransferSelected = LStrings.Create("KLF_TransferPlanner_TransferSelected", "TRANSFER SELECTED");
+    public static readonly LString KLF_TransferPlanner_NoSelection = LStrings.Create("KLF_TransferPlanner_NoSelection", "NO SELECTION");
+    public static readonly LString KLF_TransferPlanner_Create = LStrings.Create("KLF_TransferPlanner_Create", "CREATE");
+    public static readonly LString KLF_TransferPlanner_Dv = LStrings.Create("KLF_TransferPlanner_Dv", "ΔV");
+    public static readonly LString KLF_TransferPlanner_Depart = LStrings.Create("KLF_TransferPlanner_Depart", "DEPART");
+    public static readonly LString KLF_TransferPlanner_Transit = LStrings.Create("KLF_TransferPlanner_Transit", "TRANSIT");
+    public static readonly LString KLF_TransferPlanner_InterceptVelocity = LStrings.Create("KLF_TransferPlanner_InterceptVelocity", "INTERCEPT VELOCITY");
+    public static readonly LString KLF_TransferPlanner_ClosestApproach = LStrings.Create("KLF_TransferPlanner_ClosestApproach", "CLOSEST APPROACH");
+    public static readonly LString KLF_TransferPlanner_None = LStrings.Create("KLF_TransferPlanner_None", "NONE");
+    public static readonly LString KLF_TransferPlanner_SpeedUpBurnIn = LStrings.Create("KLF_TransferPlanner_SpeedUpBurnIn", "SPEED UP BURN IN");
+    public static readonly LString KLF_TransferPlanner_SlowDownBurnIn = LStrings.Create("KLF_TransferPlanner_SlowDownBurnIn", "SLOW DOWN BURN IN");
+    public static readonly LString KLF_TransferPlanner_ArrivesIn = LStrings.Create("KLF_TransferPlanner_ArrivesIn", "ARRIVES IN");
+    public static readonly LString KLF_TransferPlanner_ArrivalPeriapsis = LStrings.Create("KLF_TransferPlanner_ArrivalPeriapsis", "ARRIVAL PERIAPSIS");
+    public static readonly LString KLF_TransferPlanner_PlannedSpeedUpBurn = LStrings.Create("KLF_TransferPlanner_PlannedSpeedUpBurn", "PLANNED SPEED UP BURN");
+    public static readonly LString KLF_TransferPlanner_PlannedSlowDownBurn = LStrings.Create("KLF_TransferPlanner_PlannedSlowDownBurn", "PLANNED SLOW DOWN BURN");
+    public static readonly LString KLF_TransferPlanner_NoStarNearby = LStrings.Create("KLF_TransferPlanner_NoStarNearby", "NO STAR NEARBY");
+    public static readonly LString KLF_TransferPlanner_NoOtherStar = LStrings.Create("KLF_TransferPlanner_NoOtherStar", "NO OTHER STAR");
+    public static readonly LString KLF_TransferPlanner_Departing = LStrings.Create("KLF_TransferPlanner_Departing", "DEPARTING");
+    public static readonly LString KLF_TransferPlanner_Crossing = LStrings.Create("KLF_TransferPlanner_Crossing", "CROSSING");
+    public static readonly LString KLF_TransferPlanner_Distance = LStrings.Create("KLF_TransferPlanner_Distance", "DISTANCE");
+    public static readonly LString KLF_TransferPlanner_NoAntimatterDrive = LStrings.Create("KLF_TransferPlanner_NoAntimatterDrive", "NO ACTIVE ANTIMATTER DRIVE");
+    public static readonly LString KLF_TransferPlanner_MaxSpeed = LStrings.Create("KLF_TransferPlanner_MaxSpeed", "MAX SPEED");
+    public static readonly LString KLF_TransferPlanner_DepartureAntimatter = LStrings.Create("KLF_TransferPlanner_DepartureAntimatter", "SPEED UP BURN ANTIMATTER");
+    public static readonly LString KLF_TransferPlanner_BrakeAntimatter = LStrings.Create("KLF_TransferPlanner_BrakeAntimatter", "SLOW DOWN BURN ANTIMATTER");
+    public static readonly LString KLF_TransferPlanner_FinalSpeed = LStrings.Create("KLF_TransferPlanner_FinalSpeed", "FINAL SPEED");
+    public static readonly LString KLF_TransferPlanner_CircularSpeedAtPeriapsis = LStrings.Create("KLF_TransferPlanner_CircularSpeedAtPeriapsis", "CIRCULAR SPEED AT PERIAPSIS");
+    public static readonly LString KLF_TransferPlanner_SpeedUpBurn = LStrings.Create("KLF_TransferPlanner_SpeedUpBurn", "SPEED UP BURN");
+    public static readonly LString KLF_TransferPlanner_Coast = LStrings.Create("KLF_TransferPlanner_Coast", "COAST");
+    public static readonly LString KLF_TransferPlanner_CoastTime = LStrings.Create("KLF_TransferPlanner_CoastTime", "COAST TIME");
+    public static readonly LString KLF_TransferPlanner_HydrogenScooped = LStrings.Create("KLF_TransferPlanner_HydrogenScooped", "HYDROGEN SCOOPED");
+    public static readonly LString KLF_TransferPlanner_SlowDownBurn = LStrings.Create("KLF_TransferPlanner_SlowDownBurn", "SLOW DOWN BURN");
+    public static readonly LString KLF_TransferPlanner_BrakeOutOfAntimatter = LStrings.Create("KLF_TransferPlanner_BrakeOutOfAntimatter", "SLOW DOWN BURN RUNS OUT OF ANTIMATTER");
+    public static readonly LString KLF_TransferPlanner_NotEnoughRoom = LStrings.Create("KLF_TransferPlanner_NotEnoughRoom", "NOT ENOUGH ROOM LEFT TO SLOW DOWN");
+    public static readonly LString KLF_TransferPlanner_Journey = LStrings.Create("KLF_TransferPlanner_Journey", "JOURNEY");
+    public static readonly LString KLF_TransferPlanner_MustDepartFromBodyOrbit = LStrings.Create("KLF_TransferPlanner_MustDepartFromBodyOrbit", "MUST DEPART FROM A BODY ORBITING THE STAR");
+    public static readonly LString KLF_TransferPlanner_NoDepartureFound = LStrings.Create("KLF_TransferPlanner_NoDepartureFound", "NO DEPARTURE FOUND AT THIS SPEED");
+    public static readonly LString KLF_TransferPlanner_SpeedUpBurnGoesNowhere = LStrings.Create("KLF_TransferPlanner_SpeedUpBurnGoesNowhere", "THE SPEED UP BURN GOES NOWHERE");
+    public static readonly LString KLF_TransferPlanner_BurnTime = LStrings.Create("KLF_TransferPlanner_BurnTime", "BURN TIME");
+    public static readonly LString KLF_TransferPlanner_EndsAt = LStrings.Create("KLF_TransferPlanner_EndsAt", "ENDS AT");
+    public static readonly LString KLF_TransferPlanner_AntimatterUsed = LStrings.Create("KLF_TransferPlanner_AntimatterUsed", "ANTIMATTER USED");
+    public static readonly LString KLF_TransferPlanner_HydrogenUsed = LStrings.Create("KLF_TransferPlanner_HydrogenUsed", "HYDROGEN USED");
+    public static readonly LString KLF_TransferPlanner_Halfway = LStrings.Create("KLF_TransferPlanner_Halfway", "HALFWAY");
+    public static readonly LString KLF_TransferPlanner_VesselBurnedAway = LStrings.Create("KLF_TransferPlanner_VesselBurnedAway", "VESSEL BURNED AWAY");
+    public static readonly LString KLF_TransferPlanner_TargetSpeed = LStrings.Create("KLF_TransferPlanner_TargetSpeed", "TARGET SPEED");
+    public static readonly LString KLF_TransferPlanner_SpeedAfter = LStrings.Create("KLF_TransferPlanner_SpeedAfter", "SPEED AFTER");
+    public static readonly LString KLF_TransferPlanner_Antimatter = LStrings.Create("KLF_TransferPlanner_Antimatter", "ANTIMATTER");
+    public static readonly LString KLF_TransferPlanner_Hydrogen = LStrings.Create("KLF_TransferPlanner_Hydrogen", "HYDROGEN");
+    public static readonly LString KLF_TransferPlanner_TargetPeriapsis = LStrings.Create("KLF_TransferPlanner_TargetPeriapsis", "TARGET PERIAPSIS");
+    public static readonly LString KLF_TransferPlanner_ApproachCorrection = LStrings.Create("KLF_TransferPlanner_ApproachCorrection", "APPROACH CORRECTION");
+    public static readonly LString KLF_TransferPlanner_Arriving = LStrings.Create("KLF_TransferPlanner_Arriving", "ARRIVING");
+    public static readonly LString KLF_TransferPlanner_NoCorrectionFound = LStrings.Create("KLF_TransferPlanner_NoCorrectionFound", "NO CORRECTION FOUND");
+    public static readonly LString KLF_TransferPlanner_CalculatingCorrection = LStrings.Create("KLF_TransferPlanner_CalculatingCorrection", "CALCULATING CORRECTION…");
+    public static readonly LString KLF_TransferPlanner_Periapsis = LStrings.Create("KLF_TransferPlanner_Periapsis", "PERIAPSIS");
+    public static readonly LString KLF_TransferPlanner_Correction = LStrings.Create("KLF_TransferPlanner_Correction", "CORRECTION");
+    public static readonly LString KLF_TransferPlanner_Leaving = LStrings.Create("KLF_TransferPlanner_Leaving", "LEAVING");
+    public static readonly LString KLF_TransferPlanner_AfterSlowingDown = LStrings.Create("KLF_TransferPlanner_AfterSlowingDown", "AFTER SLOWING DOWN");
+    public static readonly LString KLF_TransferPlanner_TransferPoint = LStrings.Create("KLF_TransferPlanner_TransferPoint", "TRANSFER POINT");
+    public static readonly LString KLF_TransferPlanner_Time = LStrings.Create("KLF_TransferPlanner_Time", "TIME");
+    public static readonly LString KLF_TransferPlanner_RelativeVelocity = LStrings.Create("KLF_TransferPlanner_RelativeVelocity", "REL VELOCITY");
+    public static readonly LString KLF_TransferPlanner_Closest = LStrings.Create("KLF_TransferPlanner_Closest", "CLOSEST");
+    public static readonly LString KLF_TransferPlanner_Position = LStrings.Create("KLF_TransferPlanner_Position", "POS");
+    public static readonly LString KLF_TransferPlanner_NotEnoughDeltaV = LStrings.Create("KLF_TransferPlanner_NotEnoughDeltaV", "NOT ENOUGH DELTA-V: ");
+    public static readonly LString KLF_TransferPlanner_DeltaVShortUnit = LStrings.Create("KLF_TransferPlanner_DeltaVShortUnit", " m/s SHORT");
+    public static readonly LString KLF_TransferPlanner_NotEnough = LStrings.Create("KLF_TransferPlanner_NotEnough", "NOT ENOUGH ");
+    public static readonly LString KLF_TransferPlanner_ShortfallSeparator = LStrings.Create("KLF_TransferPlanner_ShortfallSeparator", ": ");
+    public static readonly LString KLF_TransferPlanner_Short = LStrings.Create("KLF_TransferPlanner_Short", " SHORT");
+    public static readonly LString KLF_TransferPlanner_TransferTypeHohmann = LStrings.Create("KLF_TransferPlanner_TransferTypeHohmann", "Hohmann");
+    public static readonly LString KLF_TransferPlanner_TransferTypeCircularizeApoapsis = LStrings.Create("KLF_TransferPlanner_TransferTypeCircularizeApoapsis", "Circularize Apoapsis");
+    public static readonly LString KLF_TransferPlanner_TransferTypeCircularizePeriapsis = LStrings.Create("KLF_TransferPlanner_TransferTypeCircularizePeriapsis", "Circularize Periapsis");
+    public static readonly LString KLF_TransferPlanner_TransferTypeInterstellar = LStrings.Create("KLF_TransferPlanner_TransferTypeInterstellar", "Interstellar");
+    public static readonly LString KLF_TransferPlanner_TimeUnitSeconds = LStrings.Create("KLF_TransferPlanner_TimeUnitSeconds", "Seconds");
+    public static readonly LString KLF_TransferPlanner_TimeUnitMinutes = LStrings.Create("KLF_TransferPlanner_TimeUnitMinutes", "Minutes");
+    public static readonly LString KLF_TransferPlanner_TimeUnitHours = LStrings.Create("KLF_TransferPlanner_TimeUnitHours", "Hours");
+    public static readonly LString KLF_TransferPlanner_TimeUnitDays = LStrings.Create("KLF_TransferPlanner_TimeUnitDays", "Days");
+    public static readonly LString KLF_TransferPlanner_TimeUnitWeeks = LStrings.Create("KLF_TransferPlanner_TimeUnitWeeks", "Weeks");
+    public static readonly LString KLF_TransferPlanner_TimeUnitYears = LStrings.Create("KLF_TransferPlanner_TimeUnitYears", "Years");
+    public static readonly LString KLF_PartArchetypes_Mass = LStrings.Create("KLF_PartArchetypes_Mass", "\nMass: ");
+    public static readonly LString KLF_PartArchetypes_Volume = LStrings.Create("KLF_PartArchetypes_Volume", "\nVolume: ");
+    public static readonly LString KLF_PartArchetypes_PowerGenerated = LStrings.Create("KLF_PartArchetypes_PowerGenerated", "\nPower Generated: ");
+    public static readonly LString KLF_PartArchetypes_BatteryCapacity = LStrings.Create("KLF_PartArchetypes_BatteryCapacity", "\nBattery Capacity: ");
+    public static readonly LString KLF_PartArchetypes_PowerUsed = LStrings.Create("KLF_PartArchetypes_PowerUsed", "\nPower Used: ");
+    public static readonly LString KLF_PartArchetypes_Engine = LStrings.Create("KLF_PartArchetypes_Engine", "Engine");
+    public static readonly LString KLF_PartArchetypes_PerThruster = LStrings.Create("KLF_PartArchetypes_PerThruster", "Per Thruster");
+    public static readonly LString KLF_PartArchetypes_ThrustSeaLevel = LStrings.Create("KLF_PartArchetypes_ThrustSeaLevel", "Thrust (SL): ");
+    public static readonly LString KLF_PartArchetypes_ThrustVacuum = LStrings.Create("KLF_PartArchetypes_ThrustVacuum", "Thrust (Vac): ");
+    public static readonly LString KLF_PartArchetypes_IspSeaLevel = LStrings.Create("KLF_PartArchetypes_IspSeaLevel", "Isp (SL): ");
+    public static readonly LString KLF_PartArchetypes_IspVacuum = LStrings.Create("KLF_PartArchetypes_IspVacuum", "Isp (Vac): ");
+    public static readonly LString KLF_PartArchetypes_Propellant = LStrings.Create("KLF_PartArchetypes_Propellant", "\n└─ Propellant: ");
+    public static readonly LString KLF_PartArchetypes_ListSeparator = LStrings.Create("KLF_PartArchetypes_ListSeparator", ", ");
+    public static readonly LString KLF_PartArchetypes_RoleAffinity = LStrings.Create("KLF_PartArchetypes_RoleAffinity", "\nRole Affinity: ");
+    public static readonly LString KLF_PartArchetypes_Thruster = LStrings.Create("KLF_PartArchetypes_Thruster", "Thruster");
+    public static readonly LString KLF_PartArchetypes_DecouplerForce = LStrings.Create("KLF_PartArchetypes_DecouplerForce", "\nDecoupler Force: ");
+    public static readonly LString KLF_Part_OpenDetails = LStrings.Create("KLF_Part_OpenDetails", "Open Details");
+    public static readonly LString KLF_Part_UnfocusCamera = LStrings.Create("KLF_Part_UnfocusCamera", "UnFocus Camera");
+    public static readonly LString KLF_Part_FocusCamera = LStrings.Create("KLF_Part_FocusCamera", "Focus Camera");
+    public static readonly LString KLF_Part_Decoupler = LStrings.Create("KLF_Part_Decoupler", "Decoupler");
+    public static readonly LString KLF_Part_DecouplerHint = LStrings.Create("KLF_Part_DecouplerHint", "When off, this decoupler is inert and hidden from the sequence window.");
+    public static readonly LString KLF_Part_Active = LStrings.Create("KLF_Part_Active", "Active");
+    public static readonly LString KLF_Part_PropellantUseHint = LStrings.Create("KLF_Part_PropellantUseHint", "When off, nothing can draw propellant from this tank.");
+    public static readonly LString KLF_Part_TankDrainHint = LStrings.Create("KLF_Part_TankDrainHint", "Drain this tank into every tank set to In on another open part window. Uses electrical power.");
+    public static readonly LString KLF_Part_TankFillHint = LStrings.Create("KLF_Part_TankFillHint", "Fill this tank from every tank set to Out on another open part window. Uses electrical power.");
+    public static readonly LString KLF_Part_InertMass = LStrings.Create("KLF_Part_InertMass", "Inert Mass");
+    public static readonly LString KLF_Part_MaxPressure = LStrings.Create("KLF_Part_MaxPressure", "Max Pressure");
+    public static readonly LString KLF_Part_StackInvalid = LStrings.Create("KLF_Part_StackInvalid", "Stack Invalid");
+    public static readonly LString KLF_Part_AreaRatioSized = LStrings.Create("KLF_Part_AreaRatioSized", "Area Ratio (sized)");
+    public static readonly LString KLF_Part_Expansion = LStrings.Create("KLF_Part_Expansion", "Expansion");
+    public static readonly LString KLF_Part_Enter = LStrings.Create("KLF_Part_Enter", "Enter ");
+    public static readonly LString KLF_Part_ChutesOn = LStrings.Create("KLF_Part_ChutesOn", "Chutes on ");
+    public static readonly LString KLF_Part_Decouple = LStrings.Create("KLF_Part_Decouple", "Decouple");
+    public static readonly LString KLF_Part_DecouplerHeader = LStrings.Create("KLF_Part_DecouplerHeader", "Decoupler '");
+    public static readonly LString KLF_Part_Electricity = LStrings.Create("KLF_Part_Electricity", "Electricity");
+    public static readonly LString KLF_Part_TransferOut = LStrings.Create("KLF_Part_TransferOut", "Out###tankxferout");
+    public static readonly LString KLF_Part_TransferIn = LStrings.Create("KLF_Part_TransferIn", "In###tankxferin");
+    public static readonly LString KLF_Part_ControlFromHere = LStrings.Create("KLF_Part_ControlFromHere", "Control From Here###controlfromhere");
+    public static readonly LString KLF_Part_ControlFromHereConnector = LStrings.Create("KLF_Part_ControlFromHereConnector", "Control From Here: ");
+    public static readonly LString KLF_Part_TankHeader = LStrings.Create("KLF_Part_TankHeader", "Tank '");
+    public static readonly LString KLF_Part_GrainSegmentHeader = LStrings.Create("KLF_Part_GrainSegmentHeader", "Grain Segment '");
+    public static readonly LString KLF_Part_EngineCoreHeader = LStrings.Create("KLF_Part_EngineCoreHeader", "Engine Core '");
+    public static readonly LString KLF_Part_NozzleHeader = LStrings.Create("KLF_Part_NozzleHeader", "Nozzle '");
 }
