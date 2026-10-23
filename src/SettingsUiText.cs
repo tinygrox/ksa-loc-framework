@@ -57,7 +57,12 @@ public static class SettingsUiText
             ["Reinhard Luma"] = GameStrings.KLF_Settings_Enum_ReinhardLuma,
             ["Gran Turismo"] = GameStrings.KLF_Settings_Enum_GranTurismo,
             ["Linear"] = GameStrings.KLF_Settings_Enum_Linear,
-            ["Hable"] = GameStrings.KLF_Settings_Enum_Hable
+            ["Hable"] = GameStrings.KLF_Settings_Enum_Hable,
+            ["None"] = GameStrings.KLF_Settings_Enum_None,
+            ["Overlay"] = GameStrings.KLF_Settings_Enum_Overlay,
+            ["Realistic"] = GameStrings.KLF_Settings_Enum_Realistic,
+            ["Terrain Color"] = GameStrings.KLF_Settings_Enum_TerrainColor,
+            ["Terrain Height"] = GameStrings.KLF_Settings_Enum_TerrainHeight
         };
 
     private static readonly Dictionary<string, LString> InputActionNameTexts =

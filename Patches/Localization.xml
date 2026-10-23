@@ -175,4 +175,6 @@
     <Localize Element="Tooltip" Attribute="Value" Value="Warp to the planned burn time." Key="KLF_GaugeTip_WarpBurn" />
     <Localize Element="Tooltip" Attribute="Value" Value="Yaw" Key="KLF_GaugeTip_Yaw" />
     <Localize Element="Tooltip" Attribute="Value" Value="Yaw Rate" Key="KLF_GaugeTip_YawRate" />
+    <Localize Attribute="Label" Value="RESOURCES" Key="KLF_Common_Resources" />
+    <Localize Attribute="Label" Value="GAME TIME" Key="KLF_Gauge_GameTimeUpper" />
 </Patches>

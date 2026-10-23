@@ -4743,4 +4743,940 @@ Decoupler Force: </comment>
     <value>偏航速率</value>
     <comment>Yaw Rate</comment>
   </data>
+  <data name="KLF_Fpl_Title" xml:space="preserve">
+    <value>飞行计划</value>
+    <comment>FLIGHT PLAN</comment>
+  </data>
+  <data name="KLF_Fpl_AllPlansExpire" xml:space="preserve">
+    <value>全部计划到期</value>
+    <comment>ALL PLANS EXPIRE</comment>
+  </data>
+  <data name="KLF_Fpl_AllPlansUpdateIn" xml:space="preserve">
+    <value>全部计划剩余更新</value>
+    <comment>ALL PLANS UPDATE IN</comment>
+  </data>
+  <data name="KLF_Fpl_MainExpires" xml:space="preserve">
+    <value>主飞行计划到期</value>
+    <comment>MAIN FPL EXPIRES</comment>
+  </data>
+  <data name="KLF_Fpl_Never" xml:space="preserve">
+    <value>永不</value>
+    <comment>Never</comment>
+  </data>
+  <data name="KLF_Fpl_HideOrbit" xml:space="preserve">
+    <value>隐藏轨道</value>
+    <comment>Hide Orbit</comment>
+  </data>
+  <data name="KLF_Fpl_DrawDegrees" xml:space="preserve">
+    <value>以度显示</value>
+    <comment>Draw Degrees</comment>
+  </data>
+  <data name="KLF_Fpl_DrawRelative" xml:space="preserve">
+    <value>显示相对轨道</value>
+    <comment>Draw Relative</comment>
+  </data>
+  <data name="KLF_Fpl_EndTime" xml:space="preserve">
+    <value>结束时间</value>
+    <comment>EndTime</comment>
+  </data>
+  <data name="KLF_Fpl_StartTrueAnomaly" xml:space="preserve">
+    <value>起始真近点角</value>
+    <comment>StartTrueAnomaly</comment>
+  </data>
+  <data name="KLF_Fpl_StartMeanAnomaly" xml:space="preserve">
+    <value>起始平近点角</value>
+    <comment>StartMeanAnomaly</comment>
+  </data>
+  <data name="KLF_Fpl_StartTransition" xml:space="preserve">
+    <value>起始过渡</value>
+    <comment>Start Transition</comment>
+  </data>
+  <data name="KLF_Fpl_EndTransition" xml:space="preserve">
+    <value>结束过渡</value>
+    <comment>End Transition</comment>
+  </data>
+  <data name="KLF_Fpl_EndTrueAnomaly" xml:space="preserve">
+    <value>结束真近点角</value>
+    <comment>EndTrueAnomaly</comment>
+  </data>
+  <data name="KLF_Fpl_EndMeanAnomaly" xml:space="preserve">
+    <value>结束平近点角</value>
+    <comment>EndMeanAnomaly</comment>
+  </data>
+  <data name="KLF_Fpl_PrimaryBody" xml:space="preserve">
+    <value>主天体</value>
+    <comment>PrimaryBody</comment>
+  </data>
+  <data name="KLF_Fpl_PatchOrbit" xml:space="preserve">
+    <value>轨道参数</value>
+    <comment>Patch Orbit</comment>
+  </data>
+  <data name="KLF_Fpl_SemiMajorAxis" xml:space="preserve">
+    <value>半长轴</value>
+    <comment>SemiMajorAxis</comment>
+  </data>
+  <data name="KLF_Fpl_SemiMinorAxis" xml:space="preserve">
+    <value>半短轴</value>
+    <comment>SemiMinorAxis</comment>
+  </data>
+  <data name="KLF_Fpl_Inclination" xml:space="preserve">
+    <value>倾角</value>
+    <comment>Inclination</comment>
+  </data>
+  <data name="KLF_Fpl_Eccentricity" xml:space="preserve">
+    <value>偏心率</value>
+    <comment>Eccentricity</comment>
+  </data>
+  <data name="KLF_Fpl_LongitudeOfAscendingNode" xml:space="preserve">
+    <value>升交点经度</value>
+    <comment>LongitudeOfAscendingNode</comment>
+  </data>
+  <data name="KLF_Fpl_ArgumentOfPeriapsis" xml:space="preserve">
+    <value>近点幅角</value>
+    <comment>ArgumentOfPeriapsis</comment>
+  </data>
+  <data name="KLF_Fpl_Periapsis" xml:space="preserve">
+    <value>近点</value>
+    <comment>Periapsis</comment>
+  </data>
+  <data name="KLF_Fpl_Apoapsis" xml:space="preserve">
+    <value>远点</value>
+    <comment>Apoapsis</comment>
+  </data>
+  <data name="KLF_Fpl_Encounter" xml:space="preserve">
+    <value>交会</value>
+    <comment>Encounter</comment>
+  </data>
+  <data name="KLF_Fpl_TimeSoiEncountered" xml:space="preserve">
+    <value>进入影响球时刻</value>
+    <comment>Time SOI Encountered</comment>
+  </data>
+  <data name="KLF_Fpl_EncounteredBody" xml:space="preserve">
+    <value>交会天体</value>
+    <comment>Encountered Body</comment>
+  </data>
+  <data name="KLF_Fpl_EncounterDistance" xml:space="preserve">
+    <value>交会距离</value>
+    <comment>Encounter Distance</comment>
+  </data>
+  <data name="KLF_Fpl_TimeToEncounter" xml:space="preserve">
+    <value>距交会时间</value>
+    <comment>Time To Encounter</comment>
+  </data>
+  <data name="KLF_Fpl_ClosestApproaches" xml:space="preserve">
+    <value>最近接近点</value>
+    <comment>Closest Approaches</comment>
+  </data>
+  <data name="KLF_Fpl_ClosestApproachDistance" xml:space="preserve">
+    <value>最近接近距离</value>
+    <comment>Closest Approach Distance</comment>
+  </data>
+  <data name="KLF_Fpl_ClosestApproachBody" xml:space="preserve">
+    <value>最近接近天体</value>
+    <comment>Closest Approach Body</comment>
+  </data>
+  <data name="KLF_Fpl_TimeToClosestApproach" xml:space="preserve">
+    <value>距最近接近时间</value>
+    <comment>Time To Closest Approach</comment>
+  </data>
+  <data name="KLF_Track_NoGroundTrack" xml:space="preserve">
+    <value>此载具没有可用的地面轨迹。</value>
+    <comment>No ground track available for this vehicle.</comment>
+  </data>
+  <data name="KLF_Track_Altitude" xml:space="preserve">
+    <value>高度</value>
+    <comment>Altitude</comment>
+  </data>
+  <data name="KLF_Track_Along" xml:space="preserve">
+    <value>沿迹：</value>
+    <comment>Along: </comment>
+  </data>
+  <data name="KLF_Track_Alt" xml:space="preserve">
+    <value>高度：</value>
+    <comment>Alt:   </comment>
+  </data>
+  <data name="KLF_Track_Cross" xml:space="preserve">
+    <value>横向：</value>
+    <comment>Cross: </comment>
+  </data>
+  <data name="KLF_Track_Closest" xml:space="preserve">
+    <value>最近</value>
+    <comment>Closest </comment>
+  </data>
+  <data name="KLF_Track_Sep" xml:space="preserve">
+    <value>间隔：</value>
+    <comment>Sep:   </comment>
+  </data>
+  <data name="KLF_Track_Scale" xml:space="preserve">
+    <value>缩放：</value>
+    <comment>Scale: </comment>
+  </data>
+  <data name="KLF_Track_Burn" xml:space="preserve">
+    <value>点火 </value>
+    <comment>BURN </comment>
+  </data>
+  <data name="KLF_Track_Ap" xml:space="preserve">
+    <value>远</value>
+    <comment>Ap</comment>
+  </data>
+  <data name="KLF_Track_Pe" xml:space="preserve">
+    <value>近</value>
+    <comment>Pe</comment>
+  </data>
+  <data name="KLF_Track_Sr" xml:space="preserve">
+    <value>日出</value>
+    <comment>Sr</comment>
+  </data>
+  <data name="KLF_Track_Ss" xml:space="preserve">
+    <value>日落</value>
+    <comment>Ss</comment>
+  </data>
+  <data name="KLF_Track_Sunrise" xml:space="preserve">
+    <value>日出</value>
+    <comment>Sunrise</comment>
+  </data>
+  <data name="KLF_Track_Sunset" xml:space="preserve">
+    <value>日落</value>
+    <comment>Sunset</comment>
+  </data>
+  <data name="KLF_Track_SunrisePostBurn" xml:space="preserve">
+    <value>日出（点火后）</value>
+    <comment>Sunrise (Post-burn)</comment>
+  </data>
+  <data name="KLF_Track_SunsetPostBurn" xml:space="preserve">
+    <value>日落（点火后）</value>
+    <comment>Sunset (Post-burn)</comment>
+  </data>
+  <data name="KLF_Track_OrbitClosest" xml:space="preserve">
+    <value>轨道最近接近点</value>
+    <comment>Orbit Closest Approach</comment>
+  </data>
+  <data name="KLF_Track_BurnClosest" xml:space="preserve">
+    <value>点火后最近接近点</value>
+    <comment>Post-burn Closest Approach</comment>
+  </data>
+  <data name="KLF_Track_DragBurnDv" xml:space="preserve">
+    <value>拖动以调整点火 ΔV</value>
+    <comment>Drag to adjust burn dV</comment>
+  </data>
+  <data name="KLF_Common_Resources" xml:space="preserve">
+    <value>资源</value>
+    <comment>RESOURCES</comment>
+  </data>
+  <data name="KLF_Gauge_GameTimeUpper" xml:space="preserve">
+    <value>游戏时间</value>
+    <comment>GAME TIME</comment>
+  </data>
+  <data name="KLF_Track_TitleGroundTrack" xml:space="preserve">
+    <value> | 地面轨迹</value>
+    <comment> | Ground Track</comment>
+  </data>
+  <data name="KLF_Track_TitleTargetTrack" xml:space="preserve">
+    <value> | 目标轨迹</value>
+    <comment> | Target Track</comment>
+  </data>
+  <data name="KLF_Settings_Enum_None" xml:space="preserve">
+    <value>无</value>
+    <comment>None</comment>
+  </data>
+  <data name="KLF_Settings_Enum_Overlay" xml:space="preserve">
+    <value>叠加</value>
+    <comment>Overlay</comment>
+  </data>
+  <data name="KLF_Settings_Enum_Realistic" xml:space="preserve">
+    <value>写实</value>
+    <comment>Realistic</comment>
+  </data>
+  <data name="KLF_Settings_Enum_TerrainColor" xml:space="preserve">
+    <value>地形着色</value>
+    <comment>Terrain Color</comment>
+  </data>
+  <data name="KLF_Settings_Enum_TerrainHeight" xml:space="preserve">
+    <value>地形高度</value>
+    <comment>Terrain Height</comment>
+  </data>
+  <data name="KLF_Title_ParachuteTuning" xml:space="preserve">
+    <value>降落伞调校</value>
+    <comment>Parachute Tuning</comment>
+  </data>
+  <data name="KLF_Title_DistantGlintEditor" xml:space="preserve">
+    <value>远处反光编辑器</value>
+    <comment>Distant Glint Editor</comment>
+  </data>
+  <data name="KLF_Title_ExplosionEditor" xml:space="preserve">
+    <value>爆炸编辑器</value>
+    <comment>Explosion Editor</comment>
+  </data>
+  <data name="KLF_Title_GameSaves" xml:space="preserve">
+    <value>游戏存档</value>
+    <comment>GAME SAVES</comment>
+  </data>
+  <data name="KLF_Title_GaugeHierarchy" xml:space="preserve">
+    <value>仪表层级</value>
+    <comment>Gauge Hierarchy</comment>
+  </data>
+  <data name="KLF_Title_GaugeInspector" xml:space="preserve">
+    <value>仪表检查器</value>
+    <comment>Gauge Inspector</comment>
+  </data>
+  <data name="KLF_Title_KittenLocomotionTuning" xml:space="preserve">
+    <value>小猫运动调校</value>
+    <comment>Kitten Locomotion Tuning</comment>
+  </data>
+  <data name="KLF_Title_Layouts" xml:space="preserve">
+    <value>布局</value>
+    <comment>LAYOUTS</comment>
+  </data>
+  <data name="KLF_Title_ParticleEmitterEditor" xml:space="preserve">
+    <value>粒子发射器编辑器</value>
+    <comment>Particle Emitter Editor</comment>
+  </data>
+  <data name="KLF_Title_ResourceGroups" xml:space="preserve">
+    <value>资源组</value>
+    <comment>Resource Groups</comment>
+  </data>
+  <data name="KLF_Title_ThreadProfiler" xml:space="preserve">
+    <value>线程分析器</value>
+    <comment>Thread Profiler</comment>
+  </data>
+  <data name="KLF_Title_UniverseManifest" xml:space="preserve">
+    <value>宇宙清单</value>
+    <comment>Universe Manifest</comment>
+  </data>
+  <data name="KLF_Title_VehicleSaves" xml:space="preserve">
+    <value>载具存档</value>
+    <comment>VEHICLE SAVES</comment>
+  </data>
+  <data name="KLF_Title_VersionHistoryUpper" xml:space="preserve">
+    <value>版本历史</value>
+    <comment>VERSION HISTORY</comment>
+  </data>
+  <data name="KLF_Title_CpuProfilerPrefix" xml:space="preserve">
+    <value>CPU 分析器 - </value>
+    <comment>CPU Profiler - </comment>
+  </data>
+  <data name="KLF_Orbiter_FocusHint" xml:space="preserve">
+    <value>\n双击聚焦相机\nShift + 点击设置/取消目标</value>
+    <comment>\nDouble click to focus camera\nShift + Click to set/unset target</comment>
+  </data>
+  <data name="KLF_Map_BodyPlanesHint" xml:space="preserve">
+    <value>在黄道面旁绘制被跟随天体及其目标的赤道面。</value>
+    <comment>Draw the equatorial plane of the followed body and its target alongside the ecliptic.</comment>
+  </data>
+  <data name="KLF_Map_AlignPlanesHint" xml:space="preserve">
+    <value>让所有平面与黄道平行，而不是按各自天体的转轴倾角取向。</value>
+    <comment>Hold every plane parallel to the ecliptic instead of orienting it by its body's axial tilt.</comment>
+  </data>
+  <data name="KLF_Map_MagnetospheresHint" xml:space="preserve">
+    <value>绘制每个有磁场天体的辐射带、磁力线、磁层顶与弓形激波。</value>
+    <comment>Draw each magnetised body's radiation belts, field lines, magnetopause and bow shock.</comment>
+  </data>
+  <data name="KLF_Program_RightClickDeparture" xml:space="preserve">
+    <value>右键点击轨道以创建出发点火。</value>
+    <comment>Right-click orbits to create departure burns.</comment>
+  </data>
+  <data name="KLF_Program_RightClickChained" xml:space="preserve">
+    <value>右键点击轨道以创建多个链式点火。</value>
+    <comment>Right-click orbits to create more than one chained burn.</comment>
+  </data>
+  <data name="KLF_Sequence_RightClickExpand" xml:space="preserve">
+    <value>右键展开</value>
+    <comment>Right-click to expand</comment>
+  </data>
+  <data name="KLF_Sequence_DragToFire" xml:space="preserve">
+    <value>拖到其他序列以触发</value>
+    <comment>Drag to fire in another sequence</comment>
+  </data>
+  <data name="KLF_Sequence_Inactive" xml:space="preserve">
+    <value>未激活</value>
+    <comment>Inactive</comment>
+  </data>
+  <data name="KLF_Sequence_OnlyEmptyDelete" xml:space="preserve">
+    <value>只能删除空序列</value>
+    <comment>Only empty sequences can be deleted</comment>
+  </data>
+  <data name="KLF_Sequence_EnvironmentHint" xml:space="preserve">
+    <value>该序列 ΔV 与推重比所依据的环境。点击切换。大气使用海平面（1 atm）发动机性能。</value>
+    <comment>Environment for this sequence's delta-v and TWR. Click to toggle. Atmospheric uses sea-level (1 atm) engine performance.</comment>
+  </data>
+  <data name="KLF_Sequence_TotalDv" xml:space="preserve">
+    <value>总 ΔV</value>
+    <comment>TOTAL dV</comment>
+  </data>
+  <data name="KLF_Sequence_Header" xml:space="preserve">
+    <value>序列 </value>
+    <comment>SEQUENCE </comment>
+  </data>
+  <data name="KLF_Sequence_Vac" xml:space="preserve">
+    <value>真空</value>
+    <comment>VAC</comment>
+  </data>
+  <data name="KLF_Sequence_Atm" xml:space="preserve">
+    <value>大气</value>
+    <comment>ATM</comment>
+  </data>
+  <data name="KLF_Sequence_Isp" xml:space="preserve">
+    <value>比冲 </value>
+    <comment>Isp </comment>
+  </data>
+  <data name="KLF_Sequence_Twr" xml:space="preserve">
+    <value>推重比 </value>
+    <comment>TWR </comment>
+  </data>
+  <data name="KLF_FuelLink_FlowHint" xml:space="preserve">
+    <value>燃料允许流动的方向。点击循环。</value>
+    <comment>Direction fuel is allowed to flow. Click to cycle.</comment>
+  </data>
+  <data name="KLF_Parachute_DiameterHint" xml:space="preserve">
+    <value>伞盖直径，同时决定阻力面积与收纳质量。作用于该部件的所有降落伞，且仅在展开前可调。</value>
+    <comment>Canopy diameter, which sets both drag area and packed mass. Applies to every chute in this part, and is only adjustable before they deploy.</comment>
+  </data>
+  <data name="KLF_Parachute_AltitudeHint" xml:space="preserve">
+    <value>已待发降落伞的高度闸值，由该部件所有伞共享。0 表示无高度闸值：一旦满足安全条件（G 限制 + 动压）就会展开；设置高度后需同时满足。</value>
+    <comment>Altitude gate for an armed chute, shared by every chute in this part. 0 = no altitude gate: an armed chute deploys as soon as deployment is safe (g-limit + dynamic pressure). With an altitude set it waits for both.</comment>
+  </data>
+  <data name="KLF_Parachute_CanopyDiameter" xml:space="preserve">
+    <value>伞盖直径</value>
+    <comment>Canopy Diameter</comment>
+  </data>
+  <data name="KLF_Parachute_Arm" xml:space="preserve">
+    <value>预备</value>
+    <comment>Arm</comment>
+  </data>
+  <data name="KLF_Parachute_Disarm" xml:space="preserve">
+    <value>解除</value>
+    <comment>Disarm</comment>
+  </data>
+  <data name="KLF_Parachute_ForceDeploy" xml:space="preserve">
+    <value>强制展开</value>
+    <comment>Force Deploy</comment>
+  </data>
+  <data name="KLF_Parachute_Unreef" xml:space="preserve">
+    <value>解除收口</value>
+    <comment>Un-reef</comment>
+  </data>
+  <data name="KLF_Parachute_Cut" xml:space="preserve">
+    <value>切断</value>
+    <comment>Cut</comment>
+  </data>
+  <data name="KLF_Parachute_Off" xml:space="preserve">
+    <value>关</value>
+    <comment>off</comment>
+  </data>
+  <data name="KLF_Parachute_State" xml:space="preserve">
+    <value>状态：</value>
+    <comment>State: </comment>
+  </data>
+  <data name="KLF_Manifest_FollowHint" xml:space="preserve">
+    <value>双击跟随</value>
+    <comment>Double-click to follow</comment>
+  </data>
+  <data name="KLF_Manifest_FollowControlHint" xml:space="preserve">
+    <value>双击跟随并控制</value>
+    <comment>Double-click to follow and control</comment>
+  </data>
+  <data name="KLF_Manifest_SetTargetHint" xml:space="preserve">
+    <value>Shift 点击设为目标</value>
+    <comment>Shift-Click to set as target</comment>
+  </data>
+  <data name="KLF_Manifest_UnsetTargetHint" xml:space="preserve">
+    <value>Shift 点击取消目标</value>
+    <comment>Shift-Click to unset as target</comment>
+  </data>
+  <data name="KLF_Manifest_ListHint" xml:space="preserve">
+    <value>双击项目可聚焦，Shift 点击可用当前操控的载具将其设为目标。也可在此窗口过滤对象或切换列。</value>
+    <comment>Double-click an item to focus on it or Shift-Click to target it with the currently controlled vessel. You can also filter objects in this window or toggle columns.</comment>
+  </data>
+  <data name="KLF_Roster_ListHint" xml:space="preserve">
+    <value>双击已分配的载具以跟随它。点击列标题可排序名册。</value>
+    <comment>Double-click an assigned vehicle to follow it. Click a column header to sort the roster.</comment>
+  </data>
+  <data name="KLF_Roster_Unassigned" xml:space="preserve">
+    <value>未分配</value>
+    <comment>Unassigned</comment>
+  </data>
+  <data name="KLF_Saves_NewHint" xml:space="preserve">
+    <value>将以给定名称保存当前状态</value>
+    <comment>Will create a new save of the current state with the given name</comment>
+  </data>
+  <data name="KLF_Saves_ListHint" xml:space="preserve">
+    <value>双击存档加载，右键打开其上下文菜单。点击列标题可切换该列排序。</value>
+    <comment>Double click a save to load it, and right click to gain access to that saves context menu. Clicking on a header item will toggle sorting for that column.</comment>
+  </data>
+  <data name="KLF_Layouts_SaveHint" xml:space="preserve">
+    <value>将当前仪表布局另存为新布局</value>
+    <comment>Save the current gauge layout as a new layout</comment>
+  </data>
+  <data name="KLF_Layouts_ListHint" xml:space="preserve">
+    <value>双击布局应用，右键打开其上下文菜单。点击列标题可按该列排序。</value>
+    <comment>Double click a layout to apply it, right click for its context menu. Clicking a header sorts by that column.</comment>
+  </data>
+  <data name="KLF_Inspector_NothingSelected" xml:space="preserve">
+    <value>未选中任何内容。请点击画布、组件或矩形。</value>
+    <comment>Nothing selected. Click a canvas, component or rect.</comment>
+  </data>
+  <data name="KLF_Common_New" xml:space="preserve">
+    <value>新建</value>
+    <comment>New</comment>
+  </data>
+  <data name="KLF_Manifest_Unfiltered" xml:space="preserve">
+    <value>未过滤</value>
+    <comment>Unfiltered</comment>
+  </data>
+  <data name="KLF_Manifest_Columns" xml:space="preserve">
+    <value>列</value>
+    <comment>Columns</comment>
+  </data>
+  <data name="KLF_Manifest_ClearDebris" xml:space="preserve">
+    <value>清除碎片</value>
+    <comment>Clear Debris</comment>
+  </data>
+  <data name="KLF_Manifest_NoDebris" xml:space="preserve">
+    <value>该系统没有碎片</value>
+    <comment>There is no debris in this system</comment>
+  </data>
+  <data name="KLF_Manifest_DeleteAllDebris" xml:space="preserve">
+    <value>删除该系统中所有碎片</value>
+    <comment>Delete every piece of debris in this system</comment>
+  </data>
+  <data name="KLF_Manifest_CurrentlyFollowing" xml:space="preserve">
+    <value>当前跟随</value>
+    <comment>Currently Following</comment>
+  </data>
+  <data name="KLF_Manifest_TargetOfControlled" xml:space="preserve">
+    <value>受控载具的目标</value>
+    <comment>Target of Controlled Vehicle</comment>
+  </data>
+  <data name="KLF_Manifest_ControlledVehicle" xml:space="preserve">
+    <value>受控载具</value>
+    <comment>Controlled Vehicle</comment>
+  </data>
+  <data name="KLF_Manifest_RecoverVehicle" xml:space="preserve">
+    <value>回收载具</value>
+    <comment>Recover Vehicle</comment>
+  </data>
+  <data name="KLF_Manifest_DeleteVehicle" xml:space="preserve">
+    <value>删除载具</value>
+    <comment>Delete vehicle</comment>
+  </data>
+  <data name="KLF_Manifest_Asteroids" xml:space="preserve">
+    <value>小行星</value>
+    <comment>Asteroids</comment>
+  </data>
+  <data name="KLF_Manifest_MinorBodies" xml:space="preserve">
+    <value>小天体</value>
+    <comment>Minor Bodies</comment>
+  </data>
+  <data name="KLF_Manifest_Debris" xml:space="preserve">
+    <value>碎片</value>
+    <comment>Debris</comment>
+  </data>
+  <data name="KLF_Map_Title" xml:space="preserve">
+    <value>地图视图</value>
+    <comment>MAP VIEW</comment>
+  </data>
+  <data name="KLF_Map_Viewing" xml:space="preserve">
+    <value>观察</value>
+    <comment>VIEWING</comment>
+  </data>
+  <data name="KLF_Map_Scope" xml:space="preserve">
+    <value>范围</value>
+    <comment>SCOPE</comment>
+  </data>
+  <data name="KLF_Map_OffsetX" xml:space="preserve">
+    <value>偏移 X</value>
+    <comment>OFFSET X</comment>
+  </data>
+  <data name="KLF_Map_OffsetY" xml:space="preserve">
+    <value>偏移 Y</value>
+    <comment>OFFSET Y</comment>
+  </data>
+  <data name="KLF_Map_OffsetZ" xml:space="preserve">
+    <value>偏移 Z</value>
+    <comment>OFFSET Z</comment>
+  </data>
+  <data name="KLF_Map_Overlays" xml:space="preserve">
+    <value>叠加层</value>
+    <comment>OVERLAYS</comment>
+  </data>
+  <data name="KLF_Map_BodyGridPlanes" xml:space="preserve">
+    <value>天体网格平面</value>
+    <comment>BODY GRID PLANES</comment>
+  </data>
+  <data name="KLF_Map_AlignPlanes" xml:space="preserve">
+    <value>对齐平面</value>
+    <comment>ALIGN PLANES</comment>
+  </data>
+  <data name="KLF_Map_Magnetospheres" xml:space="preserve">
+    <value>磁层</value>
+    <comment>MAGNETOSPHERES</comment>
+  </data>
+  <data name="KLF_Map_VehicleSection" xml:space="preserve">
+    <value>载具</value>
+    <comment>VEHICLE</comment>
+  </data>
+  <data name="KLF_Map_Release" xml:space="preserve">
+    <value>释放</value>
+    <comment>Release</comment>
+  </data>
+  <data name="KLF_Map_MapMode" xml:space="preserve">
+    <value>地图</value>
+    <comment>Map</comment>
+  </data>
+  <data name="KLF_Map_Take" xml:space="preserve">
+    <value>接管</value>
+    <comment>Take</comment>
+  </data>
+  <data name="KLF_Map_CameraSection" xml:space="preserve">
+    <value>相机</value>
+    <comment>CAMERA</comment>
+  </data>
+  <data name="KLF_Map_Recenter" xml:space="preserve">
+    <value>重定中心</value>
+    <comment>Recenter</comment>
+  </data>
+  <data name="KLF_Map_FocusVehicle" xml:space="preserve">
+    <value>聚焦载具</value>
+    <comment>Focus Vehicle</comment>
+  </data>
+  <data name="KLF_Map_MapControl" xml:space="preserve">
+    <value>地图控制</value>
+    <comment>MAP CONTROL</comment>
+  </data>
+  <data name="KLF_Map_VehicleControl" xml:space="preserve">
+    <value>载具控制</value>
+    <comment>VEHICLE CONTROL</comment>
+  </data>
+  <data name="KLF_Tree_NumberTanks" xml:space="preserve">
+    <value>显示储罐编号</value>
+    <comment>Number Tanks</comment>
+  </data>
+  <data name="KLF_Tree_NumberBatteries" xml:space="preserve">
+    <value>显示电池编号</value>
+    <comment>Number Batteries</comment>
+  </data>
+  <data name="KLF_ResourceGroups_NoVehicle" xml:space="preserve">
+    <value>无载具</value>
+    <comment>No vehicle</comment>
+  </data>
+  <data name="KLF_Celestial_Class" xml:space="preserve">
+    <value>类别</value>
+    <comment>CLASS</comment>
+  </data>
+  <data name="KLF_Celestial_Moon" xml:space="preserve">
+    <value>卫星</value>
+    <comment>Moon</comment>
+  </data>
+  <data name="KLF_Celestial_Radius" xml:space="preserve">
+    <value>半径</value>
+    <comment>RADIUS</comment>
+  </data>
+  <data name="KLF_Celestial_Atmosphere" xml:space="preserve">
+    <value>大气</value>
+    <comment>ATMOSPHERE</comment>
+  </data>
+  <data name="KLF_Celestial_No" xml:space="preserve">
+    <value>否</value>
+    <comment>No</comment>
+  </data>
+  <data name="KLF_Celestial_Yes" xml:space="preserve">
+    <value>是</value>
+    <comment>Yes</comment>
+  </data>
+  <data name="KLF_Celestial_AtmosphereHeight" xml:space="preserve">
+    <value>大气高度</value>
+    <comment>ATMOSPHERE HEIGHT</comment>
+  </data>
+  <data name="KLF_Celestial_Mass" xml:space="preserve">
+    <value>质量</value>
+    <comment>MASS</comment>
+  </data>
+  <data name="KLF_Celestial_SphereOfInfluence" xml:space="preserve">
+    <value>影响球</value>
+    <comment>SPHERE OF INFLUENCE</comment>
+  </data>
+  <data name="KLF_Celestial_AxialTilt" xml:space="preserve">
+    <value>转轴倾角</value>
+    <comment>AXIAL TILT</comment>
+  </data>
+  <data name="KLF_Celestial_Retrograde" xml:space="preserve">
+    <value>逆行</value>
+    <comment>RETROGRADE</comment>
+  </data>
+  <data name="KLF_VehicleInfo_AngularMomentum" xml:space="preserve">
+    <value>角动量</value>
+    <comment>AngularMomentum</comment>
+  </data>
+  <data name="KLF_VehicleInfo_Total" xml:space="preserve">
+    <value>总计</value>
+    <comment>TOTAL</comment>
+  </data>
+  <data name="KLF_VehicleInfo_Acceleration" xml:space="preserve">
+    <value>加速度</value>
+    <comment>Acceleration</comment>
+  </data>
+  <data name="KLF_VehicleInfo_AngularVelocity" xml:space="preserve">
+    <value>角速度</value>
+    <comment>AngularVelocity</comment>
+  </data>
+  <data name="KLF_VehicleInfo_AngularAcceleration" xml:space="preserve">
+    <value>角加速度</value>
+    <comment>AngularAcceleration</comment>
+  </data>
+  <data name="KLF_VehicleInfo_Situation" xml:space="preserve">
+    <value>状态</value>
+    <comment>SITUATION</comment>
+  </data>
+  <data name="KLF_VehicleInfo_DynamicPressure" xml:space="preserve">
+    <value>动压</value>
+    <comment>DYNAMIC PRESSURE</comment>
+  </data>
+  <data name="KLF_VehicleInfo_GForce" xml:space="preserve">
+    <value>G 力</value>
+    <comment>G-FORCE</comment>
+  </data>
+  <data name="KLF_VehicleInfo_Gravitation" xml:space="preserve">
+    <value>引力</value>
+    <comment>GRAVITATION</comment>
+  </data>
+  <data name="KLF_VehicleInfo_PropellantMass" xml:space="preserve">
+    <value>推进剂质量</value>
+    <comment>PROPELLANT MASS</comment>
+  </data>
+  <data name="KLF_VehicleInfo_NearbyVehicle" xml:space="preserve">
+    <value>附近载具</value>
+    <comment>NEARBY VEHICLE</comment>
+  </data>
+  <data name="KLF_Orbit_TrueAnomaly" xml:space="preserve">
+    <value>真近点角</value>
+    <comment>TRUE ANOMALY</comment>
+  </data>
+  <data name="KLF_Orbit_SemiMajorAxis" xml:space="preserve">
+    <value>半长轴</value>
+    <comment>SEMI-MAJOR AXIS</comment>
+  </data>
+  <data name="KLF_Orbit_SemiMinorAxis" xml:space="preserve">
+    <value>半短轴</value>
+    <comment>SEMI-MINOR AXIS</comment>
+  </data>
+  <data name="KLF_Orbit_OrbitalPeriod" xml:space="preserve">
+    <value>轨道周期</value>
+    <comment>ORBITAL PERIOD</comment>
+  </data>
+  <data name="KLF_Orbit_Inclination" xml:space="preserve">
+    <value>倾角</value>
+    <comment>INCLINATION</comment>
+  </data>
+  <data name="KLF_Orbit_Eccentricity" xml:space="preserve">
+    <value>偏心率</value>
+    <comment>ECCENTRICITY</comment>
+  </data>
+  <data name="KLF_Orbit_OrbitType" xml:space="preserve">
+    <value>轨道类型</value>
+    <comment>ORBIT TYPE</comment>
+  </data>
+  <data name="KLF_Orbit_Unknown" xml:space="preserve">
+    <value>未知</value>
+    <comment>Unknown</comment>
+  </data>
+  <data name="KLF_Orbit_Lan" xml:space="preserve">
+    <value>升交点经度</value>
+    <comment>LAN</comment>
+  </data>
+  <data name="KLF_Orbit_Aop" xml:space="preserve">
+    <value>近点幅角</value>
+    <comment>AOP</comment>
+  </data>
+  <data name="KLF_Orbit_Periapsis" xml:space="preserve">
+    <value>近点</value>
+    <comment>PERIAPSIS</comment>
+  </data>
+  <data name="KLF_Orbit_Apoapsis" xml:space="preserve">
+    <value>远点</value>
+    <comment>APOAPSIS</comment>
+  </data>
+  <data name="KLF_Orbit_OrbitalSpeed" xml:space="preserve">
+    <value>轨道速度</value>
+    <comment>ORBITAL SPEED</comment>
+  </data>
+  <data name="KLF_Orbit_TimeAtPeriapsis" xml:space="preserve">
+    <value>近点时刻</value>
+    <comment>TIME AT PERIAPSIS</comment>
+  </data>
+  <data name="KLF_Orbit_TimeSincePe" xml:space="preserve">
+    <value>距近点时间</value>
+    <comment>TIME SINCE PE</comment>
+  </data>
+  <data name="KLF_Orbit_Period" xml:space="preserve">
+    <value>周期</value>
+    <comment>PERIOD</comment>
+  </data>
+  <data name="KLF_Orbit_LocalPosition" xml:space="preserve">
+    <value>本地位置</value>
+    <comment>LocalPosition</comment>
+  </data>
+  <data name="KLF_Orbit_Quadrant" xml:space="preserve">
+    <value>象限</value>
+    <comment>Quadrant</comment>
+  </data>
+  <data name="KLF_Orbit_First" xml:space="preserve">
+    <value>第一</value>
+    <comment>First</comment>
+  </data>
+  <data name="KLF_Orbit_Second" xml:space="preserve">
+    <value>第二</value>
+    <comment>Second</comment>
+  </data>
+  <data name="KLF_Orbit_Third" xml:space="preserve">
+    <value>第三</value>
+    <comment>Third</comment>
+  </data>
+  <data name="KLF_Orbit_Fourth" xml:space="preserve">
+    <value>第四</value>
+    <comment>Fourth</comment>
+  </data>
+  <data name="KLF_Orbit_OrbitVelocity" xml:space="preserve">
+    <value>轨道速度</value>
+    <comment>OrbitVelocity</comment>
+  </data>
+  <data name="KLF_Orbit_Rotation" xml:space="preserve">
+    <value>旋转</value>
+    <comment>Rotation</comment>
+  </data>
+  <data name="KLF_Orbit_DrawAxes" xml:space="preserve">
+    <value>绘制坐标轴</value>
+    <comment>Draw Axes</comment>
+  </data>
+  <data name="KLF_Orbit_ShowSoi" xml:space="preserve">
+    <value>显示影响球</value>
+    <comment>Show SOI</comment>
+  </data>
+  <data name="KLF_Class_Star" xml:space="preserve">
+    <value>恒星</value>
+    <comment>Star</comment>
+  </data>
+  <data name="KLF_Class_StellarBody" xml:space="preserve">
+    <value>恒星体</value>
+    <comment>StellarBody</comment>
+  </data>
+  <data name="KLF_Class_PlanetaryBody" xml:space="preserve">
+    <value>行星体</value>
+    <comment>PlanetaryBody</comment>
+  </data>
+  <data name="KLF_Class_TerrestrialBody" xml:space="preserve">
+    <value>类地行星</value>
+    <comment>TerrestrialBody</comment>
+  </data>
+  <data name="KLF_Class_AtmosphericBody" xml:space="preserve">
+    <value>大气天体</value>
+    <comment>AtmosphericBody</comment>
+  </data>
+  <data name="KLF_Class_Barycenter" xml:space="preserve">
+    <value>质心</value>
+    <comment>Barycenter</comment>
+  </data>
+  <data name="KLF_Class_Planet" xml:space="preserve">
+    <value>行星</value>
+    <comment>Planet</comment>
+  </data>
+  <data name="KLF_Class_Asteroid" xml:space="preserve">
+    <value>小行星</value>
+    <comment>Asteroid</comment>
+  </data>
+  <data name="KLF_Class_Comet" xml:space="preserve">
+    <value>彗星</value>
+    <comment>Comet</comment>
+  </data>
+  <data name="KLF_Class_PeriodicComet" xml:space="preserve">
+    <value>周期彗星</value>
+    <comment>PeriodicComet</comment>
+  </data>
+  <data name="KLF_Class_InterstellarComet" xml:space="preserve">
+    <value>星际彗星</value>
+    <comment>InterstellarComet</comment>
+  </data>
+  <data name="KLF_Class_MinorBody" xml:space="preserve">
+    <value>小天体</value>
+    <comment>MinorBody</comment>
+  </data>
+  <data name="KLF_Class_City" xml:space="preserve">
+    <value>城市</value>
+    <comment>City</comment>
+  </data>
+  <data name="KLF_Class_Crater" xml:space="preserve">
+    <value>陨石坑</value>
+    <comment>Crater</comment>
+  </data>
+  <data name="KLF_Class_Mountain" xml:space="preserve">
+    <value>山体</value>
+    <comment>Mountain</comment>
+  </data>
+  <data name="KLF_Class_Landmark" xml:space="preserve">
+    <value>地标</value>
+    <comment>Landmark</comment>
+  </data>
+  <data name="KLF_Class_PointOfInterest" xml:space="preserve">
+    <value>兴趣点</value>
+    <comment>Point of Interest</comment>
+  </data>
+  <data name="KLF_OrbitType_Elliptical" xml:space="preserve">
+    <value>椭圆轨道</value>
+    <comment>Elliptical</comment>
+  </data>
+  <data name="KLF_OrbitType_Parabolic" xml:space="preserve">
+    <value>抛物线轨道</value>
+    <comment>Parabolic</comment>
+  </data>
+  <data name="KLF_OrbitType_Hyperbolic" xml:space="preserve">
+    <value>双曲线轨道</value>
+    <comment>Hyperbolic</comment>
+  </data>
+  <data name="KLF_OrbitType_Invalid" xml:space="preserve">
+    <value>无效</value>
+    <comment>Invalid</comment>
+  </data>
+  <data name="KLF_Situation_Maneuvering" xml:space="preserve">
+    <value>机动</value>
+    <comment>Maneuvering</comment>
+  </data>
+  <data name="KLF_Situation_Freefall" xml:space="preserve">
+    <value>自由落体</value>
+    <comment>Freefall</comment>
+  </data>
+  <data name="KLF_Situation_Rolling" xml:space="preserve">
+    <value>滚动</value>
+    <comment>Rolling</comment>
+  </data>
+  <data name="KLF_Situation_Landed" xml:space="preserve">
+    <value>着陆</value>
+    <comment>Landed</comment>
+  </data>
+  <data name="KLF_Situation_Sailing" xml:space="preserve">
+    <value>航行</value>
+    <comment>Sailing</comment>
+  </data>
+  <data name="KLF_Situation_Floating" xml:space="preserve">
+    <value>漂浮</value>
+    <comment>Floating</comment>
+  </data>
+  <data name="KLF_Situation_Dragging" xml:space="preserve">
+    <value>拖行</value>
+    <comment>Dragging</comment>
+  </data>
+  <data name="KLF_Situation_Bottomed" xml:space="preserve">
+    <value>触底</value>
+    <comment>Bottomed</comment>
+  </data>
+  <data name="KLF_Mass_JupiterMasses" xml:space="preserve">
+    <value> 木星质量</value>
+    <comment> Jupiter Masses</comment>
+  </data>
+  <data name="KLF_Mass_SolarMasses" xml:space="preserve">
+    <value> 太阳质量</value>
+    <comment> Solar Masses</comment>
+  </data>
+  <data name="KLF_Mass_EarthMasses" xml:space="preserve">
+    <value> 地球质量</value>
+    <comment> Earth Masses</comment>
+  </data>
 </root>

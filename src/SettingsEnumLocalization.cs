@@ -28,7 +28,9 @@ internal static class SettingsEnumLocalization
         typeof(GameSettings.OceanSimulationQuality),
         typeof(GameSettings.ExhaustQuality),
         typeof(GameSettings.CloudQuality),
-        typeof(GameSettings.MilkyWayQuality)
+        typeof(GameSettings.MilkyWayQuality),
+        AccessTools.Inner(typeof(GroundTrackWindow), "MapDisplayMode"),
+        AccessTools.Inner(typeof(GroundTrackWindow), "LightingDisplayMode")
     };
 
     private static readonly HashSet<MethodInfo> EnumNameMethods = CreateEnumNameMethods();
@@ -71,6 +73,11 @@ internal static class SettingsEnumLocalization
         HashSet<MethodInfo> methods = new HashSet<MethodInfo>();
         foreach (Type enumType in Types)
         {
+            if (enumType == null)
+            {
+                continue;
+            }
+
             Type collectionType = typeof(EnumCollection<,>).MakeGenericType(enumType, typeof(string));
             Type stringCollectionType = typeof(StringEnumCollection<>).MakeGenericType(enumType);
             methods.Add(AccessTools.Method(collectionType, "GetName", new[] { enumType }));

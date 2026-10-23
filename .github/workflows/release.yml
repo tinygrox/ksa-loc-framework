@@ -1,0 +1,25 @@
+name: Release
+
+on:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Package
+        run: |
+          mkdir -p pkg/ksa-loc-framework
+          cp -r mod.toml Languages.xml Fonts Languages Patches README.md ksa-loc-framework.dll pkg/ksa-loc-framework/
+          cd pkg && zip -qr "../ksa-loc-framework-$GITHUB_REF_NAME.zip" ksa-loc-framework
+
+      - name: Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release create "$GITHUB_REF_NAME" "ksa-loc-framework-$GITHUB_REF_NAME.zip" --title "$GITHUB_REF_NAME" --generate-notes
