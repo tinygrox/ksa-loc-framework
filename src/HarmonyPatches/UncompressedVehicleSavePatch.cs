@@ -7,12 +7,12 @@ namespace KsaLocFramework.HarmonyPatches;
 [HarmonyPatch(typeof(UncompressedVehicleSave))]
 public static class UncompressedVehicleSavePatch
 {
-    [HarmonyPatch("DrawInTable", new[] { typeof(IViewport) })]
+    [HarmonyPatch("DrawInTable")]
     [HarmonyTranspiler]
     public static IEnumerable<CodeInstruction> DrawInTableTranspiler(IEnumerable<CodeInstruction> instructions)
     {
         List<CodeInstruction> codes = new List<CodeInstruction>(instructions);
-        TranspilerTools.ReplaceLocalizedLiteral(codes, nameof(GameStrings.KLF_PartTreeSelectionPopup_Description));
+        TranspilerTools.ReplaceUtf8ImStringLabels(codes);
         return codes;
     }
 }

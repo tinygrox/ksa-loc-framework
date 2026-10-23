@@ -6,6 +6,7 @@ using Brutal.ImGuiApi;
 using Brutal.Localization;
 using HarmonyLib;
 using KSA;
+using KsaLocFramework.XmlPatch;
 using StarMap.API;
 using Tomlet;
 using Tomlet.Models;
@@ -19,9 +20,14 @@ public class LocFrameworkMod
     private static string _settingsPath;
     internal static readonly List<string> FontPaths = new();
 
+    internal static string GaugeCjkFontPath { get; private set; }
+
+    internal static bool IsCjkActive => SelectedLanguage != null && SelectedLanguage != DefaultLanguage;
+
     private const string DefaultLanguage = "en-US";
     private const string ConfigDirName = "Config";
     private const string SettingsFileName = "ModSettings.toml";
+    private const string PatchesDirName = "Patches";
 
     private static readonly AccessTools.FieldRef<Language, Dictionary<LStringId, string>> LocalisedStrings =
         AccessTools.FieldRefAccess<Language, Dictionary<LStringId, string>>("_localisedStrings");
@@ -39,6 +45,8 @@ public class LocFrameworkMod
 
         _harmony = new Harmony("tinygrox.KSAMod.LocFramework");
         ApplyPatches(_harmony, typeof(LocFrameworkMod).Assembly);
+
+        XmlPatchEngine.LoadPatches(Path.Combine(definingMod.DirectoryPath, PatchesDirName));
 
         RegisterFonts(definingMod);
         FontManager.RegenerateFonts();
@@ -64,7 +72,12 @@ public class LocFrameworkMod
 
         foreach (string font in declaredFonts)
         {
-            AddFontPath(Path.Combine(definingMod.DirectoryPath, font));
+            string fontPath = Path.Combine(definingMod.DirectoryPath, font);
+            AddFontPath(fontPath);
+            if (GaugeCjkFontPath == null && File.Exists(fontPath))
+            {
+                GaugeCjkFontPath = fontPath;
+            }
         }
     }
 
@@ -91,14 +104,19 @@ public class LocFrameworkMod
 
     internal static void ApplyLanguage(Language language)
     {
+        XmlPatchEngine.CaptureSystemNames();
         if (language.Id == DefaultLanguage)
         {
             Brutal.Localization.LStrings.RemoveLocalizedStringProvider();
+            XmlPatchEngine.SetTranslations(null);
+            XmlPatchEngine.ApplySystemNames();
             return;
         }
         Dictionary<LStringId, string> localisedStrings = LocalisedStrings(language);
+        XmlPatchEngine.SetTranslations(localisedStrings);
         Brutal.Localization.LStrings.SetLocalizedStringProvider(
             (LString lString, out string localizedTemplateString) => localisedStrings.TryGetValue(lString.Id, out localizedTemplateString));
+        XmlPatchEngine.ApplySystemNames();
     }
 
     private static void SelectLanguage(Language language)
@@ -143,5 +161,10 @@ public class LocFrameworkMod
             ConsoleWidgets.EndComboControl();
         }
         ConsoleWidgets.EndRow();
+        if ((SelectedLanguage ?? DefaultLanguage) != DefaultLanguage)
+        {
+            ConsoleWidgets.BeginRow(GameStrings.KLF_UI_XmlRestart.Format());
+            ConsoleWidgets.EndRow();
+        }
     }
 }

@@ -1,0 +1,178 @@
+<Patches>
+    <!-- Localize matches by element/attribute name. The matched text is used as the language file key.
+         Add Key="KLF_..." to force a specific entry, XPath="..." to target one node. -->
+    <Localize Element="DisplayName" Attribute="Value" />
+    <Localize Attribute="DisplayName" />
+    <Localize Attribute="Label" />
+    <Localize Element="Tooltip" Attribute="Value" />
+    <Localize Attribute="Label" Value="ACTIVATE" Key="KLF_Gauge_Activate" />
+    <Localize Attribute="Label" Value="AHEAD" Key="KLF_Gauge_Ahead" />
+    <Localize Attribute="Label" Value="ALIGN" Key="KLF_Gauge_Align" />
+    <Localize Attribute="Label" Value="ANTINML" Key="KLF_Gauge_Antinml" />
+    <Localize Attribute="Label" Value="ANTIVEL" Key="KLF_Gauge_Antivel" />
+    <Localize Attribute="Label" Value="ANY" Key="KLF_Gauge_Any" />
+    <Localize Attribute="Label" Value="AUTO" Key="KLF_Gauge_Auto" />
+    <Localize Attribute="Label" Value="AWAY" Key="KLF_Gauge_Away" />
+    <Localize Attribute="Label" Value="BACK" Key="KLF_Gauge_Back" />
+    <Localize Attribute="Label" Value="BALNCE" Key="KLF_Gauge_Balnce" />
+    <Localize Attribute="Label" Value="BEHIND" Key="KLF_Gauge_Behind" />
+    <Localize Attribute="Label" Value="BURN" Key="KLF_Gauge_Burn" />
+    <Localize Attribute="Label" Value="BURN TIME" Key="KLF_Gauge_BurnTime" />
+    <Localize Attribute="Label" Value="CLOSEST APPROACH" Key="KLF_Gauge_ClosestApproach" />
+    <Localize Attribute="Label" Value="CONTROL" Key="KLF_Gauge_Control" />
+    <Localize Attribute="Label" Value="DAYS" Key="KLF_Gauge_Days" />
+    <Localize Attribute="Label" Value="DELETE" Key="KLF_Gauge_Delete" />
+    <Localize Attribute="Label" Value="DIRECT" Key="KLF_Gauge_Direct" />
+    <Localize Attribute="Label" Value="DOSE MSV/H" Key="KLF_Gauge_DoseMsvH" />
+    <Localize Attribute="Label" Value="DOWN" Key="KLF_Gauge_Down" />
+    <Localize Attribute="Label" Value="ENGINE" Key="KLF_Gauge_Engine" />
+    <Localize Attribute="Label" Value="FWD" Key="KLF_Gauge_Fwd" />
+    <Localize Attribute="Label" Value="HRS" Key="KLF_Gauge_Hrs" />
+    <Localize Attribute="Label" Value="IGNITE" Key="KLF_Gauge_Ignite" />
+    <Localize Attribute="Label" Value="IN" Key="KLF_Gauge_In" />
+    <Localize Attribute="Label" Value="INVERT" Key="KLF_Gauge_Invert" />
+    <Localize Attribute="Label" Value="MANUAL" Key="KLF_Gauge_Manual" />
+    <Localize Attribute="Label" Value="MANUAL THRUST" Key="KLF_Gauge_ManualThrust" />
+    <Localize Attribute="Label" Value="MINS" Key="KLF_Gauge_Mins" />
+    <Localize Attribute="Label" Value="MODE" Key="KLF_Gauge_Mode" />
+    <Localize Attribute="Label" Value="MULT" Key="KLF_Gauge_Mult" />
+    <Localize Attribute="Label" Value="NEG" Key="KLF_Gauge_Neg" />
+    <Localize Attribute="Label" Value="NORM" Key="KLF_Gauge_Norm" />
+    <Localize Attribute="Label" Value="NORMAL" Key="KLF_Gauge_Normal" />
+    <Localize Attribute="Label" Value="ORBIT AVERAGE" Key="KLF_Gauge_OrbitAverage" />
+    <Localize Attribute="Label" Value="ORBT" Key="KLF_Gauge_Orbt" />
+    <Localize Attribute="Label" Value="OUT" Key="KLF_Gauge_Out" />
+    <Localize Attribute="Label" Value="OVEL" Key="KLF_Gauge_Ovel" />
+    <Localize Attribute="Label" Value="PERIOD" Key="KLF_Gauge_Period" />
+    <Localize Attribute="Label" Value="PITCH" Key="KLF_Gauge_Pitch" />
+    <Localize Attribute="Label" Value="POS" Key="KLF_Gauge_Pos" />
+    <Localize Attribute="Label" Value="PROFILE" Key="KLF_Gauge_Profile" />
+    <Localize Attribute="Label" Value="PROGDE" Key="KLF_Gauge_Progde" />
+    <Localize Attribute="Label" Value="PULSE" Key="KLF_Gauge_Pulse" />
+    <Localize Attribute="Label" Value="RAD IN" Key="KLF_Gauge_RadIn" />
+    <Localize Attribute="Label" Value="RAD OUT" Key="KLF_Gauge_RadOut" />
+    <Localize Attribute="Label" Value="RCS" Key="KLF_Gauge_Rcs" />
+    <Localize Attribute="Label" Value="RELATIVE" Key="KLF_Gauge_Relative" />
+    <Localize Attribute="Label" Value="RELAX" Key="KLF_Gauge_Relax" />
+    <Localize Attribute="Label" Value="RES" Key="KLF_Gauge_Res" />
+    <Localize Attribute="Label" Value="RETRO" Key="KLF_Gauge_Retro" />
+    <Localize Attribute="Label" Value="ROLL" Key="KLF_Gauge_Roll" />
+    <Localize Attribute="Label" Value="SECS" Key="KLF_Gauge_Secs" />
+    <Localize Attribute="Label" Value="SPEED" Key="KLF_Gauge_Speed" />
+    <Localize Attribute="Label" Value="STAR" Key="KLF_Gauge_Star" />
+    <Localize Attribute="Label" Value="START BURN IN" Key="KLF_Gauge_StartBurnIn" />
+    <Localize Attribute="Label" Value="STRICT" Key="KLF_Gauge_Strict" />
+    <Localize Attribute="Label" Value="SURF" Key="KLF_Gauge_Surf" />
+    <Localize Attribute="Label" Value="TGT" Key="KLF_Gauge_Tgt" />
+    <Localize Attribute="Label" Value="TIME" Key="KLF_Gauge_Time" />
+    <Localize Attribute="Label" Value="TIME TO" Key="KLF_Gauge_TimeTo" />
+    <Localize Attribute="Label" Value="TIME TO MARK" Key="KLF_Gauge_TimeToMark" />
+    <Localize Attribute="Label" Value="TOWARD" Key="KLF_Gauge_Toward" />
+    <Localize Attribute="Label" Value="TWR" Key="KLF_Gauge_Twr" />
+    <Localize Attribute="Label" Value="UP" Key="KLF_Gauge_Up" />
+    <Localize Attribute="Label" Value="UT" Key="KLF_Gauge_Ut" />
+    <Localize Attribute="Label" Value="VELOCITY" Key="KLF_Gauge_Velocity" />
+    <Localize Attribute="Label" Value="VIEW" Key="KLF_Gauge_View" />
+    <Localize Attribute="Label" Value="WARP" Key="KLF_Gauge_Warp" />
+    <Localize Attribute="Label" Value="XFER" Key="KLF_Gauge_Xfer" />
+    <Localize Attribute="Label" Value="YAW" Key="KLF_Gauge_Yaw" />
+    <Localize Attribute="Label" Value="YEARS" Key="KLF_Gauge_Years" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Altitude" Key="KLF_GaugeTip_Altitude" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Altitude at Apoapsis" Key="KLF_GaugeTip_AltitudeApoapsis" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Altitude at Periapsis" Key="KLF_GaugeTip_AltitudePeriapsis" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Balanced Attitude Control Profile. Medium speed, accuracy, and propellant burn." Key="KLF_GaugeTip_BalancedProfile" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Convert this parent departure burn into a vehicle transfer flight plan." Key="KLF_GaugeTip_ConvertDeparture" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Current engine throttle setting in percent." Key="KLF_GaugeTip_ThrottlePercent" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Current relative distance to the target." Key="KLF_GaugeTip_TargetDistance" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Current relative velocity to the target." Key="KLF_GaugeTip_TargetVelocity" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Decrease Normal Delta-V by the current step size. Hold Shift for 10x, Ctrl for 0.1x." Key="KLF_GaugeTip_DecNormal" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Decrease Outward (radial) Delta-V by the current step size. Hold Shift for 10x, Ctrl for 0.1x." Key="KLF_GaugeTip_DecOutward" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Decrease Prograde Delta-V by the current step size. Hold Shift for 10x, Ctrl for 0.1x." Key="KLF_GaugeTip_DecPrograde" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Decrease the step size used by the Prograde/Normal/Outward/Time steppers. Hold Shift to jump to the previous order of magnitude." Key="KLF_GaugeTip_StepDown" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Delete the planned burn." Key="KLF_GaugeTip_DeletePlannedBurn" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Delete this burn." Key="KLF_GaugeTip_DeleteBurn" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Delta-V remaining on the planned burn." Key="KLF_GaugeTip_RemainingDeltaV" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Disable autopilot control" Key="KLF_GaugeTip_DisableAutopilot" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Disables auto trim: attitude inputs pass straight through." Key="KLF_GaugeTip_AutoTrimOff" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Distance at the closest approach to the target." Key="KLF_GaugeTip_ClosestDistance" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Elapsed game time." Key="KLF_GaugeTip_ElapsedGameTime" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Enables auto trim: the flight computer damps body rates. Not applicable in View mode." Key="KLF_GaugeTip_AutoTrimOn" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Eva Mode: Direct control. Standard vehicle rotation and translation controls." Key="KLF_GaugeTip_EvaDirect" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Eva Mode: View control: view relative controls, Eva Kitten auto-rotates to camera orientation." Key="KLF_GaugeTip_EvaView" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Frame of reference fixed to the current target direction." Key="KLF_GaugeTip_FrameTarget" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Frame of reference fixed to the next planned burn direction." Key="KLF_GaugeTip_FrameBurn" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Frame of reference fixed to the orbital horizon." Key="KLF_GaugeTip_FrameHorizon" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Frame of reference fixed to the orbital velocity of your vehicle." Key="KLF_GaugeTip_FrameVelocity" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Frame of reference fixed to the surface of the planet." Key="KLF_GaugeTip_FrameSurface" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Game Speed." Key="KLF_GaugeTip_GameSpeed" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Hold rotation rate in the BURN frame of reference. NOTE: RCS alone cannot perfectly cancel all rotation." Key="KLF_GaugeTip_HoldRateBurn" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Hold rotation rate in the ORBT frame of reference. NOTE: RCS alone cannot perfectly cancel all rotation." Key="KLF_GaugeTip_HoldRateOrbt" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Hold rotation rate in the OVEL frame of reference. NOTE: RCS alone cannot perfectly cancel all rotation." Key="KLF_GaugeTip_HoldRateOvel" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Hold rotation rate in the STAR frame of reference. NOTE: RCS alone cannot perfectly cancel all rotation." Key="KLF_GaugeTip_HoldRateStar" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Hold rotation rate in the SURF frame of reference. NOTE: RCS alone cannot perfectly cancel all rotation." Key="KLF_GaugeTip_HoldRateSurf" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Hold rotation rate in the TGT frame of reference. NOTE: RCS alone cannot perfectly cancel all rotation." Key="KLF_GaugeTip_HoldRateTgt" />
+    <Localize Element="Tooltip" Attribute="Value" Value="How long the planned burn will take." Key="KLF_GaugeTip_BurnDuration" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Ignites the engines." Key="KLF_GaugeTip_IgniteEngines" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Increase Normal Delta-V by the current step size. Hold Shift for 10x, Ctrl for 0.1x." Key="KLF_GaugeTip_IncNormal" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Increase Outward (radial) Delta-V by the current step size. Hold Shift for 10x, Ctrl for 0.1x." Key="KLF_GaugeTip_IncOutward" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Increase Prograde Delta-V by the current step size. Hold Shift for 10x, Ctrl for 0.1x." Key="KLF_GaugeTip_IncPrograde" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Increase the step size used by the Prograde/Normal/Outward/Time steppers. Hold Shift to jump to the next order of magnitude." Key="KLF_GaugeTip_StepUp" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Inertial frame of reference fixed to the distant stars." Key="KLF_GaugeTip_FrameStars" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Move the burn earlier by the current step size. Hold Shift for 10x, Ctrl for 0.1x." Key="KLF_GaugeTip_BurnEarlier" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Move the burn later by the current step size. Hold Shift for 10x, Ctrl for 0.1x." Key="KLF_GaugeTip_BurnLater" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Move the burn one orbit earlier. Hold Shift for 10 orbits." Key="KLF_GaugeTip_BurnEarlierOrbit" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Move the burn one orbit later. Hold Shift for 10 orbits." Key="KLF_GaugeTip_BurnLaterOrbit" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Negative Delta Velocity. Nose points away from the burn direction. Up points inside orbit." Key="KLF_GaugeTip_NegativeDeltaV" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Null out roll rate only." Key="KLF_GaugeTip_NullRollRate" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Orbit Anti-Normal. Nose points away from angular momentum vector. Up points outside orbit." Key="KLF_GaugeTip_OrbitAntiNormal" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Orbit Normal. Nose points towards angular momentum vector. Up points outside orbit." Key="KLF_GaugeTip_OrbitNormal" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Orbital Horizon Ahead. Nose points towards approaching orbital horizon. Up points away from the surface." Key="KLF_GaugeTip_HorizonAhead" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Orbital Horizon Behind. Nose points towards receding orbital horizon. Up points away from the surface." Key="KLF_GaugeTip_HorizonBehind" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Pitch" Key="KLF_GaugeTip_Pitch" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Pitch Rate" Key="KLF_GaugeTip_PitchRate" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Point the up vector according to the selected target." Key="KLF_GaugeTip_PointUpTarget" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Point the up vector opposite of the selected target." Key="KLF_GaugeTip_PointUpAntiTarget" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Positive Delta Velocity. Nose points towards the burn direction. Up points outside orbit." Key="KLF_GaugeTip_PositiveDeltaV" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Prograde. Nose points towards orbital velocity. Up points outside orbit." Key="KLF_GaugeTip_Prograde" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Propellant Mass" Key="KLF_GaugeTip_PropellantMass" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Radial Inward. Nose towards the surface. Up points towards approaching orbital horizon." Key="KLF_GaugeTip_RadialIn" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Radial Outward. Nose points away from the surface. Up points towards receding orbital horizon." Key="KLF_GaugeTip_RadialOut" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Radiation dose rate averaged over the current orbit, unshielded, in millisieverts per hour." Key="KLF_GaugeTip_RadiationOrbit" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Radiation dose rate here, unshielded, in millisieverts per hour." Key="KLF_GaugeTip_RadiationHere" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Relaxed Attitude Control Profile. Low speed, accuracy, and propellant burn." Key="KLF_GaugeTip_RelaxedProfile" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Retrograde. Nose points away from orbital velocity. Up points outside orbit." Key="KLF_GaugeTip_Retrograde" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Roll" Key="KLF_GaugeTip_Roll" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Roll Rate" Key="KLF_GaugeTip_RollRate" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Sets the flight computer to automatically execute the planned burn." Key="KLF_GaugeTip_AutoExecuteBurn" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Shuts down the engines." Key="KLF_GaugeTip_ShutdownEngines" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Speed [/s]" Key="KLF_GaugeTip_Speed" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Strict Attitude Control Profile. High speed, accuracy, and propellant burn." Key="KLF_GaugeTip_StrictProfile" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Surface Backward. Nose points away from surface-relative velocity. Up points towards the surface." Key="KLF_GaugeTip_SurfaceBack" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Surface Downward. Nose points towards the surface. Up points away from the surface-relative velocity." Key="KLF_GaugeTip_SurfaceDown" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Surface Forward. Nose points toward surface-relative velocity. Up points away from the surface." Key="KLF_GaugeTip_SurfaceForward" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Surface Upward. Nose points away from the surface. Up points towards surface-relative velocity." Key="KLF_GaugeTip_SurfaceUp" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Switch Between Universal Time and Mission Elapsed Time." Key="KLF_GaugeTip_SwitchUtMet" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Target Alignment. Aligns the vehicle orientation to oppose the target's orientation." Key="KLF_GaugeTip_TargetAlign" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Target Anti-Velocity. Nose points opposite the relative velocity to the target. Up points to target's down." Key="KLF_GaugeTip_TargetAntiVelocity" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Target Away. Nose points away from the target. Up points towards the surface." Key="KLF_GaugeTip_TargetAway" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Target Towards. Nose points towards the target. Up points away from the surface." Key="KLF_GaugeTip_TargetTowards" />
+    <Localize Element="Tooltip" Attribute="Value" Value="The universal game time at which this burn's mark (midpoint) occurs." Key="KLF_GaugeTip_BurnMarkUt" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Thrust-to-weight ratio on the surface of the currently-orbited body." Key="KLF_GaugeTip_Twr" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Time remaining until this burn's mark (midpoint), relative to now." Key="KLF_GaugeTip_BurnMarkRemaining" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Time until the closest approach to the target." Key="KLF_GaugeTip_ClosestTime" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Time until the planned burn mark, being the required midpoint of the burn." Key="KLF_GaugeTip_BurnMarkTime" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Time when the burn will begin." Key="KLF_GaugeTip_BurnStartTime" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Toggle the Resource Groups window." Key="KLF_GaugeTip_ToggleResourceGroups" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Toggles the RCS thrusters." Key="KLF_GaugeTip_ToggleRcs" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Total Delta-V of this burn." Key="KLF_GaugeTip_TotalDeltaV" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Use fine-grained pulses of RCS thrust for manual control." Key="KLF_GaugeTip_PulseControl" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Use maximum continuous RCS thrust for manual control." Key="KLF_GaugeTip_ContinuousControl" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Velocity Inward. Nose points towards inside orbit. Up points towards from orbital velocity." Key="KLF_GaugeTip_VelocityIn" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Velocity Outward. Nose points towards outside orbit. Up points away from orbital velocity." Key="KLF_GaugeTip_VelocityOut" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Warp to the next apoapsis." Key="KLF_GaugeTip_WarpApoapsis" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Warp to the next periapsis." Key="KLF_GaugeTip_WarpPeriapsis" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Warp to the next SOI change." Key="KLF_GaugeTip_WarpSoi" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Warp to the planned burn time." Key="KLF_GaugeTip_WarpBurn" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Yaw" Key="KLF_GaugeTip_Yaw" />
+    <Localize Element="Tooltip" Attribute="Value" Value="Yaw Rate" Key="KLF_GaugeTip_YawRate" />
+</Patches>

@@ -132,6 +132,10 @@ The 'Font' value is a special entry that will be used to select which game font 
     <value>语言</value>
     <comment>Language</comment>
   </data>
+  <data name="KLF_UI_XmlRestart" xml:space="preserve">
+    <value>XML 文本将在重启游戏后更新</value>
+    <comment>XML text updates after a restart.</comment>
+  </data>
   <data name="KLF_UI_Confirm" xml:space="preserve">
     <value>确认</value>
     <comment>CONFIRM</comment>
@@ -3294,5 +3298,1449 @@ Decoupler Force: </comment>
   <data name="KLF_Part_NozzleHeader" xml:space="preserve">
     <value>喷管 '</value>
     <comment>Nozzle '</comment>
+  </data>
+  <data name="KLF_Burn_MousePos" xml:space="preserve">
+    <value>鼠标位置</value>
+    <comment>MousePos</comment>
+  </data>
+  <data name="KLF_Burn_HighlightedGizmo" xml:space="preserve">
+    <value>高亮 Gizmo</value>
+    <comment>HighlightedGizmo</comment>
+  </data>
+  <data name="KLF_Burn_HighlightedGizmoIndex" xml:space="preserve">
+    <value>高亮 Gizmo 索引</value>
+    <comment>HighlightedGizmoIndex</comment>
+  </data>
+  <data name="KLF_Burn_GrabbedGizmo" xml:space="preserve">
+    <value>抓取 Gizmo</value>
+    <comment>GrabbedGizmo</comment>
+  </data>
+  <data name="KLF_Burn_GrabbedGizmoIndex" xml:space="preserve">
+    <value>抓取 Gizmo 索引</value>
+    <comment>GrabbedGizmoIndex</comment>
+  </data>
+  <data name="KLF_Burn_LastGrabbedGizmo" xml:space="preserve">
+    <value>上次抓取 Gizmo</value>
+    <comment>LastGrabbedGizmo</comment>
+  </data>
+  <data name="KLF_Burn_TimeUntil" xml:space="preserve">
+    <value>剩余时间</value>
+    <comment>Time Until</comment>
+  </data>
+  <data name="KLF_Burn_GameTime" xml:space="preserve">
+    <value>游戏时间</value>
+    <comment>GameTime</comment>
+  </data>
+  <data name="KLF_Burn_DeltaVVertical" xml:space="preserve">
+    <value>ΔV [VLF]</value>
+    <comment>DeltaV [VLF]</comment>
+  </data>
+  <data name="KLF_Burn_Prograde" xml:space="preserve">
+    <value>顺行</value>
+    <comment>Prograde</comment>
+  </data>
+  <data name="KLF_Burn_Normal" xml:space="preserve">
+    <value>法向</value>
+    <comment>Normal</comment>
+  </data>
+  <data name="KLF_Burn_Outward" xml:space="preserve">
+    <value>径向外</value>
+    <comment>Outward</comment>
+  </data>
+  <data name="KLF_Burn_BurnVelocity" xml:space="preserve">
+    <value>燃烧速度 [ORB]</value>
+    <comment>BurnVelocity [ORB]</comment>
+  </data>
+  <data name="KLF_Burn_GameTimeHeader" xml:space="preserve">
+    <value>游戏时间</value>
+    <comment>Game Time</comment>
+  </data>
+  <data name="KLF_Burn_TimeTo" xml:space="preserve">
+    <value>倒计时</value>
+    <comment>Time To</comment>
+  </data>
+  <data name="KLF_Burn_DeltaV" xml:space="preserve">
+    <value>ΔV</value>
+    <comment>Delta-V</comment>
+  </data>
+  <data name="KLF_Burn_DeparturePrograde" xml:space="preserve">
+    <value>出发顺行</value>
+    <comment>Departure Prograde</comment>
+  </data>
+  <data name="KLF_Burn_DepartureNormal" xml:space="preserve">
+    <value>出发法向</value>
+    <comment>Departure Normal</comment>
+  </data>
+  <data name="KLF_Burn_DepartureOutward" xml:space="preserve">
+    <value>出发径向外</value>
+    <comment>Departure Outward</comment>
+  </data>
+  <data name="KLF_Burn_AddDelPeriod" xml:space="preserve">
+    <value>增/减周期</value>
+    <comment>Add/Del Period</comment>
+  </data>
+  <data name="KLF_Burn_Multiplier" xml:space="preserve">
+    <value>倍率</value>
+    <comment>Multiplier</comment>
+  </data>
+  <data name="KLF_Burn_Time" xml:space="preserve">
+    <value>时间</value>
+    <comment>Time</comment>
+  </data>
+  <data name="KLF_Burn_FlightPlanExpires" xml:space="preserve">
+    <value>燃烧飞行计划到期时间：</value>
+    <comment>Burn FlightPlan Expires at:</comment>
+  </data>
+  <data name="KLF_Burn_StartTime" xml:space="preserve">
+    <value>开始时间</value>
+    <comment>StartTime</comment>
+  </data>
+  <data name="KLF_Burn_EccentricAnomaly" xml:space="preserve">
+    <value>偏近点角</value>
+    <comment>EccentricAnomaly</comment>
+  </data>
+  <data name="KLF_Burn_MeanAnomaly" xml:space="preserve">
+    <value>平近点角</value>
+    <comment>MeanAnomaly</comment>
+  </data>
+  <data name="KLF_Burn_TrueAnomaly" xml:space="preserve">
+    <value>真近点角</value>
+    <comment>TrueAnomaly</comment>
+  </data>
+  <data name="KLF_Burn_None" xml:space="preserve">
+    <value>无</value>
+    <comment>None</comment>
+  </data>
+  <data name="KLF_Burn_DeleteBurn" xml:space="preserve">
+    <value>删除燃烧</value>
+    <comment>DELETE BURN</comment>
+  </data>
+  <data name="KLF_Burn_MoveToVehicleFlightPlan" xml:space="preserve">
+    <value>移至载具飞行计划</value>
+    <comment>MOVE TO VEHICLE FLIGHTPLAN</comment>
+  </data>
+  <data name="KLF_Burn_MakeVehicleTransferFlightPlan" xml:space="preserve">
+    <value>创建载具转移飞行计划</value>
+    <comment>MAKE VEHICLE TRANSFER FLIGHTPLAN</comment>
+  </data>
+  <data name="KLF_Burn_CurrentTarget" xml:space="preserve">
+    <value>当前目标：</value>
+    <comment>Current Target:</comment>
+  </data>
+  <data name="KLF_Burn_BurnRelativeInclination" xml:space="preserve">
+    <value>燃烧相对倾角：</value>
+    <comment>Burn Relative Inclination:</comment>
+  </data>
+  <data name="KLF_Burn_RelativeInclination" xml:space="preserve">
+    <value>相对倾角：</value>
+    <comment>Relative Inclination:</comment>
+  </data>
+  <data name="KLF_Burn_PatchHeader" xml:space="preserve">
+    <value>补丁 '</value>
+    <comment>Patch '</comment>
+  </data>
+  <data name="KLF_Burn_Patch" xml:space="preserve">
+    <value>补丁</value>
+    <comment>Patch</comment>
+  </data>
+  <data name="KLF_Burn_EditLabel" xml:space="preserve">
+    <value>编辑###Burn</value>
+    <comment>Edit###Burn</comment>
+  </data>
+  <data name="KLF_Burn_Edit" xml:space="preserve">
+    <value>编辑</value>
+    <comment>Edit</comment>
+  </data>
+  <data name="KLF_Burn_DeleteLabel" xml:space="preserve">
+    <value>删除###Burn</value>
+    <comment>Delete###Burn</comment>
+  </data>
+  <data name="KLF_Burn_Delete" xml:space="preserve">
+    <value>删除</value>
+    <comment>Delete</comment>
+  </data>
+  <data name="Rendezvous Control" xml:space="preserve">
+    <value>交会控制</value>
+  </data>
+  <data name="Burn Editor" xml:space="preserve">
+    <value>燃烧编辑器</value>
+  </data>
+  <data name="Burn Control" xml:space="preserve">
+    <value>燃烧控制</value>
+  </data>
+  <data name="Engine Control" xml:space="preserve">
+    <value>发动机控制</value>
+  </data>
+  <data name="Altitude" xml:space="preserve">
+    <value>高度</value>
+  </data>
+  <data name="Resources" xml:space="preserve">
+    <value>资源</value>
+  </data>
+  <data name="Game Time" xml:space="preserve">
+    <value>游戏时间</value>
+  </data>
+  <data name="Kitten Flight Control" xml:space="preserve">
+    <value>小猫飞行控制</value>
+  </data>
+  <data name="Telemetry" xml:space="preserve">
+    <value>遥测</value>
+  </data>
+  <data name="Radiation" xml:space="preserve">
+    <value>辐射</value>
+  </data>
+  <data name="Autopilot Settings" xml:space="preserve">
+    <value>自动驾驶设置</value>
+  </data>
+  <data name="Attitude Indicators" xml:space="preserve">
+    <value>姿态指示器</value>
+  </data>
+  <data name="Sequences" xml:space="preserve">
+    <value>序列</value>
+  </data>
+  <data name="Crew Portraits" xml:space="preserve">
+    <value>乘员肖像</value>
+  </data>
+  <data name="Navball" xml:space="preserve">
+    <value>导航球</value>
+  </data>
+  <data name="RATE" xml:space="preserve">
+    <value>速率</value>
+  </data>
+  <data name="APOAPSIS" xml:space="preserve">
+    <value>远地点</value>
+  </data>
+  <data name="PERIAPSIS" xml:space="preserve">
+    <value>近地点</value>
+  </data>
+  <data name="DISTANCE" xml:space="preserve">
+    <value>距离</value>
+  </data>
+  <data name="DELTAV" xml:space="preserve">
+    <value>速度增量</value>
+  </data>
+  <data name="THROTTLE" xml:space="preserve">
+    <value>油门</value>
+  </data>
+  <data name="PROPELLANT" xml:space="preserve">
+    <value>推进剂</value>
+  </data>
+  <data name="SIM SPEED" xml:space="preserve">
+    <value>模拟速度</value>
+  </data>
+  <data name="TARGET" xml:space="preserve">
+    <value>目标</value>
+  </data>
+  <data name="SHUTDN" xml:space="preserve">
+    <value>关机</value>
+  </data>
+  <data name="Altitude at Apoapsis" xml:space="preserve">
+    <value>远地点高度</value>
+  </data>
+  <data name="Altitude at Periapsis" xml:space="preserve">
+    <value>近地点高度</value>
+  </data>
+  <data name="Current engine throttle setting in percent." xml:space="preserve">
+    <value>当前发动机油门百分比。</value>
+  </data>
+  <data name="Current relative distance to the target." xml:space="preserve">
+    <value>与目标的当前相对距离。</value>
+  </data>
+  <data name="Current relative velocity to the target." xml:space="preserve">
+    <value>与目标的当前相对速度。</value>
+  </data>
+  <data name="Delete the planned burn." xml:space="preserve">
+    <value>删除计划中的点火。</value>
+  </data>
+  <data name="Solar System" xml:space="preserve">
+    <value>太阳系</value>
+  </data>
+  <data name="Earth and Moon" xml:space="preserve">
+    <value>地球与月球</value>
+  </data>
+  <data name="Earth Only" xml:space="preserve">
+    <value>仅地球</value>
+  </data>
+  <data name="Solar System + Interstellar" xml:space="preserve">
+    <value>太阳系 + 星际</value>
+  </data>
+  <data name="Earth Only + Interstellar" xml:space="preserve">
+    <value>仅地球 + 星际</value>
+  </data>
+  <data name="Interstellar (Dense)" xml:space="preserve">
+    <value>星际（密集）</value>
+  </data>
+  <data name="LR91 Sea" xml:space="preserve">
+    <value>LR91 海平面型</value>
+  </data>
+  <data name="LR91 Vac" xml:space="preserve">
+    <value>LR91 真空型</value>
+  </data>
+  <data name="RAIR-1 Antimatter Ramjet" xml:space="preserve">
+    <value>RAIR-1 反物质冲压发动机</value>
+  </data>
+  <data name="KLF_Gauge_Activate" xml:space="preserve">
+    <value>激活</value>
+  </data>
+  <data name="KLF_Gauge_Ahead" xml:space="preserve">
+    <value>前方</value>
+  </data>
+  <data name="KLF_Gauge_Align" xml:space="preserve">
+    <value>对齐</value>
+  </data>
+  <data name="KLF_Gauge_Antinml" xml:space="preserve">
+    <value>逆法向</value>
+  </data>
+  <data name="KLF_Gauge_Antivel" xml:space="preserve">
+    <value>逆速度</value>
+  </data>
+  <data name="KLF_Gauge_Any" xml:space="preserve">
+    <value>任意</value>
+  </data>
+  <data name="KLF_Gauge_Auto" xml:space="preserve">
+    <value>自动</value>
+  </data>
+  <data name="KLF_Gauge_Away" xml:space="preserve">
+    <value>背离</value>
+  </data>
+  <data name="KLF_Gauge_Back" xml:space="preserve">
+    <value>后向</value>
+  </data>
+  <data name="KLF_Gauge_Balnce" xml:space="preserve">
+    <value>平衡</value>
+  </data>
+  <data name="KLF_Gauge_Behind" xml:space="preserve">
+    <value>后方</value>
+  </data>
+  <data name="KLF_Gauge_Burn" xml:space="preserve">
+    <value>燃烧</value>
+  </data>
+  <data name="KLF_Gauge_BurnTime" xml:space="preserve">
+    <value>燃烧时间</value>
+  </data>
+  <data name="KLF_Gauge_ClosestApproach" xml:space="preserve">
+    <value>最近点</value>
+  </data>
+  <data name="KLF_Gauge_Control" xml:space="preserve">
+    <value>控制</value>
+  </data>
+  <data name="KLF_Gauge_Days" xml:space="preserve">
+    <value>天</value>
+  </data>
+  <data name="KLF_Gauge_Delete" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="KLF_Gauge_Direct" xml:space="preserve">
+    <value>直接</value>
+  </data>
+  <data name="KLF_Gauge_DoseMsvH" xml:space="preserve">
+    <value>剂量 mSv/h</value>
+  </data>
+  <data name="KLF_Gauge_Down" xml:space="preserve">
+    <value>下</value>
+  </data>
+  <data name="KLF_Gauge_Engine" xml:space="preserve">
+    <value>发动机</value>
+  </data>
+  <data name="KLF_Gauge_Fwd" xml:space="preserve">
+    <value>前向</value>
+  </data>
+  <data name="KLF_Gauge_Hrs" xml:space="preserve">
+    <value>小时</value>
+  </data>
+  <data name="KLF_Gauge_Ignite" xml:space="preserve">
+    <value>点火</value>
+  </data>
+  <data name="KLF_Gauge_In" xml:space="preserve">
+    <value>向内</value>
+  </data>
+  <data name="KLF_Gauge_Invert" xml:space="preserve">
+    <value>反转</value>
+  </data>
+  <data name="KLF_Gauge_Manual" xml:space="preserve">
+    <value>手动</value>
+  </data>
+  <data name="KLF_Gauge_ManualThrust" xml:space="preserve">
+    <value>手动推力</value>
+  </data>
+  <data name="KLF_Gauge_Mins" xml:space="preserve">
+    <value>分钟</value>
+  </data>
+  <data name="KLF_Gauge_Mode" xml:space="preserve">
+    <value>模式</value>
+  </data>
+  <data name="KLF_Gauge_Mult" xml:space="preserve">
+    <value>倍率</value>
+  </data>
+  <data name="KLF_Gauge_Neg" xml:space="preserve">
+    <value>负向</value>
+  </data>
+  <data name="KLF_Gauge_Norm" xml:space="preserve">
+    <value>法向</value>
+  </data>
+  <data name="KLF_Gauge_Normal" xml:space="preserve">
+    <value>标准</value>
+  </data>
+  <data name="KLF_Gauge_OrbitAverage" xml:space="preserve">
+    <value>轨道平均</value>
+  </data>
+  <data name="KLF_Gauge_Orbt" xml:space="preserve">
+    <value>轨道</value>
+  </data>
+  <data name="KLF_Gauge_Out" xml:space="preserve">
+    <value>向外</value>
+  </data>
+  <data name="KLF_Gauge_Ovel" xml:space="preserve">
+    <value>轨道速度</value>
+  </data>
+  <data name="KLF_Gauge_Period" xml:space="preserve">
+    <value>周期</value>
+  </data>
+  <data name="KLF_Gauge_Pitch" xml:space="preserve">
+    <value>俯仰</value>
+  </data>
+  <data name="KLF_Gauge_Pos" xml:space="preserve">
+    <value>正向</value>
+  </data>
+  <data name="KLF_Gauge_Profile" xml:space="preserve">
+    <value>曲线</value>
+  </data>
+  <data name="KLF_Gauge_Progde" xml:space="preserve">
+    <value>顺行</value>
+  </data>
+  <data name="KLF_Gauge_Pulse" xml:space="preserve">
+    <value>脉冲</value>
+  </data>
+  <data name="KLF_Gauge_RadIn" xml:space="preserve">
+    <value>径向内</value>
+  </data>
+  <data name="KLF_Gauge_RadOut" xml:space="preserve">
+    <value>径向外</value>
+  </data>
+  <data name="KLF_Gauge_Rcs" xml:space="preserve">
+    <value>RCS</value>
+  </data>
+  <data name="KLF_Gauge_Relative" xml:space="preserve">
+    <value>相对</value>
+  </data>
+  <data name="KLF_Gauge_Relax" xml:space="preserve">
+    <value>宽松</value>
+  </data>
+  <data name="KLF_Gauge_Res" xml:space="preserve">
+    <value>资源</value>
+  </data>
+  <data name="KLF_Gauge_Retro" xml:space="preserve">
+    <value>逆行</value>
+  </data>
+  <data name="KLF_Gauge_Roll" xml:space="preserve">
+    <value>滚转</value>
+  </data>
+  <data name="KLF_Gauge_Secs" xml:space="preserve">
+    <value>秒</value>
+  </data>
+  <data name="KLF_Gauge_Speed" xml:space="preserve">
+    <value>速度</value>
+  </data>
+  <data name="KLF_Gauge_Star" xml:space="preserve">
+    <value>恒星</value>
+  </data>
+  <data name="KLF_Gauge_StartBurnIn" xml:space="preserve">
+    <value>距点火</value>
+  </data>
+  <data name="KLF_Gauge_Strict" xml:space="preserve">
+    <value>严格</value>
+  </data>
+  <data name="KLF_Gauge_Surf" xml:space="preserve">
+    <value>地表</value>
+  </data>
+  <data name="KLF_Gauge_Tgt" xml:space="preserve">
+    <value>目标</value>
+  </data>
+  <data name="KLF_Gauge_Time" xml:space="preserve">
+    <value>时间</value>
+  </data>
+  <data name="KLF_Gauge_TimeTo" xml:space="preserve">
+    <value>剩余时间</value>
+  </data>
+  <data name="KLF_Gauge_TimeToMark" xml:space="preserve">
+    <value>距标记</value>
+  </data>
+  <data name="KLF_Gauge_Toward" xml:space="preserve">
+    <value>朝向</value>
+  </data>
+  <data name="KLF_Gauge_Twr" xml:space="preserve">
+    <value>推重比</value>
+  </data>
+  <data name="KLF_Gauge_Up" xml:space="preserve">
+    <value>上</value>
+  </data>
+  <data name="KLF_Gauge_Ut" xml:space="preserve">
+    <value>世界时</value>
+  </data>
+  <data name="KLF_Gauge_Velocity" xml:space="preserve">
+    <value>速度</value>
+  </data>
+  <data name="KLF_Gauge_View" xml:space="preserve">
+    <value>视图</value>
+  </data>
+  <data name="KLF_Gauge_Warp" xml:space="preserve">
+    <value>加速</value>
+  </data>
+  <data name="KLF_Gauge_Xfer" xml:space="preserve">
+    <value>转移</value>
+  </data>
+  <data name="KLF_Gauge_Yaw" xml:space="preserve">
+    <value>偏航</value>
+  </data>
+  <data name="KLF_Gauge_Years" xml:space="preserve">
+    <value>年</value>
+  </data>
+  <data name="KLF_Menu_File" xml:space="preserve">
+    <value>文件</value>
+    <comment>File</comment>
+  </data>
+  <data name="KLF_Menu_SaveLoad" xml:space="preserve">
+    <value>存档/读档</value>
+    <comment>Save/Load</comment>
+  </data>
+  <data name="KLF_Menu_BuildNewVehicle" xml:space="preserve">
+    <value>新建载具</value>
+    <comment>Build New Vehicle</comment>
+  </data>
+  <data name="KLF_Menu_LaunchExistingVehicle" xml:space="preserve">
+    <value>发射现有载具</value>
+    <comment>Launch Existing Vehicle</comment>
+  </data>
+    <data name="KLF_Menu_CheckForUpdate" xml:space="preserve">
+    <value>检查更新</value>
+    <comment>Check for Update</comment>
+  </data>
+  <data name="KLF_Menu_VersionHistory" xml:space="preserve">
+    <value>版本历史</value>
+    <comment>Version History</comment>
+  </data>
+  <data name="KLF_Menu_ExitGame" xml:space="preserve">
+    <value>退出游戏</value>
+    <comment>Exit Game</comment>
+  </data>
+    <data name="KLF_Menu_VehicleSaveLoad" xml:space="preserve">
+    <value>载具存读档</value>
+    <comment>Vehicle Save/Load</comment>
+  </data>
+  <data name="KLF_Menu_CrewAssignment" xml:space="preserve">
+    <value>乘员分配</value>
+    <comment>Crew Assignment</comment>
+  </data>
+  <data name="KLF_Menu_DrawPartAxes" xml:space="preserve">
+    <value>绘制部件坐标轴</value>
+    <comment>Draw Part Axes</comment>
+  </data>
+  <data name="KLF_Menu_ShowDeltaVDebug" xml:space="preserve">
+    <value>显示 ΔV 调试</value>
+    <comment>Show Delta-V Debug</comment>
+  </data>
+  <data name="KLF_Menu_ExitEditor" xml:space="preserve">
+    <value>退出编辑器</value>
+    <comment>Exit Editor</comment>
+  </data>
+  <data name="KLF_Menu_Universe" xml:space="preserve">
+    <value>宇宙</value>
+    <comment>Universe</comment>
+  </data>
+  <data name="KLF_Menu_Speed" xml:space="preserve">
+    <value>速度</value>
+    <comment>Speed</comment>
+  </data>
+  <data name="KLF_Menu_AutoWarp" xml:space="preserve">
+    <value>自动时间加速</value>
+    <comment>Auto Warp</comment>
+  </data>
+  <data name="KLF_Menu_Next" xml:space="preserve">
+    <value>下一个</value>
+    <comment>Next</comment>
+  </data>
+  <data name="KLF_Menu_Previous" xml:space="preserve">
+    <value>上一个</value>
+    <comment>Previous</comment>
+  </data>
+  <data name="KLF_Menu_Bodies" xml:space="preserve">
+    <value>天体</value>
+    <comment>Bodies</comment>
+  </data>
+  <data name="KLF_Menu_Manifest" xml:space="preserve">
+    <value>清单</value>
+    <comment>Manifest</comment>
+  </data>
+  <data name="KLF_Menu_KittenRoster" xml:space="preserve">
+    <value>小猫名册</value>
+    <comment>Kitten Roster</comment>
+  </data>
+  <data name="KLF_Menu_View" xml:space="preserve">
+    <value>视图</value>
+    <comment>View</comment>
+  </data>
+    <data name="KLF_Menu_TransferPlanner" xml:space="preserve">
+    <value>转移规划</value>
+    <comment>Transfer Planner</comment>
+  </data>
+  <data name="KLF_Menu_FlightPlan" xml:space="preserve">
+    <value>飞行计划</value>
+    <comment>Flight Plan</comment>
+  </data>
+  <data name="KLF_Menu_GroundTrack" xml:space="preserve">
+    <value>地面轨迹</value>
+    <comment>Ground Track</comment>
+  </data>
+  <data name="KLF_Menu_TargetTrack" xml:space="preserve">
+    <value>目标轨迹</value>
+    <comment>Target Track</comment>
+  </data>
+  <data name="KLF_Menu_Resources" xml:space="preserve">
+    <value>资源</value>
+    <comment>Resources</comment>
+  </data>
+  <data name="KLF_Menu_Staging" xml:space="preserve">
+    <value>分级</value>
+    <comment>Staging</comment>
+  </data>
+  <data name="KLF_Menu_Threads" xml:space="preserve">
+    <value>线程</value>
+    <comment>Threads</comment>
+  </data>
+      <data name="KLF_Menu_MapCamera" xml:space="preserve">
+    <value>地图相机</value>
+    <comment>Map Camera</comment>
+  </data>
+  <data name="KLF_Menu_AddCamera" xml:space="preserve">
+    <value>添加相机</value>
+    <comment>Add Camera</comment>
+  </data>
+  <data name="KLF_Menu_FollowTerrain" xml:space="preserve">
+    <value>跟随地形</value>
+    <comment>Follow Terrain</comment>
+  </data>
+    <data name="KLF_Menu_HoldAltToMultiselect" xml:space="preserve">
+    <value>按住 Alt 多选</value>
+    <comment>Hold alt to multiselect</comment>
+  </data>
+  <data name="KLF_Menu_ShowAll" xml:space="preserve">
+    <value>全部显示</value>
+    <comment>Show All</comment>
+  </data>
+  <data name="KLF_Menu_ShowNone" xml:space="preserve">
+    <value>全部隐藏</value>
+    <comment>Show None</comment>
+  </data>
+  <data name="KLF_Menu_Comets" xml:space="preserve">
+    <value>彗星</value>
+    <comment>Comets</comment>
+  </data>
+  <data name="KLF_Menu_Planets" xml:space="preserve">
+    <value>行星</value>
+    <comment>Planets</comment>
+  </data>
+  <data name="KLF_Menu_Moons" xml:space="preserve">
+    <value>卫星</value>
+    <comment>Moons</comment>
+  </data>
+  <data name="KLF_Menu_CelestialInfo" xml:space="preserve">
+    <value>天体信息</value>
+    <comment>Celestial Info</comment>
+  </data>
+  <data name="KLF_Menu_ShowOrbitMarkers" xml:space="preserve">
+    <value>显示轨道标记</value>
+    <comment>Show Orbit Markers</comment>
+  </data>
+  <data name="KLF_Menu_FlightPlans" xml:space="preserve">
+    <value>飞行计划列表</value>
+    <comment>Flight Plans</comment>
+  </data>
+      <data name="KLF_Menu_KittenTuning" xml:space="preserve">
+    <value>小猫调校</value>
+    <comment>Kitten Tuning</comment>
+  </data>
+  <data name="KLF_Menu_ParachuteTuning" xml:space="preserve">
+    <value>降落伞调校</value>
+    <comment>Parachute Tuning</comment>
+  </data>
+  <data name="KLF_Menu_ShowPortraitCameraControls" xml:space="preserve">
+    <value>显示肖像相机控制</value>
+    <comment>Show Portrait Camera Controls</comment>
+  </data>
+  <data name="KLF_Menu_Statistics" xml:space="preserve">
+    <value>统计</value>
+    <comment>Statistics</comment>
+  </data>
+  <data name="KLF_Menu_SphericalBillboarding" xml:space="preserve">
+    <value>球面公告板</value>
+    <comment>Spherical Billboarding</comment>
+  </data>
+  <data name="KLF_Menu_Wireframe" xml:space="preserve">
+    <value>线框</value>
+    <comment>Wireframe</comment>
+  </data>
+  <data name="KLF_Menu_ShowFlareDebug" xml:space="preserve">
+    <value>显示耀斑调试</value>
+    <comment>Show Flare Debug</comment>
+  </data>
+  <data name="KLF_Menu_ShowOverallBloomDebug" xml:space="preserve">
+    <value>显示泛光调试</value>
+    <comment>Show Overall Bloom Debug</comment>
+  </data>
+  <data name="KLF_Menu_ShowTerrainDebug" xml:space="preserve">
+    <value>显示地形调试</value>
+    <comment>Show Terrain Debug</comment>
+  </data>
+  <data name="KLF_Menu_ShowTextureStreaming" xml:space="preserve">
+    <value>显示纹理流送</value>
+    <comment>Show Texture Streaming</comment>
+  </data>
+  <data name="KLF_Menu_ShowOrbitDirections" xml:space="preserve">
+    <value>显示轨道方向</value>
+    <comment>Show Orbit Directions</comment>
+  </data>
+  <data name="KLF_Menu_ShowBurnDebug" xml:space="preserve">
+    <value>显示点火调试</value>
+    <comment>Show Burn Debug</comment>
+  </data>
+  <data name="KLF_Menu_ShowPartContactLoad" xml:space="preserve">
+    <value>显示部件接触载荷</value>
+    <comment>Show Part Contact Load</comment>
+  </data>
+  <data name="KLF_Menu_MeshDeformationEditor" xml:space="preserve">
+    <value>网格变形编辑器</value>
+    <comment>Mesh Deformation Editor</comment>
+  </data>
+  <data name="KLF_Menu_ShowExhaustDebug" xml:space="preserve">
+    <value>显示尾焰调试</value>
+    <comment>Show Exhaust Debug</comment>
+  </data>
+  <data name="KLF_Menu_ShowPlumeDebug" xml:space="preserve">
+    <value>显示羽流调试</value>
+    <comment>Show Plume Debug</comment>
+  </data>
+  <data name="KLF_Menu_ShowEngineDesigner" xml:space="preserve">
+    <value>显示发动机设计器</value>
+    <comment>Show Engine Designer</comment>
+  </data>
+  <data name="KLF_Menu_ShowAtmosphereEditor" xml:space="preserve">
+    <value>显示大气编辑器</value>
+    <comment>Show Atmosphere Editor</comment>
+  </data>
+  <data name="KLF_Menu_ShowCloudsEditor" xml:space="preserve">
+    <value>显示云层编辑器</value>
+    <comment>Show Clouds Editor</comment>
+  </data>
+  <data name="KLF_Menu_ShowOceanEditor" xml:space="preserve">
+    <value>显示海洋编辑器</value>
+    <comment>Show Ocean Editor</comment>
+  </data>
+  <data name="KLF_Menu_ShowParticleEmitterEditor" xml:space="preserve">
+    <value>显示粒子发射器编辑器</value>
+    <comment>Show Particle Emitter Editor</comment>
+  </data>
+  <data name="KLF_Menu_ShowExplosionEditor" xml:space="preserve">
+    <value>显示爆炸编辑器</value>
+    <comment>Show Explosion Editor</comment>
+  </data>
+  <data name="KLF_Menu_ShowDistantGlintEditor" xml:space="preserve">
+    <value>显示远处反光编辑器</value>
+    <comment>Show Distant Glint Editor</comment>
+  </data>
+  <data name="KLF_Menu_ShowDeviceHostSharedMemory" xml:space="preserve">
+    <value>显示设备主机共享内存</value>
+    <comment>Show Device Host Shared Memory</comment>
+  </data>
+  <data name="KLF_Menu_Lighting" xml:space="preserve">
+    <value>光照</value>
+    <comment>Lighting</comment>
+  </data>
+  <data name="KLF_Menu_ShowLightDebug" xml:space="preserve">
+    <value>显示光照调试</value>
+    <comment>Show Light Debug</comment>
+  </data>
+  <data name="KLF_Menu_ShowPlanetShadowDebug" xml:space="preserve">
+    <value>显示行星阴影调试</value>
+    <comment>Show Planet Shadow Debug</comment>
+  </data>
+  <data name="KLF_Menu_ShowCascadedShadowDebug" xml:space="preserve">
+    <value>显示级联阴影调试</value>
+    <comment>Show Cascaded Shadow Debug</comment>
+  </data>
+  <data name="KLF_Menu_GaugeUI" xml:space="preserve">
+    <value>仪表 UI</value>
+    <comment>Gauge UI</comment>
+  </data>
+  <data name="KLF_Menu_DebugMode" xml:space="preserve">
+    <value>调试模式</value>
+    <comment>Debug Mode</comment>
+  </data>
+  <data name="KLF_Menu_Inspector" xml:space="preserve">
+    <value>检查器</value>
+    <comment>Inspector</comment>
+  </data>
+  <data name="KLF_Menu_Hierarchy" xml:space="preserve">
+    <value>层级</value>
+    <comment>Hierarchy</comment>
+  </data>
+  <data name="KLF_Menu_Reset" xml:space="preserve">
+    <value>重置</value>
+    <comment>Reset</comment>
+  </data>
+  <data name="KLF_Menu_ShowPhysicsDebug" xml:space="preserve">
+    <value>显示物理调试</value>
+    <comment>Show Physics Debug</comment>
+  </data>
+  <data name="KLF_Menu_ShowEngineDebug" xml:space="preserve">
+    <value>显示发动机调试</value>
+    <comment>Show Engine Debug</comment>
+  </data>
+  <data name="KLF_Menu_ShowFlightComputerDebug" xml:space="preserve">
+    <value>显示飞行计算机调试</value>
+    <comment>Show Flight Computer Debug</comment>
+  </data>
+  <data name="KLF_Menu_ShowSetOrbitDebug" xml:space="preserve">
+    <value>显示设置轨道调试</value>
+    <comment>Show Set Orbit Debug</comment>
+  </data>
+  <data name="KLF_Menu_ShowAudioDebug" xml:space="preserve">
+    <value>显示音频调试</value>
+    <comment>Show Audio Debug</comment>
+  </data>
+  <data name="KLF_Menu_SpriteDistance" xml:space="preserve">
+    <value>精灵距离</value>
+    <comment>Sprite Distance</comment>
+  </data>
+  <data name="KLF_Menu_EditorToggle" xml:space="preserve">
+    <value>编辑器切换</value>
+    <comment>Editor Toggle</comment>
+  </data>
+  <data name="KLF_Menu_ShowPBRSpheres" xml:space="preserve">
+    <value>显示 PBR 球体</value>
+    <comment>Show PBR Spheres</comment>
+  </data>
+  <data name="KLF_Menu_ShowExperimentalParticles" xml:space="preserve">
+    <value>显示实验性粒子</value>
+    <comment>Show experimental particles</comment>
+  </data>
+  <data name="KLF_Menu_HUD" xml:space="preserve">
+    <value>HUD</value>
+    <comment>HUD</comment>
+  </data>
+  <data name="KLF_Menu_ContextAssignments" xml:space="preserve">
+    <value>上下文分配</value>
+    <comment>Context Assignments</comment>
+  </data>
+  <data name="KLF_Menu_SaveCurrentLayout" xml:space="preserve">
+    <value>保存当前布局</value>
+    <comment>Save Current Layout</comment>
+  </data>
+  <data name="KLF_Menu_SetCurrentAsDefault" xml:space="preserve">
+    <value>将当前设为默认</value>
+    <comment>Set Current as Default</comment>
+  </data>
+  <data name="KLF_Menu_ManageLayouts" xml:space="preserve">
+    <value>管理布局</value>
+    <comment>Manage Layouts</comment>
+  </data>
+  <data name="KLF_Menu_DeleteBurn" xml:space="preserve">
+    <value>删除点火</value>
+    <comment>Delete Burn</comment>
+  </data>
+  <data name="KLF_Menu_AtPeriapsis" xml:space="preserve">
+    <value>在近点</value>
+    <comment>At Periapsis</comment>
+  </data>
+  <data name="KLF_Menu_AtApoapsis" xml:space="preserve">
+    <value>在远点</value>
+    <comment>At Apoapsis</comment>
+  </data>
+  <data name="KLF_Menu_AtAscendingNode" xml:space="preserve">
+    <value>在升交点</value>
+    <comment>At Ascending Node</comment>
+  </data>
+  <data name="KLF_Menu_AtDescendingNode" xml:space="preserve">
+    <value>在降交点</value>
+    <comment>At Descending Node</comment>
+  </data>
+  <data name="KLF_Menu_BurnChainHint" xml:space="preserve">
+    <value>链式点火只能在最终点火后的轨迹上创建。</value>
+    <comment>Chained burns can only be created on your final post-burn trajectory.</comment>
+  </data>
+  <data name="KLF_Menu_BurnExistsHint" xml:space="preserve">
+    <value>此处已存在点火。</value>
+    <comment>A burn already exists here.</comment>
+  </data>
+  <data name="KLF_Menu_WarpToHere" xml:space="preserve">
+    <value>加速到此处</value>
+    <comment>Warp To Here</comment>
+  </data>
+  <data name="KLF_Menu_DepartureBurnFirstHint" xml:space="preserve">
+    <value>出发点火必须是第一个点火，删除其他点火后即可启用。</value>
+    <comment>A departure burn must be the first burn. Delete other burns to enable.</comment>
+  </data>
+  <data name="KLF_Menu_ToggleDockingCamera" xml:space="preserve">
+    <value>切换对接相机</value>
+    <comment>Toggle Docking Camera</comment>
+  </data>
+  <data name="KLF_Menu_DockedTo" xml:space="preserve">
+    <value>已对接至 </value>
+    <comment>Docked to </comment>
+  </data>
+  <data name="KLF_Menu_Undock" xml:space="preserve">
+    <value>解除对接</value>
+    <comment>Undock</comment>
+  </data>
+  <data name="KLF_Menu_TargetedPort" xml:space="preserve">
+    <value>目标对接口</value>
+    <comment>Targeted Port</comment>
+  </data>
+  <data name="KLF_Menu_ClearTarget" xml:space="preserve">
+    <value>清除目标</value>
+    <comment>Clear Target</comment>
+  </data>
+  <data name="KLF_Menu_NearbyVehicle" xml:space="preserve">
+    <value>附近载具</value>
+    <comment>Nearby Vehicle</comment>
+  </data>
+  <data name="KLF_Menu_Target" xml:space="preserve">
+    <value>目标</value>
+    <comment>Target</comment>
+  </data>
+  <data name="KLF_Menu_Zoom" xml:space="preserve">
+    <value>缩放</value>
+    <comment>Zoom</comment>
+  </data>
+  <data name="KLF_Menu_ManualZoom" xml:space="preserve">
+    <value>手动缩放</value>
+    <comment>Manual Zoom</comment>
+  </data>
+  <data name="KLF_Menu_Altitude" xml:space="preserve">
+    <value>高度</value>
+    <comment>Altitude</comment>
+  </data>
+  <data name="KLF_Menu_ResetAltReset" xml:space="preserve">
+    <value>重置##AltReset</value>
+    <comment>Reset##AltReset</comment>
+  </data>
+  <data name="KLF_Menu_TopDown" xml:space="preserve">
+    <value>俯视</value>
+    <comment>Top-Down</comment>
+  </data>
+  <data name="KLF_Menu_ResetCrossReset" xml:space="preserve">
+    <value>重置##CrossReset</value>
+    <comment>Reset##CrossReset</comment>
+  </data>
+  <data name="KLF_Menu_Period" xml:space="preserve">
+    <value>周期</value>
+    <comment>Period</comment>
+  </data>
+  <data name="KLF_Menu_ResetPeriodReset" xml:space="preserve">
+    <value>重置##PeriodReset</value>
+    <comment>Reset##PeriodReset</comment>
+  </data>
+  <data name="KLF_Menu_ClosestApproach" xml:space="preserve">
+    <value>最近点</value>
+    <comment>Closest Approach</comment>
+  </data>
+  <data name="KLF_Menu_SunriseSunset" xml:space="preserve">
+    <value>日出/日落</value>
+    <comment>Sunrise / Sunset</comment>
+  </data>
+  <data name="KLF_Menu_FocusOnPositions" xml:space="preserve">
+    <value>聚焦位置</value>
+    <comment>Focus on Positions</comment>
+  </data>
+  <data name="KLF_Menu_LVCRendezvousPlot" xml:space="preserve">
+    <value>LVC 交会图</value>
+    <comment>LVC Rendezvous Plot</comment>
+  </data>
+  <data name="KLF_Menu_ToggleWindowHint" xml:space="preserve">
+    <value>上述操作会开关此窗口。</value>
+    <comment>The listed action will toggle this window open and closed.</comment>
+  </data>
+  <data name="KLF_Menu_AddBurn" xml:space="preserve">
+    <value>添加点火</value>
+    <comment>Add Burn</comment>
+  </data>
+  <data name="KLF_Menu_AddBurnHere" xml:space="preserve">
+    <value>在此添加点火</value>
+    <comment>Add Burn Here</comment>
+  </data>
+  <data name="KLF_Menu_MapMode" xml:space="preserve">
+    <value>地图模式</value>
+    <comment>Map Mode</comment>
+  </data>
+  <data name="KLF_Menu_LightingMode" xml:space="preserve">
+    <value>光照模式</value>
+    <comment>Lighting Mode</comment>
+  </data>
+  <data name="KLF_Menu_Locations" xml:space="preserve">
+    <value>地点</value>
+    <comment>Locations</comment>
+  </data>
+  <data name="KLF_Menu_LatLonLines" xml:space="preserve">
+    <value>经纬线</value>
+    <comment>Lat/Lon Lines</comment>
+  </data>
+  <data name="KLF_Menu_Terminator" xml:space="preserve">
+    <value>晨昏线</value>
+    <comment>Terminator</comment>
+  </data>
+  <data name="KLF_Menu_FlightPath" xml:space="preserve">
+    <value>轨迹路径</value>
+    <comment>Flight Path</comment>
+  </data>
+  <data name="KLF_Menu_SubsolarPoint" xml:space="preserve">
+    <value>日下点</value>
+    <comment>Subsolar Point</comment>
+  </data>
+    <data name="KLF_Menu_Detached" xml:space="preserve">
+    <value>分离</value>
+    <comment>Detached</comment>
+  </data>
+  <data name="KLF_Menu_Autohide" xml:space="preserve">
+    <value>自动隐藏</value>
+    <comment>Autohide</comment>
+  </data>
+  <data name="KLF_Menu_Automatic" xml:space="preserve">
+    <value>自动</value>
+    <comment>Automatic</comment>
+  </data>
+  <data name="KLF_Menu_Recalculate" xml:space="preserve">
+    <value>重新计算</value>
+    <comment>Recalculate</comment>
+  </data>
+  <data name="KLF_Menu_AddNewGroup" xml:space="preserve">
+    <value>添加新组</value>
+    <comment>Add New Group</comment>
+  </data>
+  <data name="KLF_Menu_AddAbove" xml:space="preserve">
+    <value>在上方添加</value>
+    <comment>Add Above</comment>
+  </data>
+  <data name="KLF_Menu_AddBelow" xml:space="preserve">
+    <value>在下方添加</value>
+    <comment>Add Below</comment>
+  </data>
+  <data name="KLF_Menu_StagingDelete" xml:space="preserve">
+    <value>删除</value>
+    <comment>DELETE</comment>
+  </data>
+  <data name="KLF_Menu_Highlight" xml:space="preserve">
+    <value>高亮</value>
+    <comment>Highlight</comment>
+  </data>
+  <data name="KLF_Menu_Load" xml:space="preserve">
+    <value>载入</value>
+    <comment>Load</comment>
+  </data>
+  <data name="KLF_Menu_Delete" xml:space="preserve">
+    <value>删除</value>
+    <comment>Delete</comment>
+  </data>
+  <data name="KLF_Menu_Overwrite" xml:space="preserve">
+    <value>覆盖</value>
+    <comment>Overwrite</comment>
+  </data>
+  <data name="KLF_Menu_Select" xml:space="preserve">
+    <value>选择</value>
+    <comment>Select</comment>
+  </data>
+  <data name="KLF_Menu_Profiler" xml:space="preserve">
+    <value>性能分析器</value>
+    <comment>Profiler</comment>
+  </data>
+  <data name="KLF_GaugeTip_Altitude" xml:space="preserve">
+    <value>高度</value>
+    <comment>Altitude</comment>
+  </data>
+  <data name="KLF_GaugeTip_AltitudeApoapsis" xml:space="preserve">
+    <value>远点高度</value>
+    <comment>Altitude at Apoapsis</comment>
+  </data>
+  <data name="KLF_GaugeTip_AltitudePeriapsis" xml:space="preserve">
+    <value>近点高度</value>
+    <comment>Altitude at Periapsis</comment>
+  </data>
+  <data name="KLF_GaugeTip_BalancedProfile" xml:space="preserve">
+    <value>平衡姿态控制曲线。速度、精度与推进剂消耗均衡。</value>
+    <comment>Balanced Attitude Control Profile. Medium speed, accuracy, and propellant burn.</comment>
+  </data>
+  <data name="KLF_GaugeTip_ConvertDeparture" xml:space="preserve">
+    <value>将此父级出发点火转换为载具转移飞行计划。</value>
+    <comment>Convert this parent departure burn into a vehicle transfer flight plan.</comment>
+  </data>
+  <data name="KLF_GaugeTip_ThrottlePercent" xml:space="preserve">
+    <value>当前发动机油门设定（百分比）。</value>
+    <comment>Current engine throttle setting in percent.</comment>
+  </data>
+  <data name="KLF_GaugeTip_TargetDistance" xml:space="preserve">
+    <value>与目标的当前相对距离。</value>
+    <comment>Current relative distance to the target.</comment>
+  </data>
+  <data name="KLF_GaugeTip_TargetVelocity" xml:space="preserve">
+    <value>与目标的当前相对速度。</value>
+    <comment>Current relative velocity to the target.</comment>
+  </data>
+  <data name="KLF_GaugeTip_DecNormal" xml:space="preserve">
+    <value>按当前步长减少法向 ΔV。按住 Shift 为 10 倍，Ctrl 为 0.1 倍。</value>
+    <comment>Decrease Normal Delta-V by the current step size. Hold Shift for 10x, Ctrl for 0.1x.</comment>
+  </data>
+  <data name="KLF_GaugeTip_DecOutward" xml:space="preserve">
+    <value>按当前步长减少径向外 ΔV。按住 Shift 为 10 倍，Ctrl 为 0.1 倍。</value>
+    <comment>Decrease Outward (radial) Delta-V by the current step size. Hold Shift for 10x, Ctrl for 0.1x.</comment>
+  </data>
+  <data name="KLF_GaugeTip_DecPrograde" xml:space="preserve">
+    <value>按当前步长减少顺行 ΔV。按住 Shift 为 10 倍，Ctrl 为 0.1 倍。</value>
+    <comment>Decrease Prograde Delta-V by the current step size. Hold Shift for 10x, Ctrl for 0.1x.</comment>
+  </data>
+  <data name="KLF_GaugeTip_StepDown" xml:space="preserve">
+    <value>减小顺行/法向/径向外/时间步进器的步长。按住 Shift 可直接跳到上一个数量级。</value>
+    <comment>Decrease the step size used by the Prograde/Normal/Outward/Time steppers. Hold Shift to jump to the previous order of magnitude.</comment>
+  </data>
+  <data name="KLF_GaugeTip_DeletePlannedBurn" xml:space="preserve">
+    <value>删除已规划的点火。</value>
+    <comment>Delete the planned burn.</comment>
+  </data>
+  <data name="KLF_GaugeTip_DeleteBurn" xml:space="preserve">
+    <value>删除此次点火。</value>
+    <comment>Delete this burn.</comment>
+  </data>
+  <data name="KLF_GaugeTip_RemainingDeltaV" xml:space="preserve">
+    <value>已规划点火剩余的 ΔV。</value>
+    <comment>Delta-V remaining on the planned burn.</comment>
+  </data>
+  <data name="KLF_GaugeTip_DisableAutopilot" xml:space="preserve">
+    <value>禁用自动驾驶控制</value>
+    <comment>Disable autopilot control</comment>
+  </data>
+  <data name="KLF_GaugeTip_AutoTrimOff" xml:space="preserve">
+    <value>禁用自动配平：姿态输入直接透传。</value>
+    <comment>Disables auto trim: attitude inputs pass straight through.</comment>
+  </data>
+  <data name="KLF_GaugeTip_ClosestDistance" xml:space="preserve">
+    <value>与目标最近点的距离。</value>
+    <comment>Distance at the closest approach to the target.</comment>
+  </data>
+  <data name="KLF_GaugeTip_ElapsedGameTime" xml:space="preserve">
+    <value>已流逝的游戏时间。</value>
+    <comment>Elapsed game time.</comment>
+  </data>
+  <data name="KLF_GaugeTip_AutoTrimOn" xml:space="preserve">
+    <value>启用自动配平：飞行计算机抑制机体角速度。在视角模式下不适用。</value>
+    <comment>Enables auto trim: the flight computer damps body rates. Not applicable in View mode.</comment>
+  </data>
+  <data name="KLF_GaugeTip_EvaDirect" xml:space="preserve">
+    <value>EVA 模式：直接控制。标准的载具旋转与平移控制。</value>
+    <comment>Eva Mode: Direct control. Standard vehicle rotation and translation controls.</comment>
+  </data>
+  <data name="KLF_GaugeTip_EvaView" xml:space="preserve">
+    <value>EVA 模式：视角控制。控制相对视角，EVA 小猫会自动转向相机朝向。</value>
+    <comment>Eva Mode: View control: view relative controls, Eva Kitten auto-rotates to camera orientation.</comment>
+  </data>
+  <data name="KLF_GaugeTip_FrameTarget" xml:space="preserve">
+    <value>以当前目标方向固定的参考系。</value>
+    <comment>Frame of reference fixed to the current target direction.</comment>
+  </data>
+  <data name="KLF_GaugeTip_FrameBurn" xml:space="preserve">
+    <value>以下一段规划点火方向固定的参考系。</value>
+    <comment>Frame of reference fixed to the next planned burn direction.</comment>
+  </data>
+  <data name="KLF_GaugeTip_FrameHorizon" xml:space="preserve">
+    <value>以轨道地平线固定的参考系。</value>
+    <comment>Frame of reference fixed to the orbital horizon.</comment>
+  </data>
+  <data name="KLF_GaugeTip_FrameVelocity" xml:space="preserve">
+    <value>以载具轨道速度固定的参考系。</value>
+    <comment>Frame of reference fixed to the orbital velocity of your vehicle.</comment>
+  </data>
+  <data name="KLF_GaugeTip_FrameSurface" xml:space="preserve">
+    <value>以行星表面固定的参照系。</value>
+    <comment>Frame of reference fixed to the surface of the planet.</comment>
+  </data>
+  <data name="KLF_GaugeTip_GameSpeed" xml:space="preserve">
+    <value>游戏速度。</value>
+    <comment>Game Speed.</comment>
+  </data>
+  <data name="KLF_GaugeTip_HoldRateBurn" xml:space="preserve">
+    <value>在 BURN 参考系中保持旋转速率。注意：仅靠 RCS 无法完全消除所有旋转。</value>
+    <comment>Hold rotation rate in the BURN frame of reference. NOTE: RCS alone cannot perfectly cancel all rotation.</comment>
+  </data>
+  <data name="KLF_GaugeTip_HoldRateOrbt" xml:space="preserve">
+    <value>在 ORBT 参考系中保持旋转速率。注意：仅靠 RCS 无法完全消除所有旋转。</value>
+    <comment>Hold rotation rate in the ORBT frame of reference. NOTE: RCS alone cannot perfectly cancel all rotation.</comment>
+  </data>
+  <data name="KLF_GaugeTip_HoldRateOvel" xml:space="preserve">
+    <value>在 OVEL 参考系中保持旋转速率。注意：仅靠 RCS 无法完全消除所有旋转。</value>
+    <comment>Hold rotation rate in the OVEL frame of reference. NOTE: RCS alone cannot perfectly cancel all rotation.</comment>
+  </data>
+  <data name="KLF_GaugeTip_HoldRateStar" xml:space="preserve">
+    <value>在 STAR 参考系中保持旋转速率。注意：仅靠 RCS 无法完全消除所有旋转。</value>
+    <comment>Hold rotation rate in the STAR frame of reference. NOTE: RCS alone cannot perfectly cancel all rotation.</comment>
+  </data>
+  <data name="KLF_GaugeTip_HoldRateSurf" xml:space="preserve">
+    <value>在 SURF 参考系中保持旋转速率。注意：仅靠 RCS 无法完全消除所有旋转。</value>
+    <comment>Hold rotation rate in the SURF frame of reference. NOTE: RCS alone cannot perfectly cancel all rotation.</comment>
+  </data>
+  <data name="KLF_GaugeTip_HoldRateTgt" xml:space="preserve">
+    <value>在 TGT 参考系中保持旋转速率。注意：仅靠 RCS 无法完全消除所有旋转。</value>
+    <comment>Hold rotation rate in the TGT frame of reference. NOTE: RCS alone cannot perfectly cancel all rotation.</comment>
+  </data>
+  <data name="KLF_GaugeTip_BurnDuration" xml:space="preserve">
+    <value>规划点火将持续多久。</value>
+    <comment>How long the planned burn will take.</comment>
+  </data>
+  <data name="KLF_GaugeTip_IgniteEngines" xml:space="preserve">
+    <value>点燃发动机。</value>
+    <comment>Ignites the engines.</comment>
+  </data>
+  <data name="KLF_GaugeTip_IncNormal" xml:space="preserve">
+    <value>按当前步长增加法向 ΔV。按住 Shift 为 10 倍，Ctrl 为 0.1 倍。</value>
+    <comment>Increase Normal Delta-V by the current step size. Hold Shift for 10x, Ctrl for 0.1x.</comment>
+  </data>
+  <data name="KLF_GaugeTip_IncOutward" xml:space="preserve">
+    <value>按当前步长增加径向外 ΔV。按住 Shift 为 10 倍，Ctrl 为 0.1 倍。</value>
+    <comment>Increase Outward (radial) Delta-V by the current step size. Hold Shift for 10x, Ctrl for 0.1x.</comment>
+  </data>
+  <data name="KLF_GaugeTip_IncPrograde" xml:space="preserve">
+    <value>按当前步长增加顺行 ΔV。按住 Shift 为 10 倍，Ctrl 为 0.1 倍。</value>
+    <comment>Increase Prograde Delta-V by the current step size. Hold Shift for 10x, Ctrl for 0.1x.</comment>
+  </data>
+  <data name="KLF_GaugeTip_StepUp" xml:space="preserve">
+    <value>增大顺行/法向/径向外/时间步进器的步长。按住 Shift 可直接跳到下一个数量级。</value>
+    <comment>Increase the step size used by the Prograde/Normal/Outward/Time steppers. Hold Shift to jump to the next order of magnitude.</comment>
+  </data>
+  <data name="KLF_GaugeTip_FrameStars" xml:space="preserve">
+    <value>以遥远恒星固定的惯性参考系。</value>
+    <comment>Inertial frame of reference fixed to the distant stars.</comment>
+  </data>
+  <data name="KLF_GaugeTip_BurnEarlier" xml:space="preserve">
+    <value>按当前步长将点火提前。按住 Shift 为 10 倍，Ctrl 为 0.1 倍。</value>
+    <comment>Move the burn earlier by the current step size. Hold Shift for 10x, Ctrl for 0.1x.</comment>
+  </data>
+  <data name="KLF_GaugeTip_BurnLater" xml:space="preserve">
+    <value>按当前步长将点火推后。按住 Shift 为 10 倍，Ctrl 为 0.1 倍。</value>
+    <comment>Move the burn later by the current step size. Hold Shift for 10x, Ctrl for 0.1x.</comment>
+  </data>
+  <data name="KLF_GaugeTip_BurnEarlierOrbit" xml:space="preserve">
+    <value>将点火提前一个轨道周期。按住 Shift 为 10 个周期。</value>
+    <comment>Move the burn one orbit earlier. Hold Shift for 10 orbits.</comment>
+  </data>
+  <data name="KLF_GaugeTip_BurnLaterOrbit" xml:space="preserve">
+    <value>将点火推后一个轨道周期。按住 Shift 为 10 个周期。</value>
+    <comment>Move the burn one orbit later. Hold Shift for 10 orbits.</comment>
+  </data>
+  <data name="KLF_GaugeTip_NegativeDeltaV" xml:space="preserve">
+    <value>负向 ΔV。机头背向点火方向，上方向指向轨道内侧。</value>
+    <comment>Negative Delta Velocity. Nose points away from the burn direction. Up points inside orbit.</comment>
+  </data>
+  <data name="KLF_GaugeTip_NullRollRate" xml:space="preserve">
+    <value>仅消除滚转速率。</value>
+    <comment>Null out roll rate only.</comment>
+  </data>
+  <data name="KLF_GaugeTip_OrbitAntiNormal" xml:space="preserve">
+    <value>轨道逆法向。机头背向角动量矢量，上方向指向轨道外侧。</value>
+    <comment>Orbit Anti-Normal. Nose points away from angular momentum vector. Up points outside orbit.</comment>
+  </data>
+  <data name="KLF_GaugeTip_OrbitNormal" xml:space="preserve">
+    <value>轨道法向。机头指向角动量矢量，上方向指向轨道外侧。</value>
+    <comment>Orbit Normal. Nose points towards angular momentum vector. Up points outside orbit.</comment>
+  </data>
+  <data name="KLF_GaugeTip_HorizonAhead" xml:space="preserve">
+    <value>轨道地平线前方。机头指向前方接近的轨道地平线，上方向背离地表。</value>
+    <comment>Orbital Horizon Ahead. Nose points towards approaching orbital horizon. Up points away from the surface.</comment>
+  </data>
+  <data name="KLF_GaugeTip_HorizonBehind" xml:space="preserve">
+    <value>轨道地平线后方。机头指向后方退去的轨道地平线，上方向背离地表。</value>
+    <comment>Orbital Horizon Behind. Nose points towards receding orbital horizon. Up points away from the surface.</comment>
+  </data>
+  <data name="KLF_GaugeTip_Pitch" xml:space="preserve">
+    <value>俯仰</value>
+    <comment>Pitch</comment>
+  </data>
+  <data name="KLF_GaugeTip_PitchRate" xml:space="preserve">
+    <value>俯仰速率</value>
+    <comment>Pitch Rate</comment>
+  </data>
+  <data name="KLF_GaugeTip_PointUpTarget" xml:space="preserve">
+    <value>使上方向指向所选目标。</value>
+    <comment>Point the up vector according to the selected target.</comment>
+  </data>
+  <data name="KLF_GaugeTip_PointUpAntiTarget" xml:space="preserve">
+    <value>使上方向背离所选目标。</value>
+    <comment>Point the up vector opposite of the selected target.</comment>
+  </data>
+  <data name="KLF_GaugeTip_PositiveDeltaV" xml:space="preserve">
+    <value>正向 ΔV。机头指向点火方向，上方向指向轨道外侧。</value>
+    <comment>Positive Delta Velocity. Nose points towards the burn direction. Up points outside orbit.</comment>
+  </data>
+  <data name="KLF_GaugeTip_Prograde" xml:space="preserve">
+    <value>顺行。机头指向轨道速度方向，上方向指向轨道外侧。</value>
+    <comment>Prograde. Nose points towards orbital velocity. Up points outside orbit.</comment>
+  </data>
+  <data name="KLF_GaugeTip_PropellantMass" xml:space="preserve">
+    <value>推进剂质量</value>
+    <comment>Propellant Mass</comment>
+  </data>
+  <data name="KLF_GaugeTip_RadialIn" xml:space="preserve">
+    <value>径向向内。机头朝向地表，上方向指向前方接近的轨道地平线。</value>
+    <comment>Radial Inward. Nose towards the surface. Up points towards approaching orbital horizon.</comment>
+  </data>
+  <data name="KLF_GaugeTip_RadialOut" xml:space="preserve">
+    <value>径向向外。机头背离地表，上方向指向后方退去的轨道地平线。</value>
+    <comment>Radial Outward. Nose points away from the surface. Up points towards receding orbital horizon.</comment>
+  </data>
+  <data name="KLF_GaugeTip_RadiationOrbit" xml:space="preserve">
+    <value>当前轨道平均辐射剂量率（无屏蔽，单位 mSv/h）。</value>
+    <comment>Radiation dose rate averaged over the current orbit, unshielded, in millisieverts per hour.</comment>
+  </data>
+  <data name="KLF_GaugeTip_RadiationHere" xml:space="preserve">
+    <value>此处辐射剂量率（无屏蔽，单位 mSv/h）。</value>
+    <comment>Radiation dose rate here, unshielded, in millisieverts per hour.</comment>
+  </data>
+  <data name="KLF_GaugeTip_RelaxedProfile" xml:space="preserve">
+    <value>宽松姿态控制曲线。速度、精度与推进剂消耗都较低。</value>
+    <comment>Relaxed Attitude Control Profile. Low speed, accuracy, and propellant burn.</comment>
+  </data>
+  <data name="KLF_GaugeTip_Retrograde" xml:space="preserve">
+    <value>逆行。机头背向轨道速度方向，上方向指向轨道外侧。</value>
+    <comment>Retrograde. Nose points away from orbital velocity. Up points outside orbit.</comment>
+  </data>
+  <data name="KLF_GaugeTip_Roll" xml:space="preserve">
+    <value>滚转</value>
+    <comment>Roll</comment>
+  </data>
+  <data name="KLF_GaugeTip_RollRate" xml:space="preserve">
+    <value>滚转速率</value>
+    <comment>Roll Rate</comment>
+  </data>
+  <data name="KLF_GaugeTip_AutoExecuteBurn" xml:space="preserve">
+    <value>让飞行计算机自动执行已规划的点火。</value>
+    <comment>Sets the flight computer to automatically execute the planned burn.</comment>
+  </data>
+  <data name="KLF_GaugeTip_ShutdownEngines" xml:space="preserve">
+    <value>关闭发动机。</value>
+    <comment>Shuts down the engines.</comment>
+  </data>
+  <data name="KLF_GaugeTip_Speed" xml:space="preserve">
+    <value>速度 [/s]</value>
+    <comment>Speed [/s]</comment>
+  </data>
+  <data name="KLF_GaugeTip_StrictProfile" xml:space="preserve">
+    <value>严格姿态控制曲线。速度、精度与推进剂消耗都较高。</value>
+    <comment>Strict Attitude Control Profile. High speed, accuracy, and propellant burn.</comment>
+  </data>
+  <data name="KLF_GaugeTip_SurfaceBack" xml:space="preserve">
+    <value>地表向后。机头背向地表相对速度，上方向指向地表。</value>
+    <comment>Surface Backward. Nose points away from surface-relative velocity. Up points towards the surface.</comment>
+  </data>
+  <data name="KLF_GaugeTip_SurfaceDown" xml:space="preserve">
+    <value>地表向下。机头朝向地表，上方向背离地表相对速度。</value>
+    <comment>Surface Downward. Nose points towards the surface. Up points away from the surface-relative velocity.</comment>
+  </data>
+  <data name="KLF_GaugeTip_SurfaceForward" xml:space="preserve">
+    <value>地表向前。机头指向地表相对速度，上方向背离地表。</value>
+    <comment>Surface Forward. Nose points toward surface-relative velocity. Up points away from the surface.</comment>
+  </data>
+  <data name="KLF_GaugeTip_SurfaceUp" xml:space="preserve">
+    <value>地表向上。机头背离地表，上方向指向地表相对速度。</value>
+    <comment>Surface Upward. Nose points away from the surface. Up points towards surface-relative velocity.</comment>
+  </data>
+  <data name="KLF_GaugeTip_SwitchUtMet" xml:space="preserve">
+    <value>在世界时与任务已用时间之间切换。</value>
+    <comment>Switch Between Universal Time and Mission Elapsed Time.</comment>
+  </data>
+  <data name="KLF_GaugeTip_TargetAlign" xml:space="preserve">
+    <value>目标对齐。使载具朝向与目标朝向相反。</value>
+    <comment>Target Alignment. Aligns the vehicle orientation to oppose the target's orientation.</comment>
+  </data>
+  <data name="KLF_GaugeTip_TargetAntiVelocity" xml:space="preserve">
+    <value>目标逆速度。机头背向与目标的相对速度，上方向指向目标的下方。</value>
+    <comment>Target Anti-Velocity. Nose points opposite the relative velocity to the target. Up points to target's down.</comment>
+  </data>
+  <data name="KLF_GaugeTip_TargetAway" xml:space="preserve">
+    <value>目标背离。机头背离目标，上方向指向地表。</value>
+    <comment>Target Away. Nose points away from the target. Up points towards the surface.</comment>
+  </data>
+  <data name="KLF_GaugeTip_TargetTowards" xml:space="preserve">
+    <value>目标朝向。机头指向目标，上方向背离地表。</value>
+    <comment>Target Towards. Nose points towards the target. Up points away from the surface.</comment>
+  </data>
+  <data name="KLF_GaugeTip_BurnMarkUt" xml:space="preserve">
+    <value>此次点火标记点（中点）对应的世界时游戏时间。</value>
+    <comment>The universal game time at which this burn's mark (midpoint) occurs.</comment>
+  </data>
+  <data name="KLF_GaugeTip_Twr" xml:space="preserve">
+    <value>当前环绕天体表面的推重比。</value>
+    <comment>Thrust-to-weight ratio on the surface of the currently-orbited body.</comment>
+  </data>
+  <data name="KLF_GaugeTip_BurnMarkRemaining" xml:space="preserve">
+    <value>距此次点火标记点（中点）的剩余时间。</value>
+    <comment>Time remaining until this burn's mark (midpoint), relative to now.</comment>
+  </data>
+  <data name="KLF_GaugeTip_ClosestTime" xml:space="preserve">
+    <value>距离与目标最近点的时间。</value>
+    <comment>Time until the closest approach to the target.</comment>
+  </data>
+  <data name="KLF_GaugeTip_BurnMarkTime" xml:space="preserve">
+    <value>距规划点火标记点（即点火所需中点）的时间。</value>
+    <comment>Time until the planned burn mark, being the required midpoint of the burn.</comment>
+  </data>
+  <data name="KLF_GaugeTip_BurnStartTime" xml:space="preserve">
+    <value>点火开始的时间。</value>
+    <comment>Time when the burn will begin.</comment>
+  </data>
+  <data name="KLF_GaugeTip_ToggleResourceGroups" xml:space="preserve">
+    <value>切换资源组窗口。</value>
+    <comment>Toggle the Resource Groups window.</comment>
+  </data>
+  <data name="KLF_GaugeTip_ToggleRcs" xml:space="preserve">
+    <value>切换 RCS 推进器。</value>
+    <comment>Toggles the RCS thrusters.</comment>
+  </data>
+  <data name="KLF_GaugeTip_TotalDeltaV" xml:space="preserve">
+    <value>此次点火的总 ΔV。</value>
+    <comment>Total Delta-V of this burn.</comment>
+  </data>
+  <data name="KLF_GaugeTip_PulseControl" xml:space="preserve">
+    <value>使用 RCS 的精细脉冲进行手动控制。</value>
+    <comment>Use fine-grained pulses of RCS thrust for manual control.</comment>
+  </data>
+  <data name="KLF_GaugeTip_ContinuousControl" xml:space="preserve">
+    <value>使用 RCS 的最大连续推力进行手动控制。</value>
+    <comment>Use maximum continuous RCS thrust for manual control.</comment>
+  </data>
+  <data name="KLF_GaugeTip_VelocityIn" xml:space="preserve">
+    <value>速度向内。机头指向轨道内侧，上方向由轨道速度指向内侧。</value>
+    <comment>Velocity Inward. Nose points towards inside orbit. Up points towards from orbital velocity.</comment>
+  </data>
+  <data name="KLF_GaugeTip_VelocityOut" xml:space="preserve">
+    <value>速度向外。机头指向轨道外侧，上方向背离轨道速度。</value>
+    <comment>Velocity Outward. Nose points towards outside orbit. Up points away from orbital velocity.</comment>
+  </data>
+  <data name="KLF_GaugeTip_WarpApoapsis" xml:space="preserve">
+    <value>时间加速到下一个远点。</value>
+    <comment>Warp to the next apoapsis.</comment>
+  </data>
+  <data name="KLF_GaugeTip_WarpPeriapsis" xml:space="preserve">
+    <value>时间加速到下一个近点。</value>
+    <comment>Warp to the next periapsis.</comment>
+  </data>
+  <data name="KLF_GaugeTip_WarpSoi" xml:space="preserve">
+    <value>时间加速到下一次影响球切换。</value>
+    <comment>Warp to the next SOI change.</comment>
+  </data>
+  <data name="KLF_GaugeTip_WarpBurn" xml:space="preserve">
+    <value>时间加速到规划点火时间。</value>
+    <comment>Warp to the planned burn time.</comment>
+  </data>
+  <data name="KLF_GaugeTip_Yaw" xml:space="preserve">
+    <value>偏航</value>
+    <comment>Yaw</comment>
+  </data>
+  <data name="KLF_GaugeTip_YawRate" xml:space="preserve">
+    <value>偏航速率</value>
+    <comment>Yaw Rate</comment>
   </data>
 </root>
